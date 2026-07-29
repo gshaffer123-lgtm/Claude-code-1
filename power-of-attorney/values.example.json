@@ -1,0 +1,22 @@
+{
+  "_comment": "Copy to values.json, fill in, then: python3 make_dpoa.py out.pdf values.json. Any key left out or left empty stays a blank ruled line on the printed form. Do not commit a filled-in copy - it contains personal health information.",
+
+  "principal_name": "",
+  "principal_dob": "",
+  "principal_address": "",
+  "principal_city": "",
+  "principal_state": "WA",
+  "principal_zip": "",
+  "principal_phone": "",
+
+  "agent_name": "",
+  "agent_relationship": "Daughter",
+  "agent_address": "",
+  "agent_phone": "",
+  "agent_alt_contact": "",
+
+  "alt_agent_name": "",
+  "alt_agent_relationship": "",
+  "alt_agent_phone": "",
+  "alt_agent_address": ""
+}
