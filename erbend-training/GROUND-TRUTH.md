@@ -87,9 +87,11 @@ never agree except by accident.
 RESOLUTION: ✅ the gauge strip is the correct one. The diagram label (and the note
 text under it) must be re-derived from gauge-strip state, not recomputed.
 
-❓ OPEN: on the real machine, when the gauge shows e.g. R −2T after an `L 2` entry,
-what should the diagram's big callout read — the resulting total taper on that end
-of the part, or the delta just applied? (Pick one, label it, derive it.)
+✅ RESOLVED: the diagram's big callout shows the RESULTING state of the part — how
+much longer or shorter that end of the part is, in relative thicknesses (T), after
+the adjustment. Not the delta just applied. It is derived from the gauge strip's
+resulting totals, and the drawing itself exaggerates the end growing/tucking to
+match.
 
 ## 6. Step display
 
@@ -113,9 +115,11 @@ values.
 
 ## To do before implementation
 
-- [ ] Get the app source into this repo (push from the original session, or save
-      the deployed page's JS and drop it into chat).
-- [ ] Genaro answers the two ❓ items above.
-- [ ] Confirm baseline sign: screenshots show step-4 gauge as **R +3T**; Genaro
-      described the part as "started with −3". Reconcile which is right before
-      pinning tests.
+- [ ] Get the app source into this repo. Located: it lives on Genaro's own
+      computer — the trainer was built in Remote Control CLI sessions "ER bend"
+      (Aug 26, latest) and "ER Bend" (Aug 25). Resume the Aug 26 session on that
+      machine (`claude --resume`) and have it push the project verbatim to branch
+      `erbend-source` under `erbend-training/app/`, or drop the files into chat.
+- [x] Diagram callout semantics resolved (see §5).
+- [x] Baseline sign confirmed: **+3T** (matches screenshots).
+- [ ] Remaining ❓: step-type display fields (§6).
