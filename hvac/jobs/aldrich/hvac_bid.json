@@ -1,0 +1,1335 @@
+{
+ "address": "4407 Aldrich Rd, Bellingham WA 98226",
+ "slug": "4407-aldrich-hvac",
+ "permit": "SFR2025-00084",
+ "trade": "HVAC",
+ "price_source": "none (--no-live)",
+ "sections": {
+  "equipment": [
+   {
+    "label": "Air handler 42k",
+    "desc": "Air handler - variable speed, 42k (3.5 ton)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "air handler 42k in LAUNDRY (main; job.json (main/LAUNDRY))"
+   },
+   {
+    "label": "Heat strip 5 kW",
+    "desc": "Backup heat strip 5 kW (controlled per WSEC R403.1.2)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "backup / defrost tempering 5 kW (heat-pump shortfall at design 514 Btuh; Manual S: <= 5 kW while it is under 15,000) - the thermostat locks it out while the com"
+   },
+   {
+    "label": "Heat pump outdoor unit 42k ducted",
+    "desc": "Heat pump outdoor unit - centrally ducted 42k (3.5 ton), cold-climate variable capacity",
+    "qty": 1,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "ducted heat pump outdoor unit 42k (~32,906 Btuh at 19 F), at the electrician's Heat pump condenser (DEN ROOM, electrical/jobs/aldrich/devices.json), W wall"
+   },
+   {
+    "label": "Thermostat heat pump programmable",
+    "desc": "Thermostat - programmable, heat pump with aux-heat lockout (WSEC R403.1.1 / R403.1.2)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "WSEC R403.1.1 programmable; heat-pump aux lockout R403.1.2"
+   },
+   {
+    "label": "Site labor",
+    "desc": "HVAC equipment site time",
+    "qty": 2,
+    "unit": "days",
+    "rate": 3000.0,
+    "cost": null,
+    "price": 6000.0,
+    "cst": null,
+    "note": "10.4 crew-hours at 6.25 h/day (placeholder install minutes) \u00b7 day rate from the ROOFING day rate ($3,000 placeholder) - NOT an HVAC day rate"
+   }
+  ],
+  "rough": [
+   {
+    "label": "Condensate line 3/4 PVC",
+    "desc": "Condensate line 3/4 in PVC (or 5/8 vinyl with the line set)",
+    "qty": 9,
+    "unit": "LF",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "measured 8 LF + 10% waste = 1 x 10 ft stick \u00b7 air handler condensate to an approved discharge"
+   },
+   {
+    "label": "Condensate trap",
+    "desc": "Condensate trap + cleanout tee",
+    "qty": 1,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "trap + cleanout tee"
+   },
+   {
+    "label": "Duct hanger",
+    "desc": "Duct hanger strap / saddle (flex every 4 ft, rigid every 10 ft)",
+    "qty": 100,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "trunk"
+   },
+   {
+    "label": "Duct wrap R-8",
+    "desc": "Duct insulation R-8 wrap (rigid duct outside the envelope, WSEC R403.3.1)",
+    "qty": 49,
+    "unit": "LF",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "measured 44 LF + 10% waste \u00b7 main trunk in the vented crawl - R-8 (WSEC R403.3.1)"
+   },
+   {
+    "label": "Duct mastic and tape",
+    "desc": "Duct mastic (gal) + UL-181 foil tape",
+    "qty": 5,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "mastic by the gallon per 100 ft of duct"
+   },
+   {
+    "label": "Flex duct R-8 5 in",
+    "desc": "Flex duct R-8 5 in",
+    "qty": 137,
+    "unit": "LF",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "measured 130 LF + 5% waste = 6 x 25 ft bag \u00b7 BATH: 30 cfm \u00b7 HALLWAY: 30 cfm \u00b7 HALL: 30 cfm \u00b7 BEDROOM 1: 49 cfm \u00b7 STAIRS: 47 cfm \u00b7 MASTER BATH: 40 cfm"
+   },
+   {
+    "label": "Flex duct R-8 6 in",
+    "desc": "Flex duct R-8 6 in",
+    "qty": 189,
+    "unit": "LF",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "measured 180 LF + 5% waste = 8 x 25 ft bag \u00b7 DEN ROOM: 66 cfm \u00b7 ENTRY: 52 cfm \u00b7 BEDROOM 2: 53 cfm \u00b7 MASTER BEDROOM: 75 cfm \u00b7 LIVING ROOM: 57 cfm \u00b7 DINING ROOM: 63 cfm"
+   },
+   {
+    "label": "Register boot",
+    "desc": "Register boot (4x10 / 4x12 floor or 6x10 ceiling)",
+    "qty": 21,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": ""
+   },
+   {
+    "label": "Return duct",
+    "desc": "Return duct 12-16 in (panned joist not allowed for a new return)",
+    "qty": 43,
+    "unit": "LF",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "measured 40 LF + 5% waste \u00b7 main central return 12 in, 481 cfm, 14x20 filter grille \u00b7 upper central return 14 in, 634 cfm, 16x20 filter grille"
+   },
+   {
+    "label": "Plenum set supply and return",
+    "desc": "Supply + return plenums (fabricated, sealed, lined where required)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "supply + return plenums at the unit"
+   },
+   {
+    "label": "Supply trunk duct",
+    "desc": "Supply trunk - galvanized rectangular / 10-14 in round (extended plenum)",
+    "qty": 107,
+    "unit": "LF",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "measured 101 LF + 5% waste \u00b7 main: 12 in equivalent, 481 cfm - reducing past 24 ft \u00b7 upper: 14 in equivalent, 634 cfm - reducing past 24 ft"
+   },
+   {
+    "label": "Duct takeoff with damper",
+    "desc": "Takeoff / starting collar with balancing damper",
+    "qty": 21,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": ""
+   },
+   {
+    "label": "Transfer grille or jumper",
+    "desc": "Transfer grille pair / jumper duct (closed-door pressure relief)",
+    "qty": 4,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "DEN ROOM: 132 cfm needs ~72 sq in free area at 3 Pa - transfer grille pair or jumper duct \u00b7 BEDROOM 1: 49 cfm needs ~27 sq in free area at 3 Pa - transfer grill"
+   },
+   {
+    "label": "Anti-vibration pads",
+    "desc": "Anti-vibration pads (set of 4)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": ""
+   },
+   {
+    "label": "Mini-split cable 14/4",
+    "desc": "Communication cable 14/4 stranded (outdoor unit to each indoor unit)",
+    "qty": 38,
+    "unit": "LF",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "measured 34 LF + 10% waste = 1 x 250 ft coil \u00b7 with the line set"
+   },
+   {
+    "label": "Equipment pad",
+    "desc": "Equipment pad - composite, sized to the outdoor unit",
+    "qty": 1,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "outdoor unit pad"
+   },
+   {
+    "label": "Line set 3/8 x 3/4",
+    "desc": "Line set 3/8 x 3/4 insulated",
+    "qty": 38,
+    "unit": "LF",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "measured 34 LF + 10% waste = 1 x 50 ft coil \u00b7 42k indoor unit, 35 ft"
+   },
+   {
+    "label": "Outdoor unit stand",
+    "desc": "Outdoor unit stand / wall bracket (snow and drainage clearance)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "snow / drainage stand"
+   },
+   {
+    "label": "Line-set wall penetration",
+    "desc": "Wall penetration - 3 in sleeve, sealed and flashed",
+    "qty": 1,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "rim penetration for the line set"
+   },
+   {
+    "label": "Fire caulk",
+    "desc": "Fire caulk / sealant (tube)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "fire caulk / sealant at the penetrations"
+   },
+   {
+    "label": "Exhaust duct 4 in",
+    "desc": "Bath fan exhaust duct 4 in insulated flex (50 cfm fan: <= 25 ft, Table M1505.4.4.2)",
+    "qty": 13,
+    "unit": "LF",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "measured 12 LF + 10% waste = 1 x 25 ft bag \u00b7 BATH: 50 cfm, 6 ft, 2 elbows -> 4 in flex (Table M1505.4.4.2 allows 25 ft)"
+   },
+   {
+    "label": "Dryer elbow 4 in",
+    "desc": "Dryer duct 4 in 90 elbow",
+    "qty": 2,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": ""
+   },
+   {
+    "label": "Dryer duct 4 in rigid",
+    "desc": "Dryer duct 4 in rigid metal, smooth wall (M1502.4.2)",
+    "qty": 6,
+    "unit": "LF",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "measured 5 LF + 10% waste = 2 x 5 ft stick \u00b7 from the electrician's dryer outlet in LAUNDRY: 5 ft"
+   },
+   {
+    "label": "Dryer vent box",
+    "desc": "Dryer vent box (recessed)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": ""
+   },
+   {
+    "label": "Dryer wall cap",
+    "desc": "Dryer wall cap with damper, no screen (M1502.3)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": ""
+   },
+   {
+    "label": "Exhaust duct 6 in",
+    "desc": "Exhaust duct 6 in insulated (80-110 cfm fans, whole-house fan: Table M1505.4.4.2)",
+    "qty": 9,
+    "unit": "LF",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "measured 8 LF + 10% waste = 1 x 25 ft bag \u00b7 BATH whole-house fan: 96 cfm, 6 ft, 2 elbows -> 6 in flex (Table M1505.4.4.2 allows 45 ft) \u00b7 MASTER BATH: 110 cfm, 2 ft, 2 elbows -> 6 in flex (Table M1505.4.4."
+   },
+   {
+    "label": "Outdoor air inlet",
+    "desc": "Outdoor air inlet 4 sq in NFA, through-wall with screen (WA exhaust-only whole-house ventilation, one per habitable room)",
+    "qty": 5,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "unit house: an outdoor-air inlet (4 sq in NFA) in each of 5 habitable spaces (WA exhaust-only systems) - window trickle vents of the same area count instead"
+   },
+   {
+    "label": "Range hood duct rigid",
+    "desc": "Range hood duct 6-10 in rigid, sealed (M1503.3)",
+    "qty": 5,
+    "unit": "LF",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "measured 4 LF + 10% waste = 1 x 5 ft stick \u00b7 6 in rigid for a 300 cfm hood at the electrician's range outlet (electrical/jobs/aldrich/devices.json) (M1503.3); the hood itself is the appliance supplier's"
+   },
+   {
+    "label": "Range hood cap",
+    "desc": "Range hood wall / roof cap with damper",
+    "qty": 1,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "6 in wall cap with damper"
+   },
+   {
+    "label": "Wall cap 6 in",
+    "desc": "Wall / roof cap 6 in with backdraft damper",
+    "qty": 2,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "BATH whole-house fan: wall cap with backdraft damper \u00b7 MASTER BATH: wall cap with backdraft damper"
+   },
+   {
+    "label": "Wall cap 4 in",
+    "desc": "Wall cap 4 in with backdraft damper",
+    "qty": 2,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "BATH: wall cap with backdraft damper"
+   },
+   {
+    "label": "Whole-house exhaust fan continuous",
+    "desc": "Whole-house exhaust fan, continuous duty, <= 1.0 sone (M1505.4) - replaces one electrical allowance fan",
+    "qty": 1,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "unit house: whole-house fan 86 cfm continuous (Qr 57 x Csystem 1.5, one fan = unbalanced, not distributed) in BATH - strike that bath fan from the electrical al"
+   },
+   {
+    "label": "Whole-house ventilation control",
+    "desc": "Whole-house ventilation control - 24 h timer / override, labelled (WA M1505.4.2)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "labelled \"WHOLE HOUSE VENTILATION - LEAVE ON\" 24 h control with manual override (WA M1505.4.2); the electrician wires it"
+   },
+   {
+    "label": "Site labor",
+    "desc": "HVAC rough-in site time",
+    "qty": 8,
+    "unit": "days",
+    "rate": 3000.0,
+    "cost": null,
+    "price": 24000.0,
+    "cst": null,
+    "note": "50.6 crew-hours at 6.25 h/day (placeholder install minutes) \u00b7 day rate from the ROOFING day rate ($3,000 placeholder) - NOT an HVAC day rate"
+   }
+  ],
+  "trim": [
+   {
+    "label": "Filter",
+    "desc": "Filters MERV 8-13 (first set)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "first filter set"
+   },
+   {
+    "label": "Floor register",
+    "desc": "Floor register 4x10 / 4x12",
+    "qty": 21,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "BATH \u00b7 DEN ROOM \u00b7 ENTRY \u00b7 HALLWAY \u00b7 HALL \u00b7 BEDROOM 1"
+   },
+   {
+    "label": "Return filter grille",
+    "desc": "Return / filter grille 20x25 (or 14x30)",
+    "qty": 2,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "ENTRY (main): 14x20 at <= 300 fpm \u00b7 DINING ROOM (upper): 16x20 at <= 300 fpm"
+   },
+   {
+    "label": "Air balance",
+    "desc": "Air balance of supply registers (per ducted system)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "register balance"
+   },
+   {
+    "label": "Duct leakage test",
+    "desc": "Duct leakage test, total cfm25 (WSEC R403.3.5) - certified tester",
+    "qty": 1,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "ducts outside the thermal envelope (vented crawl): total leakage test (WSEC R403.3.5)"
+   },
+   {
+    "label": "HVAC hand-over",
+    "desc": "Equipment labels, WSEC certificate data, owner hand-over",
+    "qty": 1,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "per dwelling unit"
+   },
+   {
+    "label": "HVAC design and load calc",
+    "desc": "Load calculation + equipment selection for the permit (Manual J / S or the WSU sizing form)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "room-by-room loads for the permit (this takeoff is the draft)"
+   },
+   {
+    "label": "HVAC start-up",
+    "desc": "Start-up, charge verification, controls set-up (per outdoor unit)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "42k system"
+   },
+   {
+    "label": "Ventilation flow test",
+    "desc": "Ventilation flow test - whole-house + local exhaust (WA M1505.4.3 / M1505.4.4)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "unit house: whole-house 86 cfm + every local exhaust measured at the grille (WA M1505.4.3 / M1505.4.4)"
+   },
+   {
+    "label": "Pressure test and evacuation",
+    "desc": "Nitrogen pressure test + evacuation to 500 micron (per system)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "per refrigerant system"
+   },
+   {
+    "label": "Refrigerant additional charge (lb)",
+    "desc": "Refrigerant - additional charge beyond the pre-charge (lb)",
+    "qty": 0.4,
+    "unit": "lb",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "5 oz past the pre-charge [U: the maker's oz / ft]"
+   },
+   {
+    "label": "Site labor",
+    "desc": "HVAC trim, start-up and tests site time",
+    "qty": 2,
+    "unit": "days",
+    "rate": 3000.0,
+    "cost": null,
+    "price": 6000.0,
+    "cst": null,
+    "note": "9.8 crew-hours at 6.25 h/day (placeholder install minutes) \u00b7 day rate from the ROOFING day rate ($3,000 placeholder) - NOT an HVAC day rate"
+   },
+   {
+    "label": "Mechanical permit",
+    "desc": "Mechanical permit - City of Bellingham Permit Center (2 appliances, 5 fans / vents)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": null,
+    "cost": null,
+    "price": null,
+    "cst": null,
+    "note": "City of Bellingham Permit Center residential mechanical fee schedule - NOT FOUND in the 9/25 research (references/research-hvac-code.md 8): price it from the county sheet"
+   }
+  ]
+ },
+ "options": [],
+ "unpriced": [
+  [
+   "Air balance",
+   "EA"
+  ],
+  [
+   "Air handler 42k",
+   "EA"
+  ],
+  [
+   "Anti-vibration pads",
+   "EA"
+  ],
+  [
+   "Condensate line 3/4 PVC",
+   "LF"
+  ],
+  [
+   "Condensate trap",
+   "EA"
+  ],
+  [
+   "Dryer duct 4 in rigid",
+   "LF"
+  ],
+  [
+   "Dryer elbow 4 in",
+   "EA"
+  ],
+  [
+   "Dryer vent box",
+   "EA"
+  ],
+  [
+   "Dryer wall cap",
+   "EA"
+  ],
+  [
+   "Duct hanger",
+   "EA"
+  ],
+  [
+   "Duct leakage test",
+   "EA"
+  ],
+  [
+   "Duct mastic and tape",
+   "EA"
+  ],
+  [
+   "Duct takeoff with damper",
+   "EA"
+  ],
+  [
+   "Duct wrap R-8",
+   "LF"
+  ],
+  [
+   "Equipment pad",
+   "EA"
+  ],
+  [
+   "Exhaust duct 4 in",
+   "LF"
+  ],
+  [
+   "Exhaust duct 6 in",
+   "LF"
+  ],
+  [
+   "Filter",
+   "EA"
+  ],
+  [
+   "Fire caulk",
+   "EA"
+  ],
+  [
+   "Flex duct R-8 5 in",
+   "LF"
+  ],
+  [
+   "Flex duct R-8 6 in",
+   "LF"
+  ],
+  [
+   "Floor register",
+   "EA"
+  ],
+  [
+   "HVAC design and load calc",
+   "EA"
+  ],
+  [
+   "HVAC hand-over",
+   "EA"
+  ],
+  [
+   "HVAC start-up",
+   "EA"
+  ],
+  [
+   "Heat pump outdoor unit 42k ducted",
+   "EA"
+  ],
+  [
+   "Heat strip 5 kW",
+   "EA"
+  ],
+  [
+   "Line set 3/8 x 3/4",
+   "LF"
+  ],
+  [
+   "Line-set wall penetration",
+   "EA"
+  ],
+  [
+   "Mechanical permit",
+   "EA"
+  ],
+  [
+   "Mini-split cable 14/4",
+   "LF"
+  ],
+  [
+   "Outdoor air inlet",
+   "EA"
+  ],
+  [
+   "Outdoor unit stand",
+   "EA"
+  ],
+  [
+   "Plenum set supply and return",
+   "EA"
+  ],
+  [
+   "Pressure test and evacuation",
+   "EA"
+  ],
+  [
+   "Range hood cap",
+   "EA"
+  ],
+  [
+   "Range hood duct rigid",
+   "LF"
+  ],
+  [
+   "Refrigerant additional charge (lb)",
+   "lb"
+  ],
+  [
+   "Register boot",
+   "EA"
+  ],
+  [
+   "Return duct",
+   "LF"
+  ],
+  [
+   "Return filter grille",
+   "EA"
+  ],
+  [
+   "Supply trunk duct",
+   "LF"
+  ],
+  [
+   "Thermostat heat pump programmable",
+   "EA"
+  ],
+  [
+   "Transfer grille or jumper",
+   "EA"
+  ],
+  [
+   "Ventilation flow test",
+   "EA"
+  ],
+  [
+   "Wall cap 4 in",
+   "EA"
+  ],
+  [
+   "Wall cap 6 in",
+   "EA"
+  ],
+  [
+   "Whole-house exhaust fan continuous",
+   "EA"
+  ],
+  [
+   "Whole-house ventilation control",
+   "EA"
+  ]
+ ],
+ "scope": {
+  "equipment": [
+   "design: 19 F heating / 78 F cooling (bellingham); heating load 33,420 Btuh, cooling 1.06 tons (room-by-room, Manual J method)",
+   "unit house: 42k ducted heat pump outdoor, 42k air handler in LAUNDRY, 21 supply registers, 2 returns, 5 kW strip",
+   "cold-climate variable-capacity heat pump(s), A2L refrigerant, HSPF2 >= 9.4 per the WSEC credit"
+  ],
+  "rough": [
+   "line sets 34 ft (concealed), condensate to daylight, communication cable",
+   "ductwork 449 ft: trunks, flex branches, boots, returns, transfer paths",
+   "ventilation: exhaust 85.9 cfm continuous (WA M1505.4) - whole-house fan on a 24 h control, outdoor-air inlets",
+   "exhaust: every bath fan ducted and capped, dryer vent, range hood duct and cap - 28 ft"
+  ],
+  "trim": [
+   "registers and grilles, first filters, start-up and charge verification, controls set-up",
+   "tests: ventilation flow test, duct leakage test, the permit load calculation",
+   "inspections: Mechanical rough-in (cover), Duct leakage test, Ventilation flow test, Final mechanical"
+  ]
+ },
+ "totals": {
+  "equipment": {
+   "material_price": 0,
+   "material_cost": 0,
+   "site_price": 6000.0,
+   "sale": 6000.0,
+   "lines": 5,
+   "priced": 1
+  },
+  "rough": {
+   "material_price": 0,
+   "material_cost": 0,
+   "site_price": 24000.0,
+   "sale": 24000.0,
+   "lines": 34,
+   "priced": 1
+  },
+  "trim": {
+   "material_price": 0,
+   "material_cost": 0,
+   "site_price": 6000.0,
+   "sale": 6000.0,
+   "lines": 13,
+   "priced": 1
+  },
+  "site_days": 12,
+  "day_rate": 3000.0,
+  "paid_hours": 82.8,
+  "labour_cost": 12420.0,
+  "sales_fees": 1800.0,
+  "fee_rate": 0.05,
+  "sale": 36000.0,
+  "cost": 14220.0,
+  "margin": 21780.0,
+  "option_price": 0,
+  "priced_lines": 3,
+  "total_lines": 52
+ },
+ "caveats": [
+  "DRAFT. Nothing is sent, nothing is pushed to a client.",
+  "49 line labels have NO price on the RVM price list - the quantities are real, the money is not. See references/prices-to-set.md.",
+  "The day rate used is the ROOFING day rate ($3,000 placeholder) - NOT an HVAC day rate.",
+  "Labour COST uses bidcalc.py's crew rates (crew $70/h + lead $80/h per paid hour) - a roofing crew, a placeholder for an HVAC crew.",
+  "Install minutes are PLACEHOLDERS - no task-level HVAC install hours were found (references/research-hvac-market.md 3.3).",
+  "Sales fee 5% (owner) - the current bidcalc.py rule.",
+  "The electrician wires every outdoor unit, air handler, fan and control; the fireplace, the range hood and the bath fans themselves are other trades' supply.",
+  "The load calculation is the takeoff's own Manual J-method estimate; the permit may want it stamped on the jurisdiction's form (the \"HVAC design and load calc\" line)."
+ ],
+ "doc": {
+  "action": "create",
+  "type": "bid",
+  "trade": "hvac",
+  "scope": [
+   "Equipment: design: 19 F heating / 78 F cooling (bellingham); heating load 33,420 Btuh, cooling 1.06 tons (room-by-room, Manual J method); unit house: 42k ducted heat pump outdoor, 42k air handler in LAUNDRY, 21 supply registers, 2 returns, 5 kW strip; cold-climate variable-capacity heat pump(s), A2L refrigerant, HSPF2 >= 9.4 per the WSEC credit",
+   "Rough-in: line sets 34 ft (concealed), condensate to daylight, communication cable; ductwork 449 ft: trunks, flex branches, boots, returns, transfer paths; ventilation: exhaust 85.9 cfm continuous (WA M1505.4) - whole-house fan on a 24 h control, outdoor-air inlets; exhaust: every bath fan ducted and capped, dryer vent, range hood duct and cap - 28 ft",
+   "Trim, start-up and tests: registers and grilles, first filters, start-up and charge verification, controls set-up; tests: ventilation flow test, duct leakage test, the permit load calculation; inspections: Mechanical rough-in (cover), Duct leakage test, Ventilation flow test, Final mechanical"
+  ],
+  "lineItems": [
+   {
+    "desc": "[Equipment] Air handler - variable speed, 42k (3.5 ton)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Equipment] Backup heat strip 5 kW (controlled per WSEC R403.1.2)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Equipment] Heat pump outdoor unit - centrally ducted 42k (3.5 ton), cold-climate variable capacity",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Equipment] Thermostat - programmable, heat pump with aux-heat lockout (WSEC R403.1.1 / R403.1.2)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Equipment] HVAC equipment site time",
+    "qty": 2,
+    "unit": "days",
+    "rate": 3000.0,
+    "cost": 0,
+    "amount": 6000.0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Condensate line 3/4 in PVC (or 5/8 vinyl with the line set)",
+    "qty": 9,
+    "unit": "LF",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Condensate trap + cleanout tee",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Duct hanger strap / saddle (flex every 4 ft, rigid every 10 ft)",
+    "qty": 100,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Duct insulation R-8 wrap (rigid duct outside the envelope, WSEC R403.3.1)",
+    "qty": 49,
+    "unit": "LF",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Duct mastic (gal) + UL-181 foil tape",
+    "qty": 5,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Flex duct R-8 5 in",
+    "qty": 137,
+    "unit": "LF",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Flex duct R-8 6 in",
+    "qty": 189,
+    "unit": "LF",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Register boot (4x10 / 4x12 floor or 6x10 ceiling)",
+    "qty": 21,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Return duct 12-16 in (panned joist not allowed for a new return)",
+    "qty": 43,
+    "unit": "LF",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Supply + return plenums (fabricated, sealed, lined where required)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Supply trunk - galvanized rectangular / 10-14 in round (extended plenum)",
+    "qty": 107,
+    "unit": "LF",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Takeoff / starting collar with balancing damper",
+    "qty": 21,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Transfer grille pair / jumper duct (closed-door pressure relief)",
+    "qty": 4,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Anti-vibration pads (set of 4)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Communication cable 14/4 stranded (outdoor unit to each indoor unit)",
+    "qty": 38,
+    "unit": "LF",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Equipment pad - composite, sized to the outdoor unit",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Line set 3/8 x 3/4 insulated",
+    "qty": 38,
+    "unit": "LF",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Outdoor unit stand / wall bracket (snow and drainage clearance)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Wall penetration - 3 in sleeve, sealed and flashed",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Fire caulk / sealant (tube)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Bath fan exhaust duct 4 in insulated flex (50 cfm fan: <= 25 ft, Table M1505.4.4.2)",
+    "qty": 13,
+    "unit": "LF",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Dryer duct 4 in 90 elbow",
+    "qty": 2,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Dryer duct 4 in rigid metal, smooth wall (M1502.4.2)",
+    "qty": 6,
+    "unit": "LF",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Dryer vent box (recessed)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Dryer wall cap with damper, no screen (M1502.3)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Exhaust duct 6 in insulated (80-110 cfm fans, whole-house fan: Table M1505.4.4.2)",
+    "qty": 9,
+    "unit": "LF",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Outdoor air inlet 4 sq in NFA, through-wall with screen (WA exhaust-only whole-house ventilation, one per habitable room)",
+    "qty": 5,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Range hood duct 6-10 in rigid, sealed (M1503.3)",
+    "qty": 5,
+    "unit": "LF",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Range hood wall / roof cap with damper",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Wall / roof cap 6 in with backdraft damper",
+    "qty": 2,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Wall cap 4 in with backdraft damper",
+    "qty": 2,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Whole-house exhaust fan, continuous duty, <= 1.0 sone (M1505.4) - replaces one electrical allowance fan",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Whole-house ventilation control - 24 h timer / override, labelled (WA M1505.4.2)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] HVAC rough-in site time",
+    "qty": 8,
+    "unit": "days",
+    "rate": 3000.0,
+    "cost": 0,
+    "amount": 24000.0,
+    "auto": true
+   },
+   {
+    "desc": "[Trim, start-up and tests] Filters MERV 8-13 (first set)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Trim, start-up and tests] Floor register 4x10 / 4x12",
+    "qty": 21,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Trim, start-up and tests] Return / filter grille 20x25 (or 14x30)",
+    "qty": 2,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Trim, start-up and tests] Air balance of supply registers (per ducted system)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Trim, start-up and tests] Duct leakage test, total cfm25 (WSEC R403.3.5) - certified tester",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Trim, start-up and tests] Equipment labels, WSEC certificate data, owner hand-over",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Trim, start-up and tests] Load calculation + equipment selection for the permit (Manual J / S or the WSU sizing form)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Trim, start-up and tests] Start-up, charge verification, controls set-up (per outdoor unit)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Trim, start-up and tests] Ventilation flow test - whole-house + local exhaust (WA M1505.4.3 / M1505.4.4)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Trim, start-up and tests] Nitrogen pressure test + evacuation to 500 micron (per system)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Trim, start-up and tests] Refrigerant - additional charge beyond the pre-charge (lb)",
+    "qty": 0.4,
+    "unit": "lb",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0.0,
+    "auto": true
+   },
+   {
+    "desc": "[Trim, start-up and tests] HVAC trim, start-up and tests site time",
+    "qty": 2,
+    "unit": "days",
+    "rate": 3000.0,
+    "cost": 0,
+    "amount": 6000.0,
+    "auto": true
+   },
+   {
+    "desc": "[Trim, start-up and tests] Mechanical permit - City of Bellingham Permit Center (2 appliances, 5 fans / vents)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   }
+  ],
+  "showLineItems": true,
+  "summary": "HVAC takeoff from the plan set: ducted (credit not read), heating load 33,420 Btuh at 19 F, cooling 1.06 tons. unit house: 42k ducted heat pump outdoor, 42k air handler in LAUNDRY, 21 supply registers, 2 returns, 5 kW strip. Ventilation exhaust 85.9 cfm. 34 ft of line set, 449 ft of duct, 28 ft of vent / exhaust duct; 12 crew-days (placeholder minutes). The checker is clean on code. UNPRICED: 49 labels have no rate on the RVM price list (references/prices-to-set.md).",
+  "propertyAddress": "4407 Aldrich Rd, Bellingham WA 98226"
+ }
+}

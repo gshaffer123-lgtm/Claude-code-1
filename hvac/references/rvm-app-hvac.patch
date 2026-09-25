@@ -1,0 +1,70 @@
+diff -ruN a/public/js/order-menu.js b/public/js/order-menu.js
+--- a/public/js/order-menu.js
++++ b/public/js/order-menu.js
+@@ -27,6 +27,8 @@
+     what: 'Every receptacle, switch, light and circuit off the plan symbols, the panel schedule and NEC load calc, devices in 3D.' },
+   { key: 'plumbing', docTrade: 'plumbing', label: 'Plumbing bid', icon: '🚰', skill: 'plumbing', ready: true, needs: 'finish', priced: false,
+     what: 'Every fixture off the floor plan, supply and drain runs, rough-in and trim, pipe runs in 3D.' },
++  { key: 'hvac', docTrade: 'hvac', label: 'HVAC bid', icon: '❄️', skill: 'hvac', ready: true, needs: 'finish', priced: false,
++    what: 'Room-by-room heat loss, the heat pump sized at the design temperature, every head, register, duct, line set, vent and cap; the ventilation the code wants; runs in 3D.' },
+   { key: 'flooring', docTrade: 'flooring', label: 'Flooring bid', icon: '🪵', skill: 'flooring', ready: true, priced: false,
+     what: 'Square feet per room by material, base and shoe, transitions at every doorway, stairs, cartons to order, floors in 3D.' },
+   { key: 'framing', docTrade: 'framing', label: 'Framing bid', icon: '🪚', skill: 'framing', ready: true, priced: false,
+@@ -50,6 +52,7 @@
+   siding: { label: 'Siding', word: 'siding project', icon: '🧱', color: '#2fb37a' },
+   electrical: { label: 'Electrical', word: 'electrical project', icon: '⚡', color: '#eab308' },
+   plumbing: { label: 'Plumbing', word: 'plumbing project', icon: '🚰', color: '#38bdf8' },
++  hvac: { label: 'HVAC', word: 'heating and ventilation project', icon: '❄️', color: '#22d3ee' },
+   flooring: { label: 'Flooring', word: 'flooring project', icon: '🪵', color: '#b7791f' },
+   framing: { label: 'Framing', word: 'framing project', icon: '🪚', color: '#a16207' },
+   'paint-ext': { label: 'Exterior paint', word: 'painting project', icon: '🎨', color: '#c084fc' },
+diff -ruN a/scripts/order_trades.mjs b/scripts/order_trades.mjs
+--- a/scripts/order_trades.mjs
++++ b/scripts/order_trades.mjs
+@@ -27,19 +27,20 @@
+ 
+ export const TRADE_SKILL = {
+   'roof-metal': 'bidding', siding: 'bidding', framing: 'framing', flooring: 'flooring',
+-  'paint-ext': 'painting', 'paint-int': 'painting', electrical: 'electrical', plumbing: 'plumbing', finish: 'finish',
++  'paint-ext': 'painting', 'paint-int': 'painting', electrical: 'electrical', plumbing: 'plumbing', hvac: 'hvac', finish: 'finish',
+ };
+-// skills a trade reads from besides its own (electrical + plumbing start from the finish
+-// skill's interior.py)
+-export const TRADE_NEEDS = { electrical: ['finish'], plumbing: ['finish'] };
++// skills a trade reads from besides its own (electrical, plumbing and hvac start from the finish
++// skill's interior.py; hvac also reads the electrical skill's wall network and, when the electrical
++// trade ran first, its devices.json)
++export const TRADE_NEEDS = { electrical: ['finish'], plumbing: ['finish'], hvac: ['finish', 'electrical'] };
+ export const TRADE_LABEL = {
+   'roof-metal': 'Metal roofing bid', siding: 'Siding bid', framing: 'Framing bid', flooring: 'Flooring bid',
+-  'paint-ext': 'Exterior paint bid', 'paint-int': 'Interior paint bid', electrical: 'Electrical bid', plumbing: 'Plumbing bid', finish: 'Finish carpentry bid',
++  'paint-ext': 'Exterior paint bid', 'paint-int': 'Interior paint bid', electrical: 'Electrical bid', plumbing: 'Plumbing bid', hvac: 'HVAC bid', finish: 'Finish carpentry bid',
+ };
+ // the bid document's `trade` (public/js/order-menu.js docTrade / DOC_TRADES)
+ export const DOC_TRADE = {
+   'roof-metal': 'roof', siding: 'siding', framing: 'framing', flooring: 'flooring', 'paint-ext': 'paint-ext',
+-  'paint-int': 'paint-int', electrical: 'electrical', plumbing: 'plumbing', finish: 'finish',
++  'paint-int': 'paint-int', electrical: 'electrical', plumbing: 'plumbing', hvac: 'hvac', finish: 'finish',
+ };
+ 
+ // what each trade's agent run is told, on top of the common frame
+@@ -52,6 +53,7 @@
+   'paint-int': `Load the "painting" skill and produce the INTERIOR bid only: roomscan.py per floor sheet (the flooring skill's tracer, as the painting skill uses it), then paintkit.py / paint_bid.py. The garage interior is an OPTION, not a line. The door count comes from the door schedule, not the trace. lines = bid_interior.json's lines; options = its _meta.options; unknowns = what the plans did not say; priced: true only where a rate exists. report_file = paint_report.md. bid = bid_interior.json's create body.`,
+   electrical: `Load the "electrical" skill. Write job.json the way the skill says, run the finish skill's interior.py for the rooms, walls and doors, then the skill's one command: python ~/.claude/skills/electrical/scripts/elec_run.py job.json (device map, circuits + panel schedule + NEC load calc, takeoff, checker, 3D model, two renders, draft bid, PDF parts list). LOOK at both renders and the checker before believing the counts. lines = electrical_takeoff.json's parts with quantities; unknowns = what the sheets did not say (fixture schedule, appliance loads, service size); priced: false unless rates are given below (prices-to-set.md lists what a price needs). model_file = <slug>-electrical.json; report_file = electrical_report.md; bid = electrical_bid.json's create body.`,
+   plumbing: `Load the "plumbing" skill. Write job.json, run the finish skill's interior.py, then the skill's one command: python ~/.claude/skills/plumbing/scripts/plumb_run.py job.json --no-live (fixture map off the sheet ink - LOOK at the fixtures_p<N>.png overlays -, runs, sizes, parts, checks, the model, three renders, the draft bid rough-in / trim / allowances). lines = plumb_takeoff.json's parts with quantities; unknowns = what the sheets did not say; priced: false unless rates are given below. model_file = the plumbing viewer payload; report_file = plumb_report.md; bid = plumb_bid.json's create body.`,
++  hvac: `Load the "hvac" skill. Write job.json the way the skill says - hvac.system.kind READ off the WSEC energy sheet's selected credit (3.7 ductless, 3.6 / 3.6a ducted, a multi-zone cut sheet with a ducted credit = ducted_multizone) by LOOKING at it, foundation, ventilation, hood cfm -, run the finish skill's interior.py, then the skill's one command: python ~/.claude/skills/hvac/scripts/hvac_run.py job.json --no-live --pdf plans.pdf --result trades/hvac/result.json (the plan text read, room-by-room loads, the system sized at the design temperature, every head / register / duct / line set / vent, the checker, the model, three renders, the draft bid equipment / rough-in / trim, the PDF). LOOK at the renders and the checker before believing it. result.json is written by the script in the contract below (lines = the takeoff, unknowns = what the sheets did not say, bid = the create body, priced: false unless rates are given below); fix its summary if the renders or the energy sheet disagree.`,
+   finish: `Load the "finish" skill: roomscan.py per floor sheet, roominv.py, cabscan.py, interior.py, finishkit.py, finish_model.py + finish_render.py (two views - look at them), finish_bid.py. lines = finish_takeoff.json's counts (doors by type and size, casing / base / shoe / crown LF with corners, window trim per opening, closet shelf and rod, stair parts, cabinet LF by base / upper / tall / island / vanity with fillers, panels and hardware, countertop allowance SF); priced: true only where a rate exists. model_file = the interior viewer payload; report_file = finish_report.md; bid = finish_bid.json's create body.`,
+ };
+ 
+diff -ruN a/scripts/setup_worker.ps1 b/scripts/setup_worker.ps1
+--- a/scripts/setup_worker.ps1
++++ b/scripts/setup_worker.ps1
+@@ -86,7 +86,7 @@
+   git -C $SkillsDir branch --quiet --set-upstream-to=origin/main main
+ }
+ if ($LASTEXITCODE -ne 0) { Fail 'the skills clone failed' }
+-foreach ($s in 'bidding', 'flooring', 'framing', 'painting', 'electrical', 'plumbing', 'finish') {
++foreach ($s in 'bidding', 'flooring', 'framing', 'painting', 'electrical', 'plumbing', 'hvac', 'finish') {
+   if (-not (Test-Path (Join-Path $SkillsDir "$s\SKILL.md"))) { Fail "skill $s is missing after the clone" }
+ }
+ 

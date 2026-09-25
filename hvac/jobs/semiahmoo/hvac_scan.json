@@ -1,0 +1,413 @@
+{
+ "code": {
+  "wsec": "2021",
+  "wsec_votes": {
+   "2021": 5,
+   "2018": 3
+  }
+ },
+ "credits": [
+  {
+   "option": "2.3",
+   "year": "2021",
+   "how": [
+    "checked note"
+   ],
+   "page": null,
+   "quote": "* SLAB ON GRADE R-10 (AT PERIMETER AND UNDER ENTIRE SLAB) X\\* SEE PAGE A-6 + SEE PAGE A-7 X NOTES FOR ENERGY OPTION 2.3 (2 CREDITS) Compliance based on Section R402.4.1.2: Reduce the tested air leakage to 0.6",
+   "meaning": "air leakage 0.6 ACH50 + whole-house ventilation with heat recovery (SRE >= 0.80)",
+   "kind": "ventilation",
+   "vent": "hrv",
+   "ach50": 0.6,
+   "sre": 0.8
+  },
+  {
+   "option": "3.6",
+   "year": "2021",
+   "how": [
+    "checked note"
+   ],
+   "page": null,
+   "quote": "02.4.1.2: Reduce the tested air leakage to 0.6 air changes per hour maximum at 50 Pascals XNOTES FOR ENERGY OPTION 3.6 (1 CREDIT) Air-source, centrally ducted heat pump with minimum HSPF2 of 9.4 (HSPF of 11.0",
+   "meaning": "air-source CENTRALLY DUCTED heat pump, HSPF2 >= 9.4 (HSPF 11.0); a NEEP cold-climate VCHP where the design temperature is 23 F or below",
+   "kind": "equipment",
+   "system": "ducted",
+   "hspf2": 9.4
+  }
+ ],
+ "credits_mentioned": [
+  {
+   "option": "1.2",
+   "page": null
+  },
+  {
+   "option": "1.3",
+   "page": null
+  },
+  {
+   "option": "1.4",
+   "page": null
+  },
+  {
+   "option": "2.1",
+   "page": null
+  },
+  {
+   "option": "2.2",
+   "page": null
+  },
+  {
+   "option": "2.3",
+   "page": null
+  },
+  {
+   "option": "3.5d",
+   "page": null
+  },
+  {
+   "option": "3.7a",
+   "page": null
+  },
+  {
+   "option": "5.2",
+   "page": null
+  },
+  {
+   "option": "5.3",
+   "page": null
+  },
+  {
+   "option": "5.4",
+   "page": null
+  },
+  {
+   "option": "5.5",
+   "page": null
+  },
+  {
+   "option": "5.8",
+   "page": null
+  },
+  {
+   "option": "3.2",
+   "page": null
+  },
+  {
+   "option": "3.3a",
+   "page": null
+  },
+  {
+   "option": "3.4a",
+   "page": null
+  },
+  {
+   "option": "3.6a",
+   "page": null
+  },
+  {
+   "option": "3.8a",
+   "page": null
+  },
+  {
+   "option": "3.10f",
+   "page": null
+  },
+  {
+   "option": "5.6",
+   "page": null
+  },
+  {
+   "option": "5.7",
+   "page": null
+  },
+  {
+   "option": "2",
+   "page": null
+  },
+  {
+   "option": "3",
+   "page": null
+  },
+  {
+   "option": "4c",
+   "page": null
+  },
+  {
+   "option": "3.1a",
+   "page": null
+  }
+ ],
+ "system": {
+  "mentioned": [
+   "ducted",
+   "ductless",
+   "furnace",
+   "hydronic"
+  ],
+  "votes": [
+   {
+    "kind": "ducted",
+    "why": "option 3.6 (2021): air-source CENTRALLY DUCTED heat pump, HSPF2 >= 9.4 (HSPF 11.0); a NEEP cold-climate VCHP where the design temperature is 23 F or below",
+    "weight": 3
+   },
+   {
+    "kind": "multizone",
+    "why": "a multi-zone outdoor unit on a cut sheet: MXZ-SM60NAM",
+    "weight": 2
+   }
+  ],
+  "kind": "ducted_multizone",
+  "why": "a CENTRALLY DUCTED credit AND a multi-zone outdoor unit on a cut sheet: the credit is only earned if the indoor units are ducted (an air handler or ducted indoor units per floor), not wall heads - option 3.6 (2021): air-source CENTRALLY DUCTED heat pump, HSPF2 >= 9.4 (HSPF 11.0); a NEEP cold-climate VCHP where the design temperature is 23 F or below; a multi-zone outdoor unit on a cut sheet: MXZ-SM60NAM"
+ },
+ "equipment": [
+  {
+   "model": "MXZ-SM60NAM",
+   "maker": "Mitsubishi",
+   "kind": "multizone_outdoor",
+   "kbtuh_nominal": 60,
+   "pages": [],
+   "quote": "water heating specification. X 9.0 SPRINKLERS REQUIRED MXZ-SM60NAM 5-TON MULTI-ZONE INVERTER HEAT-PUMP SYSTEM in case of vari"
+  }
+ ],
+ "ventilation": {
+  "models": [
+   {
+    "kind": "erv",
+    "name": "VENTS Frigate ERV",
+    "model": "Frigate ERV 150",
+    "page": null
+   },
+   {
+    "kind": "erv",
+    "name": "VENTS Frigate ERV",
+    "model": "Frigate ERV 150",
+    "page": null
+   }
+  ],
+  "hrv_words": [
+   {
+    "word": "ERV",
+    "page": null,
+    "quote": "2021 Edition/(V12/12/2024) 3 DESCRIPTION VENTS\u2019 ERV 150 are the complete whole house ventilation syst"
+   },
+   {
+    "word": "ERV",
+    "page": null,
+    "quote": "re sensor settings. Warm extract air defrosts the ERV core then the supply fan switches on and the vent"
+   },
+   {
+    "word": "ERV",
+    "page": null,
+    "quote": "g under rated conditions. CONSTANT FLOW Frigate ERV 150 CF has an automatic constant air flow control"
+   },
+   {
+    "word": "ENERGY RECOVERY VENTILATION",
+    "page": null,
+    "quote": "gerant Maximum Charge Quantity Lbs, oz 11.0, 4.0 ENERGY RECOVERY VENTILATION Frigate ERV 150 Job Name: System Reference: Date"
+   },
+   {
+    "word": "ERV",
+    "page": null,
+    "quote": "oz 11.0, 4.0 ENERGY RECOVERY VENTILATION Frigate ERV 150 Job Name: System Reference: Date: 2018 Pres"
+   }
+  ],
+  "whf_words": [
+   {
+    "page": null,
+    "quote": "/16/26 1 2 A-8 A-8 223 4 5 A-8 36 D D 7 DS DS DS F F WHOLE HOUSE FAN A-7 3NORTH A-7 3ATTICDS A: 211.83 sq ft SUBFLOORING FURN"
+   }
+  ],
+  "kind": "erv",
+  "both": true
+ },
+ "fans": [
+  {
+   "cfm": 400.0,
+   "where": "exhaust",
+   "page": null,
+   "quote": "GE sq ft COVERED 121.30 sq ENTRY ft 1 2 34 5 6 400 CFM SCATH 5500 Rainier Ave S Seattle WA 98118 206 5"
+  },
+  {
+   "cfm": 400.0,
+   "where": "whole-house",
+   "page": null,
+   "quote": "BACKUP WIRING. AND WITH BE EACH A LOW UNIT DS DS 400 CFM \\* BATHROOMS: LAUNDRY KITCHENS: CONTROLS EXHAUST"
+  }
+ ],
+ "hood": {},
+ "dryer": {},
+ "fireplace": {
+  "callouts": [
+   {
+    "word": "fp",
+    "page": null,
+    "quote": "14 16 '98.5140' 536.88 GARAGE sq ft 13 B 22 25 tv fp '40.6206 7.69' 1 234 5 6 F '69.51W D F DW ' 01.0121"
+   },
+   {
+    "word": "GAS fp",
+    "page": null,
+    "quote": "/4\" 3'-0\" 7'-91/4\" 51/2\" \" 9'-2\"9'-2\"6'-2SC E C J 14 E GAS fp FP TV ABOVE SC tv tub 3'-111/4\" hall 7'-2\" \"4'-4HD BB"
+   },
+   {
+    "word": "FP",
+    "page": null,
+    "quote": "\" 7'-91/4\" 51/2\" \" 9'-2\"9'-2\"6'-2SC E C J 14 E GAS fp FP TV ABOVE SC tv tub 3'-111/4\" hall 7'-2\" \"4'-4HD BBATH"
+   },
+   {
+    "word": "FIREPLACE",
+    "page": null,
+    "quote": "Roof GREAT ROOM TV FOUNDATION AND SLAB PER STRUCTURAL FIREPLACE 12\" 12\" METAL ROOFING, TYP. TYP. WALL HARDIE PANEL SHI"
+   }
+  ],
+  "fuel": "gas",
+  "present": true
+ },
+ "mech_rooms": [
+  {
+   "word": "furnace",
+   "page": null
+  },
+  {
+   "word": "furnace",
+   "page": null
+  },
+  {
+   "word": "furnace",
+   "page": null
+  },
+  {
+   "word": "furnace",
+   "page": null
+  },
+  {
+   "word": "FURNACE",
+   "page": null
+  },
+  {
+   "word": "furnace",
+   "page": null
+  }
+ ],
+ "envelope": {
+  "ceiling_r": [
+   {
+    "v": 60.0,
+    "page": null,
+    "quote": "ENESTRATION U=0.25+ ROOF/CEILING JOIST VAULTED R-60 ADVANCED\\* WOOD FRA"
+   }
+  ],
+  "wall": [
+   {
+    "v": "R-21+12",
+    "page": null,
+    "quote": "TED R-60 ADVANCED\\* WOOD FRAME WALL R-21 BATT INSULATION W/ R-12 CONTINUOUS INSULATION\\* FLOOR"
+   }
+  ],
+  "floor_r": [
+   {
+    "v": 38.0,
+    "page": null,
+    "quote": "INUOUS INSULATION\\* FLOOR OVER UNHEATED SPACE R-38\\* SLAB ON GRADE R-1"
+   }
+  ],
+  "slab_r": [
+   {
+    "v": 10.0,
+    "page": null,
+    "quote": "HEATED SPACE R-38\\* SLAB ON GRADE R-10 (AT PERIMETER AND U"
+   }
+  ],
+  "window_u": [
+   {
+    "v": 0.25,
+    "page": null,
+    "quote": "NVELOPE (1 CREDIT) VERTICAL FENESTRATION U=0.25+ ROOF/CEILING JOIST"
+   }
+  ],
+  "resistance_allowance": {
+   "w_per_sf": 0.5,
+   "w_min": 500.0,
+   "page": null,
+   "quote": "rm a. An alternative heating source sized at a maximum of 0.5 W/sf (equivalent) of heated floor area or 500 W, whichev"
+  },
+  "ach50_code_max": 4.0,
+  "ach50": [
+   {
+    "v": 0.6,
+    "page": null,
+    "quote": "tion R402.4.1.2: Reduce the tested air leakage to 0.6 air changes per hour maximum at 50 Pascals XNOTES FOR ENERGY OPTION 3"
+   }
+  ],
+  "ceiling_r_value": 60.0,
+  "floor_r_value": 38.0,
+  "ach50_value": 0.6,
+  "wall_value": "R-21+12",
+  "window_u_value": 0.25,
+  "slab_r_value": 10.0
+ },
+ "areas": {
+  "upper_sf": 1231.0,
+  "upper_sf_page": null,
+  "garage_sf": 576.42,
+  "garage_sf_page": null,
+  "main_living_sf": 2120.95,
+  "main_living_sf_page": null,
+  "upper_living_sf": 1310.38,
+  "upper_living_sf_page": null
+ },
+ "tests": {
+  "duct_leakage": true,
+  "ventilation_flow": true,
+  "blower_door": true
+ },
+ "heat_source": [
+  {
+   "text": "Electric heat pump",
+   "page": null
+  }
+ ],
+ "conflicts": [
+  {
+   "what": "credit 2.3 (heat-recovery ventilation) AND a whole-house exhaust fan are both on the set",
+   "use": "hrv",
+   "why": "if the ERV/HRV is the whole-house system the fan is local exhaust only; if the fan is the whole-house system the credit fails - ask the designer"
+  }
+ ],
+ "warnings": [
+  "the set names more than one WSEC edition {'2021': 5, '2018': 3} - the most frequent (2021) maps the option numbers"
+ ],
+ "equipment_capacity": [
+  {
+   "btuh": 60000.0,
+   "page": null,
+   "quote": "e switch Maximum Capacity BTU/H 60,000 // 60,000 // 60,000 Rated Capacity BTU/H 60,000 // 60,000 // 60,000 Cooling1 (Non-Ducted // Mix // Ducted)"
+  },
+  {
+   "btuh": 66000.0,
+   "page": null,
+   "quote": "Prestige\u00ae ProTerra Hybrid Electric Heat Pump Specifications Rated Capacity BTU/H 66,000 // 66,000 // 66,000 Heating at 47\u00b0F2 (Non-Ducted // Mix //"
+  },
+  {
+   "btuh": 41500.0,
+   "page": null,
+   "quote": "66,000 NUMBER VARIANT BTU/H CFM WATTAGE AMPS (LBS.) Rated Capacity BTU/H 41,500 // 41,500 // 41,500 ProTerra 30 Amp Maximum Power Input W"
+  }
+ ],
+ "equipment_note": "the cut sheet rates the outdoor unit Non-Ducted // Mix // Ducted - a multi-zone that is ducted or not depending on the INDOOR units chosen",
+ "openings": {
+  "rows": [],
+  "window_sf": 0.0,
+  "patio_sf": 0.0,
+  "uncertain_sf": 0.0,
+  "door_rows": 0,
+  "count": 0,
+  "u_mean": null,
+  "note": "read off the text layer; mulled parts and interior / garage doors left out - LOOK at the schedule before trusting the total"
+ },
+ "text_chars": 77491,
+ "pages": 1,
+ "source": {
+  "kind": "text",
+  "file": "semiahmoo_SFR2026-00068.txt"
+ }
+}

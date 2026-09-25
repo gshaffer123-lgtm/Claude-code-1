@@ -1,0 +1,771 @@
+{
+ "trade": "hvac",
+ "status": "ok",
+ "priced": false,
+ "subtotal": null,
+ "summary": "HVAC takeoff from the plan set: ducted_multizone (3.6), heating load 23,560 Btuh at 19 F, cooling 1.81 tons. unit house: 60k multi-zone outdoor, 18k ducted unit in LAUNDRY, 12k ducted unit in HALL, 20 supply registers, 2 returns. Ventilation erv 64.3 cfm. 111 ft of line set, 522 ft of duct, 511 ft of vent / exhaust duct; 19 crew-days (placeholder minutes). 0 code finding(s), 2 data finding(s) to confirm. UNPRICED: 49 labels have no rate on the RVM price list (references/prices-to-set.md).",
+ "lines": [
+  {
+   "desc": "[Equipment] Ducted indoor unit (slim / multi-position) 12k",
+   "qty": 1,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Equipment] Ducted indoor unit (slim / multi-position) 18k",
+   "qty": 1,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Equipment] ERV / HRV - balanced whole-house, 50-150 cfm (SRE per the credit)",
+   "qty": 1,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Equipment] Multi-zone outdoor unit - 60k, cold-climate, up to 8 indoor units",
+   "qty": 1,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Equipment] Thermostat - programmable, heat pump with aux-heat lockout (WSEC R403.1.1 / R403.1.2)",
+   "qty": 2,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Equipment] HVAC equipment site time",
+   "qty": 3,
+   "unit": "days",
+   "rate": 3000.0,
+   "amount": 9000.0
+  },
+  {
+   "desc": "[Rough-in] Condensate line 3/4 in PVC (or 5/8 vinyl with the line set)",
+   "qty": 28,
+   "unit": "LF"
+  },
+  {
+   "desc": "[Rough-in] Condensate trap + cleanout tee",
+   "qty": 2,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Rough-in] Secondary drain pan + float switch (M1411.3.1: equipment above finished space)",
+   "qty": 1,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Rough-in] Duct hanger strap / saddle (flex every 4 ft, rigid every 10 ft)",
+   "qty": 125,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Rough-in] Duct mastic (gal) + UL-181 foil tape",
+   "qty": 10,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Rough-in] Flex duct R-8 5 in",
+   "qty": 204,
+   "unit": "LF"
+  },
+  {
+   "desc": "[Rough-in] Flex duct R-8 6 in",
+   "qty": 216,
+   "unit": "LF"
+  },
+  {
+   "desc": "[Rough-in] Register boot (4x10 / 4x12 floor or 6x10 ceiling)",
+   "qty": 20,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Rough-in] Return duct 12-16 in (panned joist not allowed for a new return)",
+   "qty": 18,
+   "unit": "LF"
+  },
+  {
+   "desc": "[Rough-in] Supply + return plenums (fabricated, sealed, lined where required)",
+   "qty": 2,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Rough-in] Supply trunk - galvanized rectangular / 10-14 in round (extended plenum)",
+   "qty": 112,
+   "unit": "LF"
+  },
+  {
+   "desc": "[Rough-in] Takeoff / starting collar with balancing damper",
+   "qty": 20,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Rough-in] Transfer grille pair / jumper duct (closed-door pressure relief)",
+   "qty": 4,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Rough-in] Anti-vibration pads (set of 4)",
+   "qty": 1,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Rough-in] Communication cable 14/4 stranded (outdoor unit to each indoor unit)",
+   "qty": 123,
+   "unit": "LF"
+  },
+  {
+   "desc": "[Rough-in] Equipment pad - composite, sized to the outdoor unit",
+   "qty": 1,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Rough-in] Line set 1/4 x 1/2 insulated",
+   "qty": 80,
+   "unit": "LF"
+  },
+  {
+   "desc": "[Rough-in] Line set 1/4 x 3/8 insulated (pre-flared or brazed)",
+   "qty": 44,
+   "unit": "LF"
+  },
+  {
+   "desc": "[Rough-in] Outdoor unit stand / wall bracket (snow and drainage clearance)",
+   "qty": 1,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Rough-in] Wall penetration - 3 in sleeve, sealed and flashed",
+   "qty": 1,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Rough-in] Fire caulk / sealant (tube)",
+   "qty": 1,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Rough-in] Bath fan exhaust duct 4 in insulated flex (50 cfm fan: <= 25 ft, Table M1505.4.4.2)",
+   "qty": 58,
+   "unit": "LF"
+  },
+  {
+   "desc": "[Rough-in] Dryer duct 4 in 90 elbow",
+   "qty": 2,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Rough-in] Dryer duct 4 in rigid metal, smooth wall (M1502.4.2)",
+   "qty": 5,
+   "unit": "LF"
+  },
+  {
+   "desc": "[Rough-in] Dryer vent box (recessed)",
+   "qty": 1,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Rough-in] Dryer wall cap with damper, no screen (M1502.3)",
+   "qty": 1,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Rough-in] ERV duct 5-6 in (supply to bedrooms / living, exhaust from baths / kitchen / laundry)",
+   "qty": 466,
+   "unit": "LF"
+  },
+  {
+   "desc": "[Rough-in] ERV intake / exhaust hood 6 in (intake >= 10 ft from any exhaust, R303.5 / M1505.2)",
+   "qty": 2,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Rough-in] ERV outdoor-air / exhaust duct, insulated with vapour jacket (to the hoods)",
+   "qty": 25,
+   "unit": "LF"
+  },
+  {
+   "desc": "[Rough-in] ERV supply / exhaust grille or valve 4-6 in",
+   "qty": 15,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Rough-in] Range hood duct 6-10 in rigid, sealed (M1503.3)",
+   "qty": 10,
+   "unit": "LF"
+  },
+  {
+   "desc": "[Rough-in] Range hood wall / roof cap with damper",
+   "qty": 1,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Rough-in] Wall cap 4 in with backdraft damper",
+   "qty": 6,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Rough-in] HVAC rough-in site time",
+   "qty": 13,
+   "unit": "days",
+   "rate": 3000.0,
+   "amount": 39000.0
+  },
+  {
+   "desc": "[Trim, start-up and tests] Filters MERV 8-13 (first set)",
+   "qty": 2,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Trim, start-up and tests] Floor register 4x10 / 4x12",
+   "qty": 20,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Trim, start-up and tests] Return / filter grille 20x25 (or 14x30)",
+   "qty": 2,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Trim, start-up and tests] Air balance of supply registers (per ducted system)",
+   "qty": 2,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Trim, start-up and tests] Equipment labels, WSEC certificate data, owner hand-over",
+   "qty": 1,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Trim, start-up and tests] Load calculation + equipment selection for the permit (Manual J / S or the WSU sizing form)",
+   "qty": 1,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Trim, start-up and tests] Start-up, charge verification, controls set-up (per outdoor unit)",
+   "qty": 1,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Trim, start-up and tests] Ventilation flow test - whole-house + local exhaust (WA M1505.4.3 / M1505.4.4)",
+   "qty": 1,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Trim, start-up and tests] Nitrogen pressure test + evacuation to 500 micron (per system)",
+   "qty": 1,
+   "unit": "EA"
+  },
+  {
+   "desc": "[Trim, start-up and tests] Refrigerant - additional charge beyond the pre-charge (lb)",
+   "qty": 2.1,
+   "unit": "lb"
+  },
+  {
+   "desc": "[Trim, start-up and tests] HVAC trim, start-up and tests site time",
+   "qty": 3,
+   "unit": "days",
+   "rate": 3000.0,
+   "amount": 9000.0
+  },
+  {
+   "desc": "[Trim, start-up and tests] Mechanical permit - City of Blaine (4 appliances, 8 fans / vents)",
+   "qty": 1,
+   "unit": "EA"
+  }
+ ],
+ "unknowns": [
+  "plan set: credit 2.3 (heat-recovery ventilation) AND a whole-house exhaust fan are both on the set -> hrv (if the ERV/HRV is the whole-house system the fan is local exhaust only; if the fan is the whole-house system the credit fails - ask the designer)",
+  "design temperature: 19 F is a stand-in (WSEC Table RC-1 Bellingham IAP 19 F / 78 F [S]; MJ8 Table 1A 23 F / 76 F [V] (Fraser outflow country - STAND-IN on the Bellingham row)) - pull WSEC Table RC-1 for blaine before this goes out",
+  "system: Energy sheet: 'X NOTES FOR ENERGY OPTION 3.6 (1 CREDIT) Air-source, centrally ducted heat pump with minimum HSPF2 of 9.4 (HSPF of 11.0) ... In areas where the winter design temperature ... is 23 F or below, an air source centrally ducted heat pump shall be a c",
+  "foundation: crawl ASSUMED for the house (TJI on p16), as the plumbing skill read it",
+  "ducts: a multi-zone with ducted indoor units per storey keeps the short duct runs in the floor / ceiling cavities inside the envelope - ASSUMED; if the main-floor unit goes in the crawl, set crawl_vented",
+  "fireplace: p5 'GAS fp' in the living room (Cascade Natural Gas serves Blaine) - a direct-vent gas fireplace ASSUMED (the modern default; a natural-draft unit would trigger WA M1503.6 make-up air) - the fireplace installer's, not HVAC scope",
+  "mechanical permit fee: City of Blaine residential mechanical fee schedule - NOT FOUND in the 9/25 research (references/research-hvac-code.md 8): price it from the county sheet"
+ ],
+ "options": [],
+ "report_file": "hvac_report.md",
+ "model_file": "8835-semiahmoo-hvac_app.json",
+ "bid": {
+  "action": "create",
+  "type": "bid",
+  "trade": "hvac",
+  "scope": [
+   "Equipment: design: 19 F heating / 78 F cooling (blaine); heating load 23,560 Btuh, cooling 1.81 tons (room-by-room, Manual J method); unit house: 60k multi-zone outdoor, 18k ducted unit in LAUNDRY, 12k ducted unit in HALL, 20 supply registers, 2 returns; cold-climate variable-capacity heat pump(s), A2L refrigerant, HSPF2 >= 9.4 per the WSEC credit",
+   "Rough-in: line sets 111 ft (concealed), condensate to daylight, communication cable; ductwork 522 ft: trunks, flex branches, boots, returns, transfer paths; ventilation: erv 64.3 cfm continuous (WA M1505.4) - ERV with ducted supply / exhaust; exhaust: every bath fan ducted and capped, dryer vent, range hood duct and cap - 511 ft",
+   "Trim, start-up and tests: registers and grilles, first filters, start-up and charge verification, controls set-up; tests: ventilation flow test, the permit load calculation; inspections: Mechanical rough-in (cover), Duct leakage test, Ventilation flow test, Final mechanical"
+  ],
+  "lineItems": [
+   {
+    "desc": "[Equipment] Ducted indoor unit (slim / multi-position) 12k",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Equipment] Ducted indoor unit (slim / multi-position) 18k",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Equipment] ERV / HRV - balanced whole-house, 50-150 cfm (SRE per the credit)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Equipment] Multi-zone outdoor unit - 60k, cold-climate, up to 8 indoor units",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Equipment] Thermostat - programmable, heat pump with aux-heat lockout (WSEC R403.1.1 / R403.1.2)",
+    "qty": 2,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Equipment] HVAC equipment site time",
+    "qty": 3,
+    "unit": "days",
+    "rate": 3000.0,
+    "cost": 0,
+    "amount": 9000.0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Condensate line 3/4 in PVC (or 5/8 vinyl with the line set)",
+    "qty": 28,
+    "unit": "LF",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Condensate trap + cleanout tee",
+    "qty": 2,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Secondary drain pan + float switch (M1411.3.1: equipment above finished space)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Duct hanger strap / saddle (flex every 4 ft, rigid every 10 ft)",
+    "qty": 125,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Duct mastic (gal) + UL-181 foil tape",
+    "qty": 10,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Flex duct R-8 5 in",
+    "qty": 204,
+    "unit": "LF",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Flex duct R-8 6 in",
+    "qty": 216,
+    "unit": "LF",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Register boot (4x10 / 4x12 floor or 6x10 ceiling)",
+    "qty": 20,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Return duct 12-16 in (panned joist not allowed for a new return)",
+    "qty": 18,
+    "unit": "LF",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Supply + return plenums (fabricated, sealed, lined where required)",
+    "qty": 2,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Supply trunk - galvanized rectangular / 10-14 in round (extended plenum)",
+    "qty": 112,
+    "unit": "LF",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Takeoff / starting collar with balancing damper",
+    "qty": 20,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Transfer grille pair / jumper duct (closed-door pressure relief)",
+    "qty": 4,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Anti-vibration pads (set of 4)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Communication cable 14/4 stranded (outdoor unit to each indoor unit)",
+    "qty": 123,
+    "unit": "LF",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Equipment pad - composite, sized to the outdoor unit",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Line set 1/4 x 1/2 insulated",
+    "qty": 80,
+    "unit": "LF",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Line set 1/4 x 3/8 insulated (pre-flared or brazed)",
+    "qty": 44,
+    "unit": "LF",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Outdoor unit stand / wall bracket (snow and drainage clearance)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Wall penetration - 3 in sleeve, sealed and flashed",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Fire caulk / sealant (tube)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Bath fan exhaust duct 4 in insulated flex (50 cfm fan: <= 25 ft, Table M1505.4.4.2)",
+    "qty": 58,
+    "unit": "LF",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Dryer duct 4 in 90 elbow",
+    "qty": 2,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Dryer duct 4 in rigid metal, smooth wall (M1502.4.2)",
+    "qty": 5,
+    "unit": "LF",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Dryer vent box (recessed)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Dryer wall cap with damper, no screen (M1502.3)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] ERV duct 5-6 in (supply to bedrooms / living, exhaust from baths / kitchen / laundry)",
+    "qty": 466,
+    "unit": "LF",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] ERV intake / exhaust hood 6 in (intake >= 10 ft from any exhaust, R303.5 / M1505.2)",
+    "qty": 2,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] ERV outdoor-air / exhaust duct, insulated with vapour jacket (to the hoods)",
+    "qty": 25,
+    "unit": "LF",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] ERV supply / exhaust grille or valve 4-6 in",
+    "qty": 15,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Range hood duct 6-10 in rigid, sealed (M1503.3)",
+    "qty": 10,
+    "unit": "LF",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Range hood wall / roof cap with damper",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] Wall cap 4 in with backdraft damper",
+    "qty": 6,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Rough-in] HVAC rough-in site time",
+    "qty": 13,
+    "unit": "days",
+    "rate": 3000.0,
+    "cost": 0,
+    "amount": 39000.0,
+    "auto": true
+   },
+   {
+    "desc": "[Trim, start-up and tests] Filters MERV 8-13 (first set)",
+    "qty": 2,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Trim, start-up and tests] Floor register 4x10 / 4x12",
+    "qty": 20,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Trim, start-up and tests] Return / filter grille 20x25 (or 14x30)",
+    "qty": 2,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Trim, start-up and tests] Air balance of supply registers (per ducted system)",
+    "qty": 2,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Trim, start-up and tests] Equipment labels, WSEC certificate data, owner hand-over",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Trim, start-up and tests] Load calculation + equipment selection for the permit (Manual J / S or the WSU sizing form)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Trim, start-up and tests] Start-up, charge verification, controls set-up (per outdoor unit)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Trim, start-up and tests] Ventilation flow test - whole-house + local exhaust (WA M1505.4.3 / M1505.4.4)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Trim, start-up and tests] Nitrogen pressure test + evacuation to 500 micron (per system)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   },
+   {
+    "desc": "[Trim, start-up and tests] Refrigerant - additional charge beyond the pre-charge (lb)",
+    "qty": 2.1,
+    "unit": "lb",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0.0,
+    "auto": true
+   },
+   {
+    "desc": "[Trim, start-up and tests] HVAC trim, start-up and tests site time",
+    "qty": 3,
+    "unit": "days",
+    "rate": 3000.0,
+    "cost": 0,
+    "amount": 9000.0,
+    "auto": true
+   },
+   {
+    "desc": "[Trim, start-up and tests] Mechanical permit - City of Blaine (4 appliances, 8 fans / vents)",
+    "qty": 1,
+    "unit": "EA",
+    "rate": 0,
+    "cost": 0,
+    "amount": 0,
+    "auto": true
+   }
+  ],
+  "showLineItems": true,
+  "summary": "HVAC takeoff from the plan set: ducted_multizone (3.6), heating load 23,560 Btuh at 19 F, cooling 1.81 tons. unit house: 60k multi-zone outdoor, 18k ducted unit in LAUNDRY, 12k ducted unit in HALL, 20 supply registers, 2 returns. Ventilation erv 64.3 cfm. 111 ft of line set, 522 ft of duct, 511 ft of vent / exhaust duct; 19 crew-days (placeholder minutes). 0 code finding(s), 2 data finding(s) to confirm. UNPRICED: 49 labels have no rate on the RVM price list (references/prices-to-set.md).",
+  "propertyAddress": "8835 Semiahmoo Dr, Blaine WA 98230"
+ },
+ "record_patch": null
+}

@@ -1,0 +1,137 @@
+{
+ "code": {
+  "wsec": "2021",
+  "wsec_votes": {
+   "2021": 3
+  }
+ },
+ "credits": [],
+ "credits_mentioned": [],
+ "system": {
+  "votes": [],
+  "kind": "unknown",
+  "why": "no credit option, heat-source line or cut sheet names the heating system - the credit table may be drawn as linework: render the energy sheet and LOOK"
+ },
+ "equipment": [],
+ "ventilation": {
+  "whf_words": [
+   {
+    "page": null,
+    "quote": "EN ROOM 19'-312\" 10' clng. hardwood Lower Level Living House Whole Fan 11' clng. concrete FAN B 1,375.89 sf 96 CFM 12 B W"
+   }
+  ],
+  "kind": "exhaust"
+ },
+ "fans": [
+  {
+   "cfm": 96.0,
+   "where": "whole-house",
+   "page": null,
+   "quote": "le Fan 11' clng. concrete FAN B 1,375.89 sf 96 CFM 12 B WINDOW SCHEDULE A-7A-75 MARK Width SIZE"
+  },
+  {
+   "cfm": 96.0,
+   "where": "exhaust",
+   "page": null,
+   "quote": "3'-912\" 7'-8\" 1'-8\" 6'-4\" 10 5'-312\" FAN 08 96 CFM OFFICE 10' clng. 47' hardwood 09 2'-212\" 5'-"
+  },
+  {
+   "cfm": 96.0,
+   "where": "exhaust",
+   "page": null,
+   "quote": "7' hardwood 09 2'-212\" 5'-312\" FAN 072'-8\" 96 CFM 13'-138\" HALLWAY 4'-112\" 25'-2\" SD SD 03 10"
+  }
+ ],
+ "hood": {},
+ "dryer": {},
+ "fireplace": {
+  "present": false
+ },
+ "mech_rooms": [],
+ "envelope": {
+  "wall": [
+   {
+    "v": "R-21+5",
+    "page": null,
+    "quote": "l.com TSN-1-2024 A-6 R-60 R-21+5 R-21+5 R-38 6 MIL. VAPOR B"
+   },
+   {
+    "v": "R-21+5",
+    "page": null,
+    "quote": "SN-1-2024 A-6 R-60 R-21+5 R-21+5 R-38 6 MIL. VAPOR BARRIER"
+   },
+   {
+    "v": "R-21+5",
+    "page": null,
+    "quote": "10' 10'-8\" 9' 61116\" 10' R-21+5 11\" ALERT Engineered truss"
+   },
+   {
+    "v": "R-21+5",
+    "page": null,
+    "quote": "ulation outside of sheathing R-21+5 R-21+5 9'-4\" R-30 R-21 R-2"
+   },
+   {
+    "v": "R-21+5",
+    "page": null,
+    "quote": "outside of sheathing R-21+5 R-21+5 9'-4\" R-30 R-21 R-21+5 R-2"
+   },
+   {
+    "v": "R-21+5",
+    "page": null,
+    "quote": "1+5 R-21+5 9'-4\" R-30 R-21 R-21+5 R-21+5 R-38 6 MIL. VAPOR BA"
+   },
+   {
+    "v": "R-21+5",
+    "page": null,
+    "quote": "1+5 9'-4\" R-30 R-21 R-21+5 R-21+5 R-38 6 MIL. VAPOR BARRIER 2"
+   }
+  ],
+  "ceiling_r": [
+   {
+    "v": 60.0,
+    "page": null,
+    "quote": " [bare section label - the largest R on the set]"
+   }
+  ],
+  "floor_r": [
+   {
+    "v": 38.0,
+    "page": null,
+    "quote": "4 A-6 R-60 R-21+5 R-21+5 R-38 6 MIL. VAPOR BARRIER 9' 10 [bare section label beside a floor / vapour-barrier word]"
+   }
+  ],
+  "ceiling_r_value": 60.0,
+  "floor_r_value": 38.0,
+  "wall_value": "R-21+5"
+ },
+ "areas": {
+  "main_sf": 1363.0,
+  "main_sf_page": null,
+  "upper_sf": 1363.0,
+  "upper_sf_page": null,
+  "garage_sf": 752.36,
+  "garage_sf_page": null,
+  "upper_living_sf": 1306.96,
+  "upper_living_sf_page": null
+ },
+ "tests": {},
+ "heat_source": [],
+ "conflicts": [],
+ "warnings": [],
+ "openings": {
+  "rows": [],
+  "window_sf": 0.0,
+  "patio_sf": 0.0,
+  "uncertain_sf": 0.0,
+  "door_rows": 0,
+  "count": 0,
+  "u_mean": null,
+  "note": "read off the text layer; mulled parts and interior / garage doors left out - LOOK at the schedule before trusting the total"
+ },
+ "text_chars": 8451,
+ "pages": 1,
+ "source": {
+  "kind": "text",
+  "file": "aldrich_SFR2025-00084.txt"
+ }
+}

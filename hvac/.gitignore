@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+# plan text and plan PDFs stay out of this (public) repo - they carry owner names and contact lines
+*.txt
+plans*.pdf
+energy_p*.png
