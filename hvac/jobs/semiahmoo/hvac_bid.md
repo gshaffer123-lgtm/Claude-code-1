@@ -86,7 +86,7 @@ rough-in subtotal: materials $0.00 + site $39,000.00 = **$39,000.00** (1/34 line
 | Nitrogen pressure test + evacuation to 500 micron (per system) | 1 | EA | — | — | per refrigerant system |
 | Refrigerant - additional charge beyond the pre-charge (lb) | 2.1 | lb | — | — | 33 oz past the pre-charge [U: the maker's oz / ft] |
 | HVAC trim, start-up and tests site time | 3 | days | $3000.00 | $9,000.00 | 11.2 crew-hours at 6.25 h/day (placeholder install minutes) · day rate from the ROOFING day rate ($3,000 placeholder) - NOT an HVA |
-| Mechanical permit - City of Blaine (4 appliances, 8 fans / vents) | 1 | EA | — | — | City of Blaine residential mechanical fee schedule - NOT FOUND in the 9/25 research (references/research-hvac-code.md 8): price it |
+| Mechanical permit - Whatcom County PDS (4 appliances, 8 fans / vents) | 1 | EA | — | — | Whatcom County PDS residential mechanical fee schedule - NOT FOUND in the 9/25 research (references/research-hvac-code.md 8): pric |
 
 trim, start-up and tests subtotal: materials $0.00 + site $9,000.00 = **$9,000.00** (1/12 lines priced)
 

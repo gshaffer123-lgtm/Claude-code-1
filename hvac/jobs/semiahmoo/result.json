@@ -267,7 +267,7 @@
    "amount": 9000.0
   },
   {
-   "desc": "[Trim, start-up and tests] Mechanical permit - City of Blaine (4 appliances, 8 fans / vents)",
+   "desc": "[Trim, start-up and tests] Mechanical permit - Whatcom County PDS (4 appliances, 8 fans / vents)",
    "qty": 1,
    "unit": "EA"
   }
@@ -279,7 +279,7 @@
   "foundation: crawl ASSUMED for the house (TJI on p16), as the plumbing skill read it",
   "ducts: a multi-zone with ducted indoor units per storey keeps the short duct runs in the floor / ceiling cavities inside the envelope - ASSUMED; if the main-floor unit goes in the crawl, set crawl_vented",
   "fireplace: p5 'GAS fp' in the living room (Cascade Natural Gas serves Blaine) - a direct-vent gas fireplace ASSUMED (the modern default; a natural-draft unit would trigger WA M1503.6 make-up air) - the fireplace installer's, not HVAC scope",
-  "mechanical permit fee: City of Blaine residential mechanical fee schedule - NOT FOUND in the 9/25 research (references/research-hvac-code.md 8): price it from the county sheet"
+  "mechanical permit fee: Whatcom County PDS residential mechanical fee schedule - NOT FOUND in the 9/25 research (references/research-hvac-code.md 8): price it from the county sheet"
  ],
  "options": [],
  "report_file": "hvac_report.md",
@@ -754,7 +754,7 @@
     "auto": true
    },
    {
-    "desc": "[Trim, start-up and tests] Mechanical permit - City of Blaine (4 appliances, 8 fans / vents)",
+    "desc": "[Trim, start-up and tests] Mechanical permit - Whatcom County PDS (4 appliances, 8 fans / vents)",
     "qty": 1,
     "unit": "EA",
     "rate": 0,

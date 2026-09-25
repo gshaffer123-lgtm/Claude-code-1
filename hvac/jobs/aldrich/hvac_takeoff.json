@@ -9,13 +9,14 @@
   "lineset_route": "concealed",
   "ducts": "crawl_vented",
   "ventilation": "exhaust",
-  "jurisdiction": "bellingham",
+  "jurisdiction": "whatcom",
   "system": {
    "kind": "ducted",
    "hspf2_min": 9.4,
    "ahu_room": "main/LAUNDRY"
   },
   "sources": {
+   "_jurisdiction": "SFR2025-00084 is a Whatcom County EnerGov case (Build Radar scripts/portal_all.json: Building (Residential) - SFR - New Construction, Issued 2025-10-02) - unincorporated county with a Bellingham mailing address, so Whatcom County PDS issues and inspects. (The electrical job has City of Bellingham; the plumbing job has whatcom.)",
    "_code": "A-1/A-2/A-3 'TABLE WASHINGTON STATE 2021 ENERGY CODE - OPTION / POINTS / COMPLIANCE PATHWAY' - the table's rows are drawn as linework: no text to read",
    "_system": "ASSUMED. The WSEC credit table on A-1..A-3 is drawn, not text - hvacscan comes back 'unknown'. The electrical skill's job carries 'air-source heat pump with a ducted air handler' in the LAUNDRY; that is carried here UNREAD. RENDER A-1 AND LOOK before this bid is shown - a ductless credit (3.7) would change every line",
    "_cfa_sf": "A-2 'Main Floor Area: 1363 ft2', A-3 'Upper Floor Area: 1363 ft2'",
@@ -3759,12 +3760,12 @@
   "note": "crew minutes are PLACEHOLDERS (no task-level install hours were found: references/research-hvac-market.md 3.3) - set them from a sub or the crew"
  },
  "inspections": {
-  "jurisdiction": "bellingham",
-  "authority": "City of Bellingham Permit Center",
+  "jurisdiction": "whatcom",
+  "authority": "Whatcom County PDS",
   "appliances": 2,
   "fans_and_vents": 5,
   "permit_fee": null,
-  "fee_source": "City of Bellingham Permit Center residential mechanical fee schedule - NOT FOUND in the 9/25 research (references/research-hvac-code.md 8): price it from the county sheet",
+  "fee_source": "Whatcom County PDS residential mechanical fee schedule - NOT FOUND in the 9/25 research (references/research-hvac-code.md 8): price it from the county sheet",
   "sequence": [
    {
     "name": "Mechanical rough-in (cover)",

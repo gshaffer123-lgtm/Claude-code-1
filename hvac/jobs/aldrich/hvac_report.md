@@ -151,17 +151,18 @@ glazing 388.6 sf (traced windows (interior.json)); infiltration 5 ACH50 -> 0.448
 
 crew of 2: {'set': 10.4, 'rough': 50.6, 'trim': 3.3, 'startup': 6.5} crew-hours -> {'set': 2, 'rough': 8, 'trim': 1, 'startup': 1} days (12 total at 6.25 h/day). crew minutes are PLACEHOLDERS (no task-level install hours were found: references/research-hvac-market.md 3.3) - set them from a sub or the crew
 
-## Inspections - City of Bellingham Permit Center
+## Inspections - Whatcom County PDS
 
 - **Mechanical rough-in (cover)** - after framing, before insulation; line sets pressure-tested and in place; ducts, boots, exhaust ducts and caps; firestops at the garage separation
 - **Duct leakage test** - rough-in or final; total leakage at 25 Pa per WSEC R403.3.5 - waived only when every duct and the air handler are inside the envelope
 - **Ventilation flow test** - before final; whole-house rate and every local exhaust measured (WA M1505.4)
 - **Final mechanical** - equipment set, started, labelled; equipment listing / HSPF2 on the certificate, controls, condensate, clearances
 
-permit: 2 appliances, 5 fans / vents; fee: City of Bellingham Permit Center residential mechanical fee schedule - NOT FOUND in the 9/25 research (references/research-hvac-code.md 8): price it from the county sheet
+permit: 2 appliances, 5 fans / vents; fee: Whatcom County PDS residential mechanical fee schedule - NOT FOUND in the 9/25 research (references/research-hvac-code.md 8): price it from the county sheet
 
 ## What job.json said, and where it came from
 
+- **jurisdiction** - SFR2025-00084 is a Whatcom County EnerGov case (Build Radar scripts/portal_all.json: Building (Residential) - SFR - New Construction, Issued 2025-10-02) - unincorporated county with a Bellingham mailing address, so Whatcom County PDS issues and inspects. (The electrical job has City of Bellingham; the plumbing job has whatcom.)
 - **code** - A-1/A-2/A-3 'TABLE WASHINGTON STATE 2021 ENERGY CODE - OPTION / POINTS / COMPLIANCE PATHWAY' - the table's rows are drawn as linework: no text to read
 - **system** - ASSUMED. The WSEC credit table on A-1..A-3 is drawn, not text - hvacscan comes back 'unknown'. The electrical skill's job carries 'air-source heat pump with a ducted air handler' in the LAUNDRY; that is carried here UNREAD. RENDER A-1 AND LOOK before this bid is shown - a ductless credit (3.7) would change every line
 - **cfa_sf** - A-2 'Main Floor Area: 1363 ft2', A-3 'Upper Floor Area: 1363 ft2'

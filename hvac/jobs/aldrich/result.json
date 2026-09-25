@@ -267,7 +267,7 @@
    "amount": 6000.0
   },
   {
-   "desc": "[Trim, start-up and tests] Mechanical permit - City of Bellingham Permit Center (2 appliances, 5 fans / vents)",
+   "desc": "[Trim, start-up and tests] Mechanical permit - Whatcom County PDS (2 appliances, 5 fans / vents)",
    "qty": 1,
    "unit": "EA"
   }
@@ -276,7 +276,7 @@
   "system: ASSUMED. The WSEC credit table on A-1..A-3 is drawn, not text - hvacscan comes back 'unknown'. The electrical skill's job carries 'air-source heat pump with a ducted air handler' in the LAUNDRY; that is carried here UNREAD. RENDER A-1 AND LOOK before this bid ",
   "hood: no hood CFM on the set; 300 cfm ASSUMED",
   "dryer: LAUNDRY on A-2; electric ASSUMED (all-electric Bellingham norm per the electrical job)",
-  "mechanical permit fee: City of Bellingham Permit Center residential mechanical fee schedule - NOT FOUND in the 9/25 research (references/research-hvac-code.md 8): price it from the county sheet"
+  "mechanical permit fee: Whatcom County PDS residential mechanical fee schedule - NOT FOUND in the 9/25 research (references/research-hvac-code.md 8): price it from the county sheet"
  ],
  "options": [],
  "report_file": "hvac_report.md",
@@ -751,7 +751,7 @@
     "auto": true
    },
    {
-    "desc": "[Trim, start-up and tests] Mechanical permit - City of Bellingham Permit Center (2 appliances, 5 fans / vents)",
+    "desc": "[Trim, start-up and tests] Mechanical permit - Whatcom County PDS (2 appliances, 5 fans / vents)",
     "qty": 1,
     "unit": "EA",
     "rate": 0,

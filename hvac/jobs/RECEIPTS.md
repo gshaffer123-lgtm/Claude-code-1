@@ -1,6 +1,6 @@
 # HVAC - receipts, five houses
 
-Generated 2026-09-25 08:09 by `scripts/receipts.py` from each house's files. 5 houses.
+Generated 2026-09-25 08:26 by `scripts/receipts.py` from each house's files. 5 houses.
 
 ## What ran, per house
 

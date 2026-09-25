@@ -1,6 +1,6 @@
 # Receipts - 4407 Aldrich Rd, Bellingham WA 98226
 
-`4407-aldrich-hvac` · permit SFR2025-00084 · generated 2026-09-25 08:09 by `receipts.py` from the files in this folder.
+`4407-aldrich-hvac` · permit SFR2025-00084 · generated 2026-09-25 08:26 by `receipts.py` from the files in this folder.
 
 | Step | Ran | Receipt |
 |---|---|---|
@@ -26,6 +26,7 @@
 **From the electrical job:** the bath fans (the electrician supplies them; HVAC ducts them), the dryer and range outlet positions, the outdoor-unit disconnect and air-handler junction.
 
 **Assumed, or answered by job.json rather than the plan:**
+- **jurisdiction** - SFR2025-00084 is a Whatcom County EnerGov case (Build Radar scripts/portal_all.json: Building (Residential) - SFR - New Construction, Issued 2025-10-02) - unincorporated county with a Bellingham mailing address, so Whatcom County PDS issues and inspects. (The electrical job has City of Bellingham; the plumbing job has whatcom.)
 - **code** - A-1/A-2/A-3 'TABLE WASHINGTON STATE 2021 ENERGY CODE - OPTION / POINTS / COMPLIANCE PATHWAY' - the table's rows are drawn as linework: no text to read
 - **system** - ASSUMED. The WSEC credit table on A-1..A-3 is drawn, not text - hvacscan comes back 'unknown'. The electrical skill's job carries 'air-source heat pump with a ducted air handler' in the LAUNDRY; that is carried here UNREAD. RENDER A-1 AND LOOK before this bid is shown - a ductless credit (3.7) would change every line
 - **cfa_sf** - A-2 'Main Floor Area: 1363 ft2', A-3 'Upper Floor Area: 1363 ft2'

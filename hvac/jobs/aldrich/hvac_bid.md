@@ -86,7 +86,7 @@ rough-in subtotal: materials $0.00 + site $24,000.00 = **$24,000.00** (1/34 line
 | Nitrogen pressure test + evacuation to 500 micron (per system) | 1 | EA | — | — | per refrigerant system |
 | Refrigerant - additional charge beyond the pre-charge (lb) | 0.4 | lb | — | — | 5 oz past the pre-charge [U: the maker's oz / ft] |
 | HVAC trim, start-up and tests site time | 2 | days | $3000.00 | $6,000.00 | 9.8 crew-hours at 6.25 h/day (placeholder install minutes) · day rate from the ROOFING day rate ($3,000 placeholder) - NOT an HVAC |
-| Mechanical permit - City of Bellingham Permit Center (2 appliances, 5 fa | 1 | EA | — | — | City of Bellingham Permit Center residential mechanical fee schedule - NOT FOUND in the 9/25 research (references/research-hvac-co |
+| Mechanical permit - Whatcom County PDS (2 appliances, 5 fans / vents) | 1 | EA | — | — | Whatcom County PDS residential mechanical fee schedule - NOT FOUND in the 9/25 research (references/research-hvac-code.md 8): pric |
 
 trim, start-up and tests subtotal: materials $0.00 + site $6,000.00 = **$6,000.00** (1/13 lines priced)
 

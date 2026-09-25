@@ -1,6 +1,6 @@
 # Receipts - 8835 Semiahmoo Dr, Blaine WA 98230
 
-`8835-semiahmoo-hvac` · permit SFR2026-00068 · generated 2026-09-25 08:09 by `receipts.py` from the files in this folder.
+`8835-semiahmoo-hvac` · permit SFR2026-00068 · generated 2026-09-25 08:26 by `receipts.py` from the files in this folder.
 
 | Step | Ran | Receipt |
 |---|---|---|
@@ -26,6 +26,7 @@
 **From the electrical job:** the bath fans (the electrician supplies them; HVAC ducts them), the dryer and range outlet positions, the outdoor-unit disconnect and air-handler junction.
 
 **Assumed, or answered by job.json rather than the plan:**
+- **jurisdiction** - SFR2026-00068 is a Whatcom County EnerGov case (Build Radar scripts/portal_all.json: Replacement SFR, Issued 2026-07-13) - unincorporated county with a Blaine mailing address, so Whatcom County PDS issues and inspects. (The electrical job has City of Blaine; the plumbing job has whatcom.)
 - **code** - the energy sheet is the WSU 2021 WSEC-R prescriptive form with the Table R406.2/R406.3 summary
 - **system** - Energy sheet: 'X NOTES FOR ENERGY OPTION 3.6 (1 CREDIT) Air-source, centrally ducted heat pump with minimum HSPF2 of 9.4 (HSPF of 11.0) ... In areas where the winter design temperature ... is 23 F or below, an air source centrally ducted heat pump shall be a cold climate variable capacity heat pump as listed on the NEEP qualified product list'; 'Heat Source: Electric heat pump'; the cut sheet is a Mitsubishi MXZ-SM60NAM (5-ton multi-zone Hyper-Heat, rated Non-Ducted // Mix // Ducted). The credit is only earned with DUCTED indoor units - one per storey is ASSUMED (the set names none). The plumbing skill read 'ductless' and the electrical skill an air handler: both were half right.
 - **cfa_sf** - A-2/A-3 level tags: Main Level Living 2,120.95 sf + Upper 1,310.38 sf

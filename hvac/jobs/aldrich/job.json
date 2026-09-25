@@ -10,7 +10,8 @@
  "storey_shift": {"upper": [-2.16, -7.48]},
  "_storey_shift": "the finish job's own _dxdy_measured (register_interior.py, 9/22-23): the upper storey sits (-2.16, -7.48) ft from where the typed dx = dy = 0 put it. Applied here so the ceilings and floors over each other line up; the interior.json itself is not touched",
  "hvac": {
-  "jurisdiction": "bellingham",
+  "jurisdiction": "whatcom",
+  "_jurisdiction": "SFR2025-00084 is a Whatcom County EnerGov case (Build Radar scripts/portal_all.json: Building (Residential) - SFR - New Construction, Issued 2025-10-02) - unincorporated county with a Bellingham mailing address, so Whatcom County PDS issues and inspects. (The electrical job has City of Bellingham; the plumbing job has whatcom.)",
   "code": {"wsec": "2021"},
   "_code": "A-1/A-2/A-3 'TABLE WASHINGTON STATE 2021 ENERGY CODE - OPTION / POINTS / COMPLIANCE PATHWAY' - the table's rows are drawn as linework: no text to read",
   "system": {"kind": "ducted", "hspf2_min": 9.4, "ahu_room": "main/LAUNDRY"},

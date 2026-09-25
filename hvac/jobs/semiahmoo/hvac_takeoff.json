@@ -9,7 +9,7 @@
   "lineset_route": "concealed",
   "ducts": "inside",
   "ventilation": "erv",
-  "jurisdiction": "blaine",
+  "jurisdiction": "whatcom",
   "system": {
    "kind": "ducted_multizone",
    "option": "3.6",
@@ -19,6 +19,7 @@
    "indoor": "ducted per storey (not named on the set)"
   },
   "sources": {
+   "_jurisdiction": "SFR2026-00068 is a Whatcom County EnerGov case (Build Radar scripts/portal_all.json: Replacement SFR, Issued 2026-07-13) - unincorporated county with a Blaine mailing address, so Whatcom County PDS issues and inspects. (The electrical job has City of Blaine; the plumbing job has whatcom.)",
    "_code": "the energy sheet is the WSU 2021 WSEC-R prescriptive form with the Table R406.2/R406.3 summary",
    "_system": "Energy sheet: 'X NOTES FOR ENERGY OPTION 3.6 (1 CREDIT) Air-source, centrally ducted heat pump with minimum HSPF2 of 9.4 (HSPF of 11.0) ... In areas where the winter design temperature ... is 23 F or below, an air source centrally ducted heat pump shall be a cold climate variable capacity heat pump as listed on the NEEP qualified product list'; 'Heat Source: Electric heat pump'; the cut sheet is a Mitsubishi MXZ-SM60NAM (5-ton multi-zone Hyper-Heat, rated Non-Ducted // Mix // Ducted). The credit is only earned with DUCTED indoor units - one per storey is ASSUMED (the set names none). The plumbing skill read 'ductless' and the electrical skill an air handler: both were half right.",
    "_cfa_sf": "A-2/A-3 level tags: Main Level Living 2,120.95 sf + Upper 1,310.38 sf",
@@ -6296,12 +6297,12 @@
   "note": "crew minutes are PLACEHOLDERS (no task-level install hours were found: references/research-hvac-market.md 3.3) - set them from a sub or the crew"
  },
  "inspections": {
-  "jurisdiction": "blaine",
-  "authority": "City of Blaine",
+  "jurisdiction": "whatcom",
+  "authority": "Whatcom County PDS",
   "appliances": 4,
   "fans_and_vents": 8,
   "permit_fee": null,
-  "fee_source": "City of Blaine residential mechanical fee schedule - NOT FOUND in the 9/25 research (references/research-hvac-code.md 8): price it from the county sheet",
+  "fee_source": "Whatcom County PDS residential mechanical fee schedule - NOT FOUND in the 9/25 research (references/research-hvac-code.md 8): price it from the county sheet",
   "sequence": [
    {
     "name": "Mechanical rough-in (cover)",

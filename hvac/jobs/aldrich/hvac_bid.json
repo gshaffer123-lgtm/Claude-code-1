@@ -573,14 +573,14 @@
    },
    {
     "label": "Mechanical permit",
-    "desc": "Mechanical permit - City of Bellingham Permit Center (2 appliances, 5 fans / vents)",
+    "desc": "Mechanical permit - Whatcom County PDS (2 appliances, 5 fans / vents)",
     "qty": 1,
     "unit": "EA",
     "rate": null,
     "cost": null,
     "price": null,
     "cst": null,
-    "note": "City of Bellingham Permit Center residential mechanical fee schedule - NOT FOUND in the 9/25 research (references/research-hvac-code.md 8): price it from the county sheet"
+    "note": "Whatcom County PDS residential mechanical fee schedule - NOT FOUND in the 9/25 research (references/research-hvac-code.md 8): price it from the county sheet"
    }
   ]
  },
@@ -1319,7 +1319,7 @@
     "auto": true
    },
    {
-    "desc": "[Trim, start-up and tests] Mechanical permit - City of Bellingham Permit Center (2 appliances, 5 fans / vents)",
+    "desc": "[Trim, start-up and tests] Mechanical permit - Whatcom County PDS (2 appliances, 5 fans / vents)",
     "qty": 1,
     "unit": "EA",
     "rate": 0,

@@ -8,7 +8,8 @@
  "storeys": [{"name": "main", "rooms": "rooms_p5.json", "page": 5, "z": 0.0, "plate": 10.0},
              {"name": "upper", "rooms": "rooms_p6.json", "page": 6, "z": 11.2, "plate": 9.0}],
  "hvac": {
-  "jurisdiction": "blaine",
+  "jurisdiction": "whatcom",
+  "_jurisdiction": "SFR2026-00068 is a Whatcom County EnerGov case (Build Radar scripts/portal_all.json: Replacement SFR, Issued 2026-07-13) - unincorporated county with a Blaine mailing address, so Whatcom County PDS issues and inspects. (The electrical job has City of Blaine; the plumbing job has whatcom.)",
   "code": {"wsec": "2021"},
   "_code": "the energy sheet is the WSU 2021 WSEC-R prescriptive form with the Table R406.2/R406.3 summary",
   "system": {"kind": "ducted_multizone", "option": "3.6", "hspf2_min": 9.4, "outdoor_model": "Mitsubishi MXZ-SM60NAM", "outdoor_kbtuh": 60,

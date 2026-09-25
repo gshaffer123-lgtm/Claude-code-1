@@ -171,17 +171,18 @@ glazing 735.1 sf (traced windows (interior.json)); infiltration 0.6 ACH50 -> 0.0
 
 crew of 2: {'set': 18.0, 'rough': 79.3, 'trim': 3.2, 'startup': 8.0} crew-hours -> {'set': 3, 'rough': 13, 'trim': 1, 'startup': 2} days (19 total at 6.25 h/day). crew minutes are PLACEHOLDERS (no task-level install hours were found: references/research-hvac-market.md 3.3) - set them from a sub or the crew
 
-## Inspections - City of Blaine
+## Inspections - Whatcom County PDS
 
 - **Mechanical rough-in (cover)** - after framing, before insulation; line sets pressure-tested and in place; ducts, boots, exhaust ducts and caps; firestops at the garage separation
 - **Duct leakage test** - rough-in or final; total leakage at 25 Pa per WSEC R403.3.5 - waived only when every duct and the air handler are inside the envelope
 - **Ventilation flow test** - before final; whole-house rate and every local exhaust measured (WA M1505.4)
 - **Final mechanical** - equipment set, started, labelled; equipment listing / HSPF2 on the certificate, controls, condensate, clearances
 
-permit: 4 appliances, 8 fans / vents; fee: City of Blaine residential mechanical fee schedule - NOT FOUND in the 9/25 research (references/research-hvac-code.md 8): price it from the county sheet
+permit: 4 appliances, 8 fans / vents; fee: Whatcom County PDS residential mechanical fee schedule - NOT FOUND in the 9/25 research (references/research-hvac-code.md 8): price it from the county sheet
 
 ## What job.json said, and where it came from
 
+- **jurisdiction** - SFR2026-00068 is a Whatcom County EnerGov case (Build Radar scripts/portal_all.json: Replacement SFR, Issued 2026-07-13) - unincorporated county with a Blaine mailing address, so Whatcom County PDS issues and inspects. (The electrical job has City of Blaine; the plumbing job has whatcom.)
 - **code** - the energy sheet is the WSU 2021 WSEC-R prescriptive form with the Table R406.2/R406.3 summary
 - **system** - Energy sheet: 'X NOTES FOR ENERGY OPTION 3.6 (1 CREDIT) Air-source, centrally ducted heat pump with minimum HSPF2 of 9.4 (HSPF of 11.0) ... In areas where the winter design temperature ... is 23 F or below, an air source centrally ducted heat pump shall be a cold climate variable capacity heat pump as listed on the NEEP qualified product list'; 'Heat Source: Electric heat pump'; the cut sheet is a Mitsubishi MXZ-SM60NAM (5-ton multi-zone Hyper-Heat, rated Non-Ducted // Mix // Ducted). The credit is only earned with DUCTED indoor units - one per storey is ASSUMED (the set names none). The plumbing skill read 'ductless' and the electrical skill an air handler: both were half right.
 - **cfa_sf** - A-2/A-3 level tags: Main Level Living 2,120.95 sf + Upper 1,310.38 sf
