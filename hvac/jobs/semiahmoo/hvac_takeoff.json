@@ -1,0 +1,6841 @@
+{
+ "address": "8835 Semiahmoo Dr, Blaine WA 98230",
+ "slug": "8835-semiahmoo-hvac",
+ "permit": "SFR2026-00068",
+ "generated": "hvackit.py",
+ "spec": {
+  "kind": "ducted_multizone",
+  "foundation": "crawl",
+  "lineset_route": "concealed",
+  "ducts": "inside",
+  "ventilation": "erv",
+  "jurisdiction": "whatcom",
+  "system": {
+   "kind": "ducted_multizone",
+   "option": "3.6",
+   "hspf2_min": 9.4,
+   "outdoor_model": "Mitsubishi MXZ-SM60NAM",
+   "outdoor_kbtuh": 60,
+   "indoor": "ducted per storey (not named on the set)"
+  },
+  "sources": {
+   "_jurisdiction": "SFR2026-00068 is a Whatcom County EnerGov case (Build Radar scripts/portal_all.json: Replacement SFR, Issued 2026-07-13) - unincorporated county with a Blaine mailing address, so Whatcom County PDS issues and inspects. (The electrical job has City of Blaine; the plumbing job has whatcom.)",
+   "_code": "the energy sheet is the WSU 2021 WSEC-R prescriptive form with the Table R406.2/R406.3 summary",
+   "_system": "Energy sheet: 'X NOTES FOR ENERGY OPTION 3.6 (1 CREDIT) Air-source, centrally ducted heat pump with minimum HSPF2 of 9.4 (HSPF of 11.0) ... In areas where the winter design temperature ... is 23 F or below, an air source centrally ducted heat pump shall be a cold climate variable capacity heat pump as listed on the NEEP qualified product list'; 'Heat Source: Electric heat pump'; the cut sheet is a Mitsubishi MXZ-SM60NAM (5-ton multi-zone Hyper-Heat, rated Non-Ducted // Mix // Ducted). The credit is only earned with DUCTED indoor units - one per storey is ASSUMED (the set names none). The plumbing skill read 'ductless' and the electrical skill an air handler: both were half right.",
+   "_cfa_sf": "A-2/A-3 level tags: Main Level Living 2,120.95 sf + Upper 1,310.38 sf",
+   "_bedrooms": "PRIMARY (main), two BEDROOMs (upper); the DEN, YOGA and ROOM are not bedrooms",
+   "_exclude_rooms": "the 537 sf WORKBENCH / SHOP is garage-side (the sheet's own 'AREA OF FIRST FLOOR & GARAGE = 1992+537'); the two STAIR OPENING regions are voids in the upper floor, open to the main floor - not floor area",
+   "_envelope": "energy sheet prescriptive table: 'VERTICAL FENESTRATION U=0.25, ROOF/CEILING JOIST VAULTED R-60 ADVANCED, WOOD FRAME WALL R-21 BATT INSULATION W/ R-12 CONTINUOUS INSULATION, FLOOR OVER UNHEATED SPACE R-38, SLAB ON GRADE R-10'; option 2.3 = 0.6 ACH50",
+   "_foundation": "crawl ASSUMED for the house (TJI on p16), as the plumbing skill read it",
+   "_ducts": "a multi-zone with ducted indoor units per storey keeps the short duct runs in the floor / ceiling cavities inside the envelope - ASSUMED; if the main-floor unit goes in the crawl, set crawl_vented",
+   "_ventilation": "energy sheet: 'X NOTES FOR ENERGY OPTION 2.3 (2 CREDITS) ... 0.6 air changes per hour' + the VENTS Frigate ERV 150 cut sheet ('the complete whole house ventilation system'); the plan also prints WHOLE HOUSE FAN and two EXHAUST FAN * tags - with the ERV they are local exhaust",
+   "_hood": "A2.1 kitchen: 400 CFM - exactly the M1503.6 threshold (make-up air is required ABOVE 400 cfm); the electrical job wires an interlock anyway",
+   "_dryer": "LAUNDRY on the main floor; 'D' electric per the plumbing job (the plumbing reads a gas dryer stub on another sheet - the finish skill's appliance check flags the conflict)",
+   "_fireplace": "p5 'GAS fp' in the living room (Cascade Natural Gas serves Blaine) - a direct-vent gas fireplace ASSUMED (the modern default; a natural-draft unit would trigger WA M1503.6 make-up air) - the fireplace installer's, not HVAC scope"
+  }
+ },
+ "design": {
+  "town": "blaine",
+  "heat": 19,
+  "cool": 78,
+  "wb": 64,
+  "grains": 4,
+  "range": 20,
+  "mj8_heat": 23,
+  "mj8_cool": 76,
+  "station": "Bellingham IAP",
+  "src": "WSEC Table RC-1 Bellingham IAP 19 F / 78 F [S]; MJ8 Table 1A 23 F / 76 F [V] (Fraser outflow country - STAND-IN on the Bellingham row)",
+  "stand_in": true,
+  "indoor_heat": 70.0,
+  "indoor_cool": 75.0,
+  "dT_heat": 51.0,
+  "dT_cool": 3.0
+ },
+ "loads": {
+  "totals": {
+   "heat_btuh": 23560,
+   "heat_rooms_btuh": 22838,
+   "cool_sens_btuh": 20857,
+   "cool_lat_btuh": 920,
+   "cool_tons": 1.81,
+   "heat_per_sf": 6.9,
+   "cool_per_sf": 6.3,
+   "cool_over_heat": 0.92,
+   "wsu_btuh": 39604,
+   "wsu_ach": 0.6,
+   "wsu_max_hp_btuh": 49505,
+   "UA": 429.2,
+   "by_component": {
+    "wall": 6499,
+    "window": 8301,
+    "door": 1367,
+    "ceiling": 2593,
+    "floor": 2459,
+    "infiltration": 1618,
+    "duct": 0,
+    "ventilation": 722
+   }
+  },
+  "units": [
+   {
+    "name": "house",
+    "rooms": [
+     "main/R1",
+     "main/R3",
+     "main/R4",
+     "main/R7",
+     "main/R9",
+     "main/R10",
+     "main/R11",
+     "main/R12",
+     "main/R13",
+     "main/R15",
+     "main/R18",
+     "main/R21",
+     "main/R24",
+     "main/R25",
+     "main/R26",
+     "main/R27",
+     "main/R29",
+     "main/R30",
+     "main/R31",
+     "main/R32",
+     "main/R33",
+     "main/R34",
+     "main/R35",
+     "main/R36",
+     "main/R37",
+     "main/R38",
+     "main/R39",
+     "main/R40",
+     "upper/R3",
+     "upper/R7",
+     "upper/R13",
+     "upper/R15",
+     "upper/R18",
+     "upper/R21",
+     "upper/R23",
+     "upper/R24"
+    ],
+    "cfa_sf": 3431,
+    "bedrooms": 3,
+    "vent_qr": 64.3,
+    "vent_csystem": 1.0,
+    "vent_cfm": 64.3,
+    "vent_how": "balanced ERV: 1.1 x 64 cfm x dT x (1 - SRE 0.8)",
+    "vent_heat_btuh": 722,
+    "heat_rooms_btuh": 22838,
+    "heat_btuh": 23560,
+    "cool_sens_btuh": 20857,
+    "cool_lat_btuh": 920,
+    "cool_tons": 1.81,
+    "heat_per_sf": 6.9
+   }
+  ],
+  "u_src": {
+   "ceiling": "R-60 -> U-0.024 [job.json]",
+   "vault": "R-38 -> U-0.028 [default]",
+   "floor": "R-38 -> U-0.029 [job.json]",
+   "wall": "R-21+12 -> U-0.033 [job.json]",
+   "window": "U-0.25 [job.json]",
+   "skylight": "U-0.50 [default]",
+   "door": "U-0.20 [default]",
+   "slab_f": "F-0.54 [default]",
+   "ach50": "0.6 ACH50 [job.json]"
+  },
+  "glazing": {
+   "traced_sf": 735.1,
+   "used_sf": 735.1,
+   "why": "traced windows (interior.json)",
+   "spread_sf": 0.0
+  },
+  "alt": {
+   "heat": 23,
+   "heat_btuh": 21712,
+   "note": "at Manual J's own 99 % design temperature (23 F) the load is ~21,712 Btuh; the equipment is sized on the code's Table RC-1 value (19 F)"
+  },
+  "infiltration": {
+   "ach50": 0.6,
+   "storeys": 2,
+   "method": "MJ8 blower-door (ICFM = 0.05488 Q50 sqrt(0.015 N dT + Cw 15^2), shielding 4)",
+   "ach_nat": 0.054,
+   "n_equiv": 11.2,
+   "cfm_heat": 28.8,
+   "cfm_cool": 10.8,
+   "volume_traced": 32166,
+   "volume_used": 32166
+  },
+  "ventilation": {
+   "kind": "erv",
+   "balanced": true,
+   "distributed": true,
+   "cfm": 64.3,
+   "qr": 64.3,
+   "csystem": 1.0,
+   "bedrooms": 3,
+   "cfa_sf": 3431,
+   "sre": 0.8,
+   "heat_btuh": 722,
+   "cool_btuh": 42,
+   "how": "balanced ERV: 1.1 x 64 cfm x dT x (1 - SRE 0.8)",
+   "formula": "Qv = (0.01 x CFA + 7.5 x (bedrooms + 1), min 30) x Csystem (WA M1505.4.3, Eq. 15-1 / 15-2)"
+  },
+  "area": {
+   "traced_sf": 3364,
+   "plan_sf": 3431,
+   "scale": 1.0
+  },
+  "duct": {
+   "location": "inside",
+   "factor": 0.0
+  },
+  "notes": [
+   "excluded from the conditioned space (job.json exclude_rooms): main/R5 WORKBENCH / SHOP, upper/R19 STAIR OPENING, upper/R22 STAIR OPENING",
+   "north_deg not set: the sheet is ASSUMED north-up, so window facings (cooling only) are page directions",
+   "inside the house though the tracer skipped them (>= 70 % wrapped by rooms - chases, the fireplace mass, wall voids): upper/R16 (10 sf), upper/R17 (16 sf), upper/R19 STAIR OPENING (30 sf), upper/R20 GAME AREA (40 sf), upper/R22 STAIR OPENING (164 sf), upper/R9 (16 sf)"
+  ],
+  "warnings": [
+   "cooling / heating = 0.92, outside 0.25-0.8 (expected 0.40-0.55) - a design temperature or the glass is off"
+  ]
+ },
+ "rooms": [
+  {
+   "key": "main/R1",
+   "name": null,
+   "use": "circulation",
+   "unit": "house",
+   "storey": "main",
+   "area_sf": 9.2,
+   "heat_btuh": 704,
+   "cool_btuh": 747,
+   "win_sf": 27.5,
+   "ext_wall_ft": 18.7,
+   "ceil_sf": 7.8,
+   "floor_sf": 9.2,
+   "centroid": [
+    72.84,
+    11.42
+   ],
+   "poly": [
+    [
+     72.75,
+     7.75
+    ],
+    [
+     71.62,
+     8.75
+    ],
+    [
+     71.62,
+     11.5
+    ],
+    [
+     71.12,
+     11.62
+    ],
+    [
+     71.12,
+     13.25
+    ],
+    [
+     73.88,
+     13.25
+    ],
+    [
+     74.0,
+     13.62
+    ],
+    [
+     75.0,
+     13.62
+    ],
+    [
+     75.12,
+     13.25
+    ],
+    [
+     76.5,
+     14.5
+    ],
+    [
+     77.5,
+     14.0
+    ],
+    [
+     76.62,
+     14.0
+    ],
+    [
+     76.62,
+     13.25
+    ],
+    [
+     79.0,
+     13.25
+    ],
+    [
+     75.12,
+     13.25
+    ],
+    [
+     73.88,
+     13.25
+    ],
+    [
+     73.0,
+     13.25
+    ],
+    [
+     72.88,
+     7.75
+    ]
+   ],
+   "z": 0.0
+  },
+  {
+   "key": "main/R3",
+   "name": null,
+   "use": "circulation",
+   "unit": "house",
+   "storey": "main",
+   "area_sf": 15.1,
+   "heat_btuh": 822,
+   "cool_btuh": 1286,
+   "win_sf": 47.5,
+   "ext_wall_ft": 12.9,
+   "ceil_sf": 13.6,
+   "floor_sf": 15.1,
+   "centroid": [
+    66.72,
+    12.5
+   ],
+   "poly": [
+    [
+     63.12,
+     9.88
+    ],
+    [
+     62.88,
+     10.12
+    ],
+    [
+     62.88,
+     13.12
+    ],
+    [
+     65.12,
+     13.25
+    ],
+    [
+     65.25,
+     13.88
+    ],
+    [
+     64.62,
+     14.0
+    ],
+    [
+     66.38,
+     14.25
+    ],
+    [
+     66.5,
+     13.25
+    ],
+    [
+     66.62,
+     13.62
+    ],
+    [
+     66.75,
+     13.62
+    ],
+    [
+     67.75,
+     13.62
+    ],
+    [
+     67.88,
+     13.25
+    ],
+    [
+     71.0,
+     13.12
+    ],
+    [
+     71.0,
+     11.62
+    ],
+    [
+     63.25,
+     11.62
+    ]
+   ],
+   "z": 0.0
+  },
+  {
+   "key": "main/R4",
+   "name": "PRIMARY",
+   "use": "bedroom",
+   "unit": "house",
+   "storey": "main",
+   "area_sf": 232.1,
+   "heat_btuh": 900,
+   "cool_btuh": 481,
+   "win_sf": 0,
+   "ext_wall_ft": 30.7,
+   "ceil_sf": 13.6,
+   "floor_sf": 232.1,
+   "centroid": [
+    70.74,
+    21.66
+   ],
+   "poly": [
+    [
+     66.62,
+     13.75
+    ],
+    [
+     66.5,
+     15.38
+    ],
+    [
+     66.38,
+     14.38
+    ],
+    [
+     64.5,
+     14.0
+    ],
+    [
+     63.5,
+     14.0
+    ],
+    [
+     63.5,
+     16.25
+    ],
+    [
+     62.88,
+     16.5
+    ],
+    [
+     62.88,
+     19.25
+    ],
+    [
+     63.0,
+     20.75
+    ],
+    [
+     62.88,
+     23.62
+    ],
+    [
+     63.5,
+     24.25
+    ],
+    [
+     63.0,
+     24.5
+    ],
+    [
+     63.0,
+     26.12
+    ],
+    [
+     63.5,
+     26.25
+    ],
+    [
+     63.5,
+     29.25
+    ],
+    [
+     78.38,
+     29.38
+    ],
+    [
+     78.25,
+     14.0
+    ],
+    [
+     77.62,
+     14.0
+    ],
+    [
+     76.5,
+     14.62
+    ],
+    [
+     75.25,
+     13.75
+    ],
+    [
+     75.12,
+     14.12
+    ],
+    [
+     75.0,
+     13.75
+    ],
+    [
+     74.0,
+     13.75
+    ],
+    [
+     70.88,
+     14.12
+    ],
+    [
+     67.75,
+     13.75
+    ]
+   ],
+   "z": 0.0
+  },
+  {
+   "key": "main/R7",
+   "name": null,
+   "use": "circulation",
+   "unit": "house",
+   "storey": "main",
+   "area_sf": 17.1,
+   "heat_btuh": 618,
+   "cool_btuh": 129,
+   "win_sf": 0,
+   "ext_wall_ft": 11.7,
+   "ceil_sf": 15.9,
+   "floor_sf": 17.1,
+   "centroid": [
+    60.98,
+    17.65
+   ],
+   "poly": [
+    [
+     59.25,
+     15.12
+    ],
+    [
+     59.25,
+     20.12
+    ],
+    [
+     62.62,
+     20.12
+    ],
+    [
+     62.75,
+     19.12
+    ],
+    [
+     62.75,
+     16.38
+    ],
+    [
+     62.62,
+     15.25
+    ]
+   ],
+   "z": 0.0
+  },
+  {
+   "key": "main/R9",
+   "name": "hall",
+   "use": "circulation",
+   "unit": "house",
+   "storey": "main",
+   "area_sf": 16.0,
+   "heat_btuh": 35,
+   "cool_btuh": 13,
+   "win_sf": 0,
+   "ext_wall_ft": 0,
+   "ceil_sf": 13.8,
+   "floor_sf": 16.0,
+   "centroid": [
+    68.96,
+    32.04
+   ],
+   "poly": [
+    [
+     67.12,
+     29.88
+    ],
+    [
+     67.0,
+     34.0
+    ],
+    [
+     67.38,
+     34.12
+    ],
+    [
+     70.88,
+     34.12
+    ],
+    [
+     70.88,
+     30.0
+    ]
+   ],
+   "z": 0.0
+  },
+  {
+   "key": "main/R10",
+   "name": "CLOSET",
+   "use": "closet",
+   "unit": "house",
+   "storey": "main",
+   "area_sf": 55.1,
+   "heat_btuh": 239,
+   "cool_btuh": 14,
+   "win_sf": 0,
+   "ext_wall_ft": 7.9,
+   "ceil_sf": 13.5,
+   "floor_sf": 55.1,
+   "centroid": [
+    74.88,
+    33.88
+   ],
+   "poly": [
+    [
+     71.38,
+     29.88
+    ],
+    [
+     71.38,
+     37.75
+    ],
+    [
+     78.38,
+     37.88
+    ],
+    [
+     78.38,
+     30.0
+    ]
+   ],
+   "z": 0.0
+  },
+  {
+   "key": "main/R11",
+   "name": null,
+   "use": "circulation",
+   "unit": "house",
+   "storey": "main",
+   "area_sf": 18.4,
+   "heat_btuh": 552,
+   "cool_btuh": 789,
+   "win_sf": 28.8,
+   "ext_wall_ft": 9.4,
+   "ceil_sf": 18.4,
+   "floor_sf": 18.4,
+   "centroid": [
+    30.88,
+    32.87
+   ],
+   "poly": [
+    [
+     29.25,
+     30.0
+    ],
+    [
+     29.25,
+     35.75
+    ],
+    [
+     32.5,
+     35.62
+    ],
+    [
+     32.62,
+     33.38
+    ],
+    [
+     30.75,
+     33.25
+    ],
+    [
+     32.62,
+     33.12
+    ],
+    [
+     32.5,
+     30.0
+    ],
+    [
+     31.25,
+     30.0
+    ],
+    [
+     31.12,
+     30.62
+    ],
+    [
+     30.62,
+     30.0
+    ]
+   ],
+   "z": 0.0
+  },
+  {
+   "key": "main/R12",
+   "name": "HALL",
+   "use": "circulation",
+   "unit": "house",
+   "storey": "main",
+   "area_sf": 13.6,
+   "heat_btuh": 15,
+   "cool_btuh": 0,
+   "win_sf": 0,
+   "ext_wall_ft": 0,
+   "ceil_sf": 0.0,
+   "floor_sf": 13.6,
+   "centroid": [
+    69.0,
+    36.04
+   ],
+   "poly": [
+    [
+     67.0,
+     34.25
+    ],
+    [
+     67.25,
+     37.88
+    ],
+    [
+     70.88,
+     37.88
+    ],
+    [
+     70.88,
+     34.25
+    ]
+   ],
+   "z": 0.0
+  },
+  {
+   "key": "main/R13",
+   "name": null,
+   "use": "circulation",
+   "unit": "house",
+   "storey": "main",
+   "area_sf": 18.2,
+   "heat_btuh": 824,
+   "cool_btuh": 1457,
+   "win_sf": 53.8,
+   "ext_wall_ft": 9.1,
+   "ceil_sf": 18.2,
+   "floor_sf": 18.2,
+   "centroid": [
+    30.91,
+    39.12
+   ],
+   "poly": [
+    [
+     29.25,
+     36.25
+    ],
+    [
+     29.25,
+     42.0
+    ],
+    [
+     30.12,
+     42.0
+    ],
+    [
+     30.25,
+     41.5
+    ],
+    [
+     30.5,
+     41.88
+    ],
+    [
+     32.5,
+     41.88
+    ],
+    [
+     32.62,
+     39.25
+    ],
+    [
+     30.5,
+     39.12
+    ],
+    [
+     32.62,
+     39.0
+    ],
+    [
+     32.62,
+     36.38
+    ],
+    [
+     30.88,
+     36.25
+    ],
+    [
+     30.62,
+     36.62
+    ]
+   ],
+   "z": 0.0
+  },
+  {
+   "key": "main/R15",
+   "name": "YOGA",
+   "use": "living",
+   "unit": "house",
+   "storey": "main",
+   "area_sf": 121.3,
+   "heat_btuh": 812,
+   "cool_btuh": 746,
+   "win_sf": 38.8,
+   "ext_wall_ft": 12.1,
+   "ceil_sf": 0.1,
+   "floor_sf": 121.3,
+   "centroid": [
+    72.89,
+    43.71
+   ],
+   "poly": [
+    [
+     67.12,
+     38.38
+    ],
+    [
+     67.12,
+     41.38
+    ],
+    [
+     67.75,
+     41.5
+    ],
+    [
+     67.12,
+     41.88
+    ],
+    [
+     67.25,
+     49.0
+    ],
+    [
+     78.38,
+     49.0
+    ],
+    [
+     78.38,
+     47.75
+    ],
+    [
+     78.88,
+     47.62
+    ],
+    [
+     78.88,
+     45.12
+    ],
+    [
+     78.25,
+     44.62
+    ],
+    [
+     78.88,
+     44.38
+    ],
+    [
+     78.88,
+     42.12
+    ],
+    [
+     78.38,
+     42.0
+    ],
+    [
+     78.25,
+     38.38
+    ]
+   ],
+   "z": 0.0
+  },
+  {
+   "key": "main/R18",
+   "name": "ENTRY",
+   "use": "circulation",
+   "unit": "house",
+   "storey": "main",
+   "area_sf": 93.0,
+   "heat_btuh": 857,
+   "cool_btuh": 929,
+   "win_sf": 34.4,
+   "ext_wall_ft": 17.9,
+   "ceil_sf": 5.5,
+   "floor_sf": 93.0,
+   "centroid": [
+    75.38,
+    56.37
+   ],
+   "poly": [
+    [
+     71.25,
+     49.5
+    ],
+    [
+     70.75,
+     50.25
+    ],
+    [
+     70.88,
+     62.25
+    ],
+    [
+     71.0,
+     62.25
+    ],
+    [
+     73.5,
+     62.25
+    ],
+    [
+     73.5,
+     61.75
+    ],
+    [
+     74.12,
+     61.5
+    ],
+    [
+     74.75,
+     60.12
+    ],
+    [
+     79.0,
+     60.12
+    ],
+    [
+     79.12,
+     59.12
+    ],
+    [
+     80.25,
+     60.88
+    ],
+    [
+     82.88,
+     60.88
+    ],
+    [
+     82.62,
+     60.12
+    ],
+    [
+     80.75,
+     60.0
+    ],
+    [
+     82.88,
+     59.88
+    ],
+    [
+     82.88,
+     57.38
+    ],
+    [
+     82.38,
+     57.0
+    ],
+    [
+     82.25,
+     55.88
+    ],
+    [
+     75.88,
+     55.75
+    ],
+    [
+     76.25,
+     53.0
+    ],
+    [
+     76.25,
+     52.5
+    ],
+    [
+     74.88,
+     52.38
+    ],
+    [
+     77.0,
+     52.25
+    ],
+    [
+     76.88,
+     49.88
+    ],
+    [
+     72.75,
+     50.12
+    ],
+    [
+     72.62,
+     49.5
+    ]
+   ],
+   "z": 0.0
+  },
+  {
+   "key": "main/R21",
+   "name": "LAUNDRY",
+   "use": "utility",
+   "unit": "house",
+   "storey": "main",
+   "area_sf": 65.3,
+   "heat_btuh": 923,
+   "cool_btuh": 868,
+   "win_sf": 35.8,
+   "ext_wall_ft": 20.4,
+   "ceil_sf": 32.6,
+   "floor_sf": 65.3,
+   "centroid": [
+    75.77,
+    66.73
+   ],
+   "poly": [
+    [
+     70.88,
+     62.38
+    ],
+    [
+     70.88,
+     67.25
+    ],
+    [
+     71.62,
+     67.5
+    ],
+    [
+     71.5,
+     68.0
+    ],
+    [
+     70.88,
+     68.0
+    ],
+    [
+     70.88,
+     70.25
+    ],
+    [
+     71.62,
+     70.38
+    ],
+    [
+     71.62,
+     71.12
+    ],
+    [
+     73.0,
+     71.12
+    ],
+    [
+     73.12,
+     69.5
+    ],
+    [
+     73.25,
+     71.12
+    ],
+    [
+     74.62,
+     71.12
+    ],
+    [
+     74.75,
+     70.62
+    ],
+    [
+     75.25,
+     70.62
+    ],
+    [
+     75.5,
+     68.75
+    ],
+    [
+     82.88,
+     68.5
+    ],
+    [
+     82.88,
+     67.5
+    ],
+    [
+     81.25,
+     67.38
+    ],
+    [
+     82.88,
+     67.25
+    ],
+    [
+     82.88,
+     66.38
+    ],
+    [
+     82.25,
+     66.25
+    ],
+    [
+     82.25,
+     64.38
+    ],
+    [
+     74.88,
+     64.5
+    ],
+    [
+     73.5,
+     62.38
+    ]
+   ],
+   "z": 0.0
+  },
+  {
+   "key": "main/R24",
+   "name": null,
+   "use": "circulation",
+   "unit": "house",
+   "storey": "main",
+   "area_sf": 6.7,
+   "heat_btuh": 919,
+   "cool_btuh": 548,
+   "win_sf": 14.4,
+   "ext_wall_ft": 13.6,
+   "ceil_sf": 6.7,
+   "floor_sf": 6.7,
+   "centroid": [
+    105.77,
+    11.36
+   ],
+   "poly": [
+    [
+     106.25,
+     8.12
+    ],
+    [
+     106.25,
+     9.75
+    ],
+    [
+     104.75,
+     10.25
+    ],
+    [
+     104.75,
+     13.12
+    ],
+    [
+     106.0,
+     13.38
+    ],
+    [
+     106.12,
+     12.88
+    ],
+    [
+     106.62,
+     13.38
+    ],
+    [
+     106.62,
+     8.38
+    ]
+   ],
+   "z": 0.0
+  },
+  {
+   "key": "main/R25",
+   "name": null,
+   "use": "circulation",
+   "unit": "house",
+   "storey": "main",
+   "area_sf": 8.2,
+   "heat_btuh": 19,
+   "cool_btuh": 7,
+   "win_sf": 0,
+   "ext_wall_ft": 0,
+   "ceil_sf": 8.0,
+   "floor_sf": 8.2,
+   "centroid": [
+    60.52,
+    48.06
+   ],
+   "poly": [
+    [
+     58.38,
+     47.12
+    ],
+    [
+     58.38,
+     49.12
+    ],
+    [
+     62.75,
+     48.88
+    ],
+    [
+     62.75,
+     47.12
+    ]
+   ],
+   "z": 0.0
+  },
+  {
+   "key": "main/R26",
+   "name": "PANTRY",
+   "use": "pantry",
+   "unit": "house",
+   "storey": "main",
+   "area_sf": 7.0,
+   "heat_btuh": 8,
+   "cool_btuh": 0,
+   "win_sf": 0,
+   "ext_wall_ft": 0,
+   "ceil_sf": 0.0,
+   "floor_sf": 7.0,
+   "centroid": [
+    64.7,
+    48.11
+   ],
+   "poly": [
+    [
+     62.88,
+     47.12
+    ],
+    [
+     63.0,
+     48.88
+    ],
+    [
+     63.12,
+     49.12
+    ],
+    [
+     66.38,
+     49.12
+    ],
+    [
+     66.5,
+     47.12
+    ]
+   ],
+   "z": 0.0
+  },
+  {
+   "key": "main/R27",
+   "name": "BROOM",
+   "use": "closet",
+   "unit": "house",
+   "storey": "main",
+   "area_sf": 7.8,
+   "heat_btuh": 9,
+   "cool_btuh": 0,
+   "win_sf": 0,
+   "ext_wall_ft": 0,
+   "ceil_sf": 0.0,
+   "floor_sf": 7.8,
+   "centroid": [
+    75.57,
+    62.26
+   ],
+   "poly": [
+    [
+     74.88,
+     60.75
+    ],
+    [
+     73.62,
+     62.38
+    ],
+    [
+     73.75,
+     62.38
+    ],
+    [
+     75.25,
+     63.88
+    ],
+    [
+     76.88,
+     63.88
+    ],
+    [
+     76.75,
+     60.62
+    ]
+   ],
+   "z": 0.0
+  },
+  {
+   "key": "main/R29",
+   "name": "BATH",
+   "use": "bath",
+   "unit": "house",
+   "storey": "main",
+   "area_sf": 38.8,
+   "heat_btuh": 100,
+   "cool_btuh": 12,
+   "win_sf": 0,
+   "ext_wall_ft": 2.0,
+   "ceil_sf": 12.5,
+   "floor_sf": 38.8,
+   "centroid": [
+    63.79,
+    33.19
+   ],
+   "poly": [
+    [
+     60.5,
+     29.88
+    ],
+    [
+     60.5,
+     34.25
+    ],
+    [
+     61.75,
+     35.5
+    ],
+    [
+     63.62,
+     35.62
+    ],
+    [
+     63.5,
+     37.5
+    ],
+    [
+     63.62,
+     37.5
+    ],
+    [
+     66.5,
+     37.25
+    ],
+    [
+     66.62,
+     34.25
+    ],
+    [
+     64.88,
+     34.12
+    ],
+    [
+     66.62,
+     34.0
+    ],
+    [
+     66.5,
+     29.88
+    ]
+   ],
+   "z": 0.0
+  },
+  {
+   "key": "main/R30",
+   "name": "W.C.",
+   "use": "bath",
+   "unit": "house",
+   "storey": "main",
+   "area_sf": 24.7,
+   "heat_btuh": 99,
+   "cool_btuh": 23,
+   "win_sf": 0,
+   "ext_wall_ft": 2.0,
+   "ceil_sf": 24.7,
+   "floor_sf": 24.7,
+   "centroid": [
+    59.6,
+    35.46
+   ],
+   "poly": [
+    [
+     58.38,
+     29.88
+    ],
+    [
+     58.38,
+     41.12
+    ],
+    [
+     59.0,
+     41.12
+    ],
+    [
+     59.5,
+     38.88
+    ],
+    [
+     60.5,
+     39.38
+    ],
+    [
+     60.62,
+     41.12
+    ],
+    [
+     61.12,
+     41.12
+    ],
+    [
+     61.12,
+     36.0
+    ],
+    [
+     60.62,
+     35.62
+    ],
+    [
+     61.62,
+     35.5
+    ],
+    [
+     60.38,
+     34.25
+    ],
+    [
+     60.38,
+     29.88
+    ]
+   ],
+   "z": 0.0
+  },
+  {
+   "key": "main/R31",
+   "name": "VANITY",
+   "use": "bath",
+   "unit": "house",
+   "storey": "main",
+   "area_sf": 16.6,
+   "heat_btuh": 19,
+   "cool_btuh": 0,
+   "win_sf": 0,
+   "ext_wall_ft": 0,
+   "ceil_sf": 0.0,
+   "floor_sf": 16.6,
+   "centroid": [
+    65.03,
+    40.27
+   ],
+   "poly": [
+    [
+     63.5,
+     37.62
+    ],
+    [
+     63.5,
+     42.62
+    ],
+    [
+     64.5,
+     43.12
+    ],
+    [
+     66.5,
+     43.12
+    ],
+    [
+     66.5,
+     37.38
+    ]
+   ],
+   "z": 0.0
+  },
+  {
+   "key": "main/R32",
+   "name": "shower",
+   "use": "bath",
+   "unit": "house",
+   "storey": "main",
+   "area_sf": 14.0,
+   "heat_btuh": 18,
+   "cool_btuh": 1,
+   "win_sf": 0,
+   "ext_wall_ft": 0,
+   "ceil_sf": 1.6,
+   "floor_sf": 14.0,
+   "centroid": [
+    64.33,
+    44.93
+   ],
+   "poly": [
+    [
+     63.5,
+     42.75
+    ],
+    [
+     63.75,
+     43.75
+    ],
+    [
+     61.75,
+     43.75
+    ],
+    [
+     61.75,
+     44.25
+    ],
+    [
+     62.38,
+     44.38
+    ],
+    [
+     61.75,
+     46.5
+    ],
+    [
+     66.5,
+     46.5
+    ],
+    [
+     66.5,
+     43.25
+    ],
+    [
+     64.5,
+     43.25
+    ]
+   ],
+   "z": 0.0
+  },
+  {
+   "key": "main/R33",
+   "name": "COATS",
+   "use": "closet",
+   "unit": "house",
+   "storey": "main",
+   "area_sf": 76.9,
+   "heat_btuh": 110,
+   "cool_btuh": 17,
+   "win_sf": 0,
+   "ext_wall_ft": 0,
+   "ceil_sf": 19.0,
+   "floor_sf": 76.9,
+   "centroid": [
+    65.49,
+    53.02
+   ],
+   "poly": [
+    [
+     59.5,
+     49.5
+    ],
+    [
+     59.38,
+     55.0
+    ],
+    [
+     64.0,
+     55.0
+    ],
+    [
+     64.12,
+     57.38
+    ],
+    [
+     64.25,
+     57.38
+    ],
+    [
+     70.62,
+     57.25
+    ],
+    [
+     70.62,
+     50.25
+    ],
+    [
+     71.12,
+     49.5
+    ],
+    [
+     71.0,
+     49.5
+    ]
+   ],
+   "z": 0.0
+  },
+  {
+   "key": "main/R34",
+   "name": "LIVING ROOM",
+   "use": "living",
+   "unit": "house",
+   "storey": "main",
+   "area_sf": 208.3,
+   "heat_btuh": 1277,
+   "cool_btuh": 416,
+   "win_sf": 36.2,
+   "ext_wall_ft": 29.7,
+   "ceil_sf": 31.7,
+   "floor_sf": 208.3,
+   "centroid": [
+    45.28,
+    34.5
+   ],
+   "poly": [
+    [
+     33.88,
+     29.25
+    ],
+    [
+     33.5,
+     30.88
+    ],
+    [
+     32.88,
+     31.12
+    ],
+    [
+     32.88,
+     33.12
+    ],
+    [
+     33.62,
+     33.25
+    ],
+    [
+     32.88,
+     33.38
+    ],
+    [
+     32.88,
+     35.5
+    ],
+    [
+     33.5,
+     35.75
+    ],
+    [
+     33.5,
+     36.25
+    ],
+    [
+     32.88,
+     36.38
+    ],
+    [
+     32.88,
+     38.88
+    ],
+    [
+     33.0,
+     38.88
+    ],
+    [
+     54.5,
+     38.75
+    ],
+    [
+     54.62,
+     38.0
+    ],
+    [
+     55.0,
+     38.38
+    ],
+    [
+     57.75,
+     38.38
+    ],
+    [
+     57.88,
+     38.0
+    ],
+    [
+     57.75,
+     29.88
+    ],
+    [
+     47.62,
+     29.88
+    ],
+    [
+     47.5,
+     32.0
+    ],
+    [
+     40.5,
+     32.0
+    ],
+    [
+     40.38,
+     30.12
+    ],
+    [
+     39.75,
+     30.0
+    ],
+    [
+     39.5,
+     29.25
+    ],
+    [
+     36.88,
+     29.25
+    ],
+    [
+     36.75,
+     30.12
+    ],
+    [
+     36.62,
+     29.25
+    ]
+   ],
+   "z": 0.0
+  },
+  {
+   "key": "main/R35",
+   "name": "GREAT ROOM",
+   "use": "living",
+   "unit": "house",
+   "storey": "main",
+   "area_sf": 297.7,
+   "heat_btuh": 843,
+   "cool_btuh": 182,
+   "win_sf": 0,
+   "ext_wall_ft": 24.7,
+   "ceil_sf": 4.7,
+   "floor_sf": 297.7,
+   "centroid": [
+    42.26,
+    46.54
+   ],
+   "poly": [
+    [
+     32.88,
+     39.0
+    ],
+    [
+     33.62,
+     39.12
+    ],
+    [
+     32.88,
+     39.25
+    ],
+    [
+     32.88,
+     41.75
+    ],
+    [
+     33.5,
+     42.0
+    ],
+    [
+     33.5,
+     42.62
+    ],
+    [
+     32.88,
+     42.75
+    ],
+    [
+     32.88,
+     45.38
+    ],
+    [
+     33.62,
+     45.5
+    ],
+    [
+     32.88,
+     45.62
+    ],
+    [
+     32.88,
+     48.12
+    ],
+    [
+     33.5,
+     48.38
+    ],
+    [
+     33.5,
+     48.88
+    ],
+    [
+     32.88,
+     49.12
+    ],
+    [
+     32.88,
+     51.12
+    ],
+    [
+     33.62,
+     51.25
+    ],
+    [
+     32.88,
+     51.38
+    ],
+    [
+     32.88,
+     53.5
+    ],
+    [
+     33.5,
+     53.62
+    ],
+    [
+     33.5,
+     54.62
+    ],
+    [
+     34.25,
+     55.38
+    ],
+    [
+     34.38,
+     55.38
+    ],
+    [
+     34.88,
+     55.38
+    ],
+    [
+     35.75,
+     55.38
+    ],
+    [
+     37.5,
+     55.38
+    ],
+    [
+     38.38,
+     55.38
+    ],
+    [
+     38.88,
+     55.38
+    ],
+    [
+     39.62,
+     55.38
+    ],
+    [
+     42.25,
+     55.38
+    ],
+    [
+     42.5,
+     54.75
+    ],
+    [
+     43.62,
+     54.75
+    ],
+    [
+     43.5,
+     56.88
+    ],
+    [
+     45.5,
+     56.0
+    ],
+    [
+     48.12,
+     56.0
+    ],
+    [
+     48.12,
+     49.5
+    ],
+    [
+     54.38,
+     43.25
+    ],
+    [
+     53.88,
+     42.88
+    ],
+    [
+     54.5,
+     42.75
+    ],
+    [
+     54.5,
+     38.88
+    ],
+    [
+     54.25,
+     38.88
+    ]
+   ],
+   "z": 0.0
+  },
+  {
+   "key": "main/R36",
+   "name": "POWDER",
+   "use": "powder",
+   "unit": "house",
+   "storey": "main",
+   "area_sf": 9.1,
+   "heat_btuh": 21,
+   "cool_btuh": 8,
+   "win_sf": 0,
+   "ext_wall_ft": 0,
+   "ceil_sf": 9.1,
+   "floor_sf": 9.1,
+   "centroid": [
+    56.98,
+    42.86
+   ],
+   "poly": [
+    [
+     55.0,
+     41.75
+    ],
+    [
+     55.0,
+     44.0
+    ],
+    [
+     55.5,
+     44.25
+    ],
+    [
+     57.0,
+     44.25
+    ],
+    [
+     57.38,
+     43.5
+    ],
+    [
+     58.12,
+     43.62
+    ],
+    [
+     61.12,
+     43.62
+    ],
+    [
+     59.5,
+     43.5
+    ],
+    [
+     58.88,
+     43.0
+    ],
+    [
+     59.38,
+     41.75
+    ]
+   ],
+   "z": 0.0
+  },
+  {
+   "key": "main/R37",
+   "name": "HALL",
+   "use": "circulation",
+   "unit": "house",
+   "storey": "main",
+   "area_sf": 105.8,
+   "heat_btuh": 216,
+   "cool_btuh": 73,
+   "win_sf": 0,
+   "ext_wall_ft": 0,
+   "ceil_sf": 79.7,
+   "floor_sf": 105.8,
+   "centroid": [
+    54.02,
+    50.47
+   ],
+   "poly": [
+    [
+     54.38,
+     43.38
+    ],
+    [
+     48.25,
+     49.5
+    ],
+    [
+     48.25,
+     56.0
+    ],
+    [
+     54.0,
+     56.0
+    ],
+    [
+     54.38,
+     55.75
+    ],
+    [
+     54.62,
+     55.0
+    ],
+    [
+     59.25,
+     55.0
+    ],
+    [
+     59.38,
+     49.5
+    ],
+    [
+     57.62,
+     49.38
+    ],
+    [
+     57.5,
+     46.62
+    ],
+    [
+     59.75,
+     46.5
+    ],
+    [
+     59.62,
+     45.12
+    ],
+    [
+     60.12,
+     44.38
+    ],
+    [
+     61.12,
+     44.25
+    ],
+    [
+     61.12,
+     43.75
+    ],
+    [
+     58.0,
+     43.75
+    ],
+    [
+     57.75,
+     44.38
+    ],
+    [
+     57.12,
+     44.25
+    ],
+    [
+     55.38,
+     44.38
+    ],
+    [
+     55.38,
+     46.88
+    ],
+    [
+     55.0,
+     47.12
+    ],
+    [
+     55.25,
+     49.25
+    ],
+    [
+     54.75,
+     49.5
+    ]
+   ],
+   "z": 0.0
+  },
+  {
+   "key": "main/R38",
+   "name": "KITCHEN",
+   "use": "kitchen",
+   "unit": "house",
+   "storey": "main",
+   "area_sf": 170.7,
+   "heat_btuh": 513,
+   "cool_btuh": 1438,
+   "win_sf": 0,
+   "ext_wall_ft": 11.6,
+   "ceil_sf": 69.6,
+   "floor_sf": 170.7,
+   "centroid": [
+    63.54,
+    63.83
+   ],
+   "poly": [
+    [
+     58.12,
+     55.5
+    ],
+    [
+     58.12,
+     56.0
+    ],
+    [
+     57.5,
+     56.12
+    ],
+    [
+     57.38,
+     57.38
+    ],
+    [
+     55.38,
+     57.25
+    ],
+    [
+     55.38,
+     59.5
+    ],
+    [
+     56.62,
+     61.0
+    ],
+    [
+     56.62,
+     65.5
+    ],
+    [
+     58.62,
+     67.5
+    ],
+    [
+     61.62,
+     67.5
+    ],
+    [
+     62.5,
+     68.38
+    ],
+    [
+     62.5,
+     70.62
+    ],
+    [
+     65.12,
+     70.88
+    ],
+    [
+     65.12,
+     72.5
+    ],
+    [
+     63.0,
+     72.62
+    ],
+    [
+     63.0,
+     73.25
+    ],
+    [
+     70.38,
+     72.88
+    ],
+    [
+     70.38,
+     68.12
+    ],
+    [
+     68.88,
+     68.0
+    ],
+    [
+     68.38,
+     67.12
+    ],
+    [
+     68.62,
+     63.75
+    ],
+    [
+     70.25,
+     63.62
+    ],
+    [
+     70.25,
+     61.5
+    ],
+    [
+     68.25,
+     61.62
+    ],
+    [
+     68.25,
+     59.62
+    ],
+    [
+     70.25,
+     59.62
+    ],
+    [
+     70.25,
+     57.75
+    ],
+    [
+     66.38,
+     57.5
+    ],
+    [
+     60.38,
+     57.5
+    ],
+    [
+     60.25,
+     55.5
+    ]
+   ],
+   "z": 0.0
+  },
+  {
+   "key": "main/R39",
+   "name": "DINING",
+   "use": "living",
+   "unit": "house",
+   "storey": "main",
+   "area_sf": 107.1,
+   "heat_btuh": 380,
+   "cool_btuh": 270,
+   "win_sf": 0,
+   "ext_wall_ft": 6.3,
+   "ceil_sf": 107.1,
+   "floor_sf": 107.1,
+   "centroid": [
+    49.88,
+    60.53
+   ],
+   "poly": [
+    [
+     54.38,
+     55.88
+    ],
+    [
+     48.12,
+     56.12
+    ],
+    [
+     45.5,
+     56.12
+    ],
+    [
+     43.5,
+     57.0
+    ],
+    [
+     43.0,
+     57.5
+    ],
+    [
+     43.0,
+     59.88
+    ],
+    [
+     43.62,
+     60.0
+    ],
+    [
+     43.0,
+     60.12
+    ],
+    [
+     43.0,
+     62.62
+    ],
+    [
+     43.5,
+     62.75
+    ],
+    [
+     43.0,
+     63.75
+    ],
+    [
+     48.75,
+     63.75
+    ],
+    [
+     50.62,
+     65.38
+    ],
+    [
+     56.5,
+     65.38
+    ],
+    [
+     56.5,
+     61.0
+    ],
+    [
+     55.25,
+     59.5
+    ],
+    [
+     55.25,
+     57.25
+    ],
+    [
+     54.5,
+     57.25
+    ],
+    [
+     54.5,
+     55.88
+    ]
+   ],
+   "z": 0.0
+  },
+  {
+   "key": "main/R40",
+   "name": "GREAT ROOM",
+   "use": "living",
+   "unit": "house",
+   "storey": "main",
+   "area_sf": 113.0,
+   "heat_btuh": 883,
+   "cool_btuh": 282,
+   "win_sf": 0,
+   "ext_wall_ft": 30.4,
+   "ceil_sf": 112.8,
+   "floor_sf": 113.0,
+   "centroid": [
+    51.74,
+    68.31
+   ],
+   "poly": [
+    [
+     43.0,
+     63.88
+    ],
+    [
+     43.0,
+     65.88
+    ],
+    [
+     43.62,
+     66.0
+    ],
+    [
+     43.0,
+     66.12
+    ],
+    [
+     43.0,
+     68.5
+    ],
+    [
+     43.5,
+     68.75
+    ],
+    [
+     43.62,
+     70.75
+    ],
+    [
+     44.75,
+     70.75
+    ],
+    [
+     45.25,
+     71.38
+    ],
+    [
+     45.38,
+     71.38
+    ],
+    [
+     46.0,
+     71.38
+    ],
+    [
+     46.75,
+     71.38
+    ],
+    [
+     48.5,
+     71.38
+    ],
+    [
+     49.38,
+     71.38
+    ],
+    [
+     49.88,
+     71.38
+    ],
+    [
+     50.62,
+     71.38
+    ],
+    [
+     53.25,
+     71.38
+    ],
+    [
+     53.5,
+     70.75
+    ],
+    [
+     57.38,
+     70.88
+    ],
+    [
+     57.5,
+     72.75
+    ],
+    [
+     62.62,
+     73.25
+    ],
+    [
+     62.62,
+     72.62
+    ],
+    [
+     60.0,
+     72.5
+    ],
+    [
+     60.25,
+     70.5
+    ],
+    [
+     62.38,
+     70.62
+    ],
+    [
+     62.38,
+     68.38
+    ],
+    [
+     61.62,
+     67.62
+    ],
+    [
+     58.62,
+     67.62
+    ],
+    [
+     56.5,
+     65.5
+    ],
+    [
+     50.62,
+     65.5
+    ],
+    [
+     48.75,
+     63.88
+    ]
+   ],
+   "z": 0.0
+  },
+  {
+   "key": "upper/R3",
+   "name": "BEDROOM",
+   "use": "bedroom",
+   "unit": "house",
+   "storey": "upper",
+   "area_sf": 198.8,
+   "heat_btuh": 1633,
+   "cool_btuh": 597,
+   "win_sf": 11.2,
+   "ext_wall_ft": 51.1,
+   "ceil_sf": 198.8,
+   "floor_sf": 0.0,
+   "centroid": [
+    70.22,
+    20.7
+   ],
+   "poly": [
+    [
+     65.12,
+     13.62
+    ],
+    [
+     65.0,
+     14.25
+    ],
+    [
+     63.25,
+     14.25
+    ],
+    [
+     63.25,
+     16.75
+    ],
+    [
+     62.62,
+     17.0
+    ],
+    [
+     62.75,
+     20.75
+    ],
+    [
+     62.75,
+     24.38
+    ],
+    [
+     63.25,
+     24.5
+    ],
+    [
+     63.25,
+     25.88
+    ],
+    [
+     63.75,
+     26.12
+    ],
+    [
+     63.25,
+     30.88
+    ],
+    [
+     63.38,
+     30.88
+    ],
+    [
+     64.5,
+     31.12
+    ],
+    [
+     64.5,
+     26.75
+    ],
+    [
+     64.75,
+     27.62
+    ],
+    [
+     64.88,
+     27.62
+    ],
+    [
+     67.12,
+     28.25
+    ],
+    [
+     67.5,
+     25.5
+    ],
+    [
+     67.88,
+     25.62
+    ],
+    [
+     67.75,
+     27.75
+    ],
+    [
+     72.62,
+     27.75
+    ],
+    [
+     72.62,
+     26.0
+    ],
+    [
+     70.12,
+     26.0
+    ],
+    [
+     69.62,
+     25.62
+    ],
+    [
+     73.5,
+     25.5
+    ],
+    [
+     74.62,
+     26.25
+    ],
+    [
+     74.75,
+     25.5
+    ],
+    [
+     74.88,
+     27.0
+    ],
+    [
+     75.25,
+     27.12
+    ],
+    [
+     76.38,
+     26.62
+    ],
+    [
+     75.88,
+     25.5
+    ],
+    [
+     78.62,
+     25.25
+    ],
+    [
+     78.62,
+     23.38
+    ],
+    [
+     78.12,
+     23.25
+    ],
+    [
+     78.0,
+     14.25
+    ],
+    [
+     76.38,
+     14.25
+    ],
+    [
+     76.25,
+     13.62
+    ],
+    [
+     75.12,
+     13.62
+    ],
+    [
+     75.0,
+     14.38
+    ],
+    [
+     74.88,
+     13.62
+    ],
+    [
+     73.75,
+     13.62
+    ],
+    [
+     73.62,
+     14.25
+    ],
+    [
+     67.62,
+     14.25
+    ],
+    [
+     67.5,
+     13.62
+    ],
+    [
+     66.5,
+     13.62
+    ],
+    [
+     66.38,
+     15.25
+    ],
+    [
+     66.25,
+     13.62
+    ]
+   ],
+   "z": 11.2
+  },
+  {
+   "key": "upper/R7",
+   "name": "ENSUITE",
+   "use": "bath",
+   "unit": "house",
+   "storey": "upper",
+   "area_sf": 21.0,
+   "heat_btuh": 151,
+   "cool_btuh": 21,
+   "win_sf": 0,
+   "ext_wall_ft": 6.9,
+   "ceil_sf": 21.0,
+   "floor_sf": 0.0,
+   "centroid": [
+    74.76,
+    30.39
+   ],
+   "poly": [
+    [
+     73.25,
+     26.25
+    ],
+    [
+     73.38,
+     32.25
+    ],
+    [
+     72.5,
+     32.38
+    ],
+    [
+     72.38,
+     32.5
+    ],
+    [
+     73.0,
+     33.5
+    ],
+    [
+     73.25,
+     33.62
+    ],
+    [
+     76.38,
+     33.62
+    ],
+    [
+     76.38,
+     26.75
+    ],
+    [
+     75.12,
+     27.25
+    ],
+    [
+     75.5,
+     27.62
+    ],
+    [
+     74.88,
+     27.75
+    ],
+    [
+     74.75,
+     28.5
+    ],
+    [
+     74.62,
+     27.12
+    ]
+   ],
+   "z": 11.2
+  },
+  {
+   "key": "upper/R13",
+   "name": "BATH",
+   "use": "bath",
+   "unit": "house",
+   "storey": "upper",
+   "area_sf": 21.2,
+   "heat_btuh": 122,
+   "cool_btuh": 21,
+   "win_sf": 0,
+   "ext_wall_ft": 4.8,
+   "ceil_sf": 21.2,
+   "floor_sf": 5.9,
+   "centroid": [
+    75.61,
+    52.87
+   ],
+   "poly": [
+    [
+     73.25,
+     50.75
+    ],
+    [
+     73.12,
+     51.25
+    ],
+    [
+     72.62,
+     51.25
+    ],
+    [
+     72.75,
+     54.12
+    ],
+    [
+     73.0,
+     54.5
+    ],
+    [
+     73.5,
+     54.5
+    ],
+    [
+     73.62,
+     53.75
+    ],
+    [
+     74.38,
+     53.25
+    ],
+    [
+     75.0,
+     54.0
+    ],
+    [
+     75.12,
+     55.5
+    ],
+    [
+     78.0,
+     55.5
+    ],
+    [
+     78.0,
+     50.75
+    ]
+   ],
+   "z": 11.2
+  },
+  {
+   "key": "upper/R15",
+   "name": "HALL",
+   "use": "circulation",
+   "unit": "house",
+   "storey": "upper",
+   "area_sf": 14.9,
+   "heat_btuh": 59,
+   "cool_btuh": 14,
+   "win_sf": 0,
+   "ext_wall_ft": 2.2,
+   "ceil_sf": 14.9,
+   "floor_sf": 0.0,
+   "centroid": [
+    65.96,
+    31.37
+   ],
+   "poly": [
+    [
+     64.75,
+     27.75
+    ],
+    [
+     64.75,
+     34.38
+    ],
+    [
+     65.38,
+     34.0
+    ],
+    [
+     65.62,
+     34.5
+    ],
+    [
+     65.75,
+     34.38
+    ],
+    [
+     67.25,
+     34.38
+    ],
+    [
+     67.38,
+     34.25
+    ],
+    [
+     67.12,
+     28.88
+    ],
+    [
+     65.88,
+     28.88
+    ],
+    [
+     66.0,
+     28.25
+    ],
+    [
+     66.75,
+     28.25
+    ]
+   ],
+   "z": 11.2
+  },
+  {
+   "key": "upper/R18",
+   "name": "DEN",
+   "use": "office",
+   "unit": "house",
+   "storey": "upper",
+   "area_sf": 452.1,
+   "heat_btuh": 2828,
+   "cool_btuh": 4132,
+   "win_sf": 138.8,
+   "ext_wall_ft": 38.3,
+   "ceil_sf": 452.1,
+   "floor_sf": 25.5,
+   "centroid": [
+    70.91,
+    49.66
+   ],
+   "poly": [
+    [
+     63.25,
+     31.0
+    ],
+    [
+     63.25,
+     31.12
+    ],
+    [
+     62.88,
+     37.25
+    ],
+    [
+     62.88,
+     39.75
+    ],
+    [
+     62.88,
+     42.75
+    ],
+    [
+     62.75,
+     43.38
+    ],
+    [
+     62.88,
+     43.5
+    ],
+    [
+     62.88,
+     48.12
+    ],
+    [
+     63.12,
+     48.0
+    ],
+    [
+     63.38,
+     48.25
+    ],
+    [
+     62.88,
+     59.25
+    ],
+    [
+     63.88,
+     59.88
+    ],
+    [
+     62.75,
+     60.0
+    ],
+    [
+     62.75,
+     61.5
+    ],
+    [
+     62.75,
+     63.25
+    ],
+    [
+     63.38,
+     64.12
+    ],
+    [
+     67.12,
+     64.38
+    ],
+    [
+     67.88,
+     64.38
+    ],
+    [
+     68.0,
+     64.12
+    ],
+    [
+     68.12,
+     64.38
+    ],
+    [
+     69.0,
+     65.0
+    ],
+    [
+     69.0,
+     64.75
+    ],
+    [
+     69.25,
+     64.12
+    ],
+    [
+     82.12,
+     64.12
+    ],
+    [
+     82.12,
+     63.25
+    ],
+    [
+     82.62,
+     63.0
+    ],
+    [
+     82.62,
+     60.38
+    ],
+    [
+     82.12,
+     60.25
+    ],
+    [
+     82.62,
+     60.12
+    ],
+    [
+     82.62,
+     57.62
+    ],
+    [
+     82.12,
+     57.25
+    ],
+    [
+     82.0,
+     56.12
+    ],
+    [
+     70.25,
+     56.0
+    ],
+    [
+     70.38,
+     53.38
+    ],
+    [
+     70.75,
+     54.0
+    ],
+    [
+     72.62,
+     54.0
+    ],
+    [
+     72.62,
+     53.88
+    ],
+    [
+     72.5,
+     52.38
+    ],
+    [
+     70.25,
+     52.25
+    ],
+    [
+     72.5,
+     52.12
+    ],
+    [
+     72.5,
+     51.25
+    ],
+    [
+     70.25,
+     51.0
+    ],
+    [
+     70.38,
+     50.25
+    ],
+    [
+     78.12,
+     50.25
+    ],
+    [
+     78.12,
+     48.38
+    ],
+    [
+     78.62,
+     48.25
+    ],
+    [
+     78.62,
+     46.38
+    ],
+    [
+     78.12,
+     46.25
+    ],
+    [
+     78.62,
+     45.75
+    ],
+    [
+     78.62,
+     43.88
+    ],
+    [
+     78.12,
+     43.75
+    ],
+    [
+     78.62,
+     42.62
+    ],
+    [
+     78.12,
+     42.5
+    ],
+    [
+     78.62,
+     42.38
+    ],
+    [
+     78.62,
+     41.38
+    ],
+    [
+     78.12,
+     41.25
+    ],
+    [
+     78.0,
+     34.62
+    ],
+    [
+     67.38,
+     34.38
+    ],
+    [
+     65.75,
+     34.5
+    ],
+    [
+     65.62,
+     34.75
+    ],
+    [
+     64.75,
+     34.88
+    ],
+    [
+     64.62,
+     35.75
+    ],
+    [
+     64.5,
+     31.25
+    ]
+   ],
+   "z": 11.2
+  },
+  {
+   "key": "upper/R21",
+   "name": "ROOM",
+   "use": "living",
+   "unit": "house",
+   "storey": "upper",
+   "area_sf": 491.2,
+   "heat_btuh": 2741,
+   "cool_btuh": 2375,
+   "win_sf": 93.1,
+   "ext_wall_ft": 60.4,
+   "ceil_sf": 491.2,
+   "floor_sf": 3.7,
+   "centroid": [
+    43.16,
+    42.19
+   ],
+   "poly": [
+    [
+     47.5,
+     30.12
+    ],
+    [
+     47.38,
+     31.12
+    ],
+    [
+     40.25,
+     31.12
+    ],
+    [
+     40.0,
+     30.25
+    ],
+    [
+     33.25,
+     30.25
+    ],
+    [
+     32.88,
+     33.25
+    ],
+    [
+     35.12,
+     33.38
+    ],
+    [
+     32.88,
+     33.5
+    ],
+    [
+     32.88,
+     35.62
+    ],
+    [
+     33.25,
+     35.88
+    ],
+    [
+     32.88,
+     39.12
+    ],
+    [
+     33.38,
+     39.25
+    ],
+    [
+     32.88,
+     39.38
+    ],
+    [
+     32.88,
+     42.0
+    ],
+    [
+     33.25,
+     42.25
+    ],
+    [
+     32.88,
+     45.12
+    ],
+    [
+     33.38,
+     45.25
+    ],
+    [
+     32.88,
+     45.38
+    ],
+    [
+     32.88,
+     48.38
+    ],
+    [
+     33.25,
+     48.75
+    ],
+    [
+     32.88,
+     51.12
+    ],
+    [
+     33.38,
+     51.25
+    ],
+    [
+     32.88,
+     51.38
+    ],
+    [
+     32.88,
+     53.75
+    ],
+    [
+     33.25,
+     53.88
+    ],
+    [
+     33.38,
+     55.0
+    ],
+    [
+     47.88,
+     55.0
+    ],
+    [
+     48.12,
+     53.38
+    ],
+    [
+     54.25,
+     47.25
+    ],
+    [
+     54.25,
+     30.12
+    ]
+   ],
+   "z": 11.2
+  },
+  {
+   "key": "upper/R23",
+   "name": "LANDING",
+   "use": "circulation",
+   "unit": "house",
+   "storey": "upper",
+   "area_sf": 64.5,
+   "heat_btuh": 1498,
+   "cool_btuh": 2485,
+   "win_sf": 90.6,
+   "ext_wall_ft": 18.2,
+   "ceil_sf": 64.5,
+   "floor_sf": 55.7,
+   "centroid": [
+    79.77,
+    73.8
+   ],
+   "poly": [
+    [
+     78.62,
+     67.0
+    ],
+    [
+     77.25,
+     68.38
+    ],
+    [
+     76.38,
+     68.12
+    ],
+    [
+     76.38,
+     70.25
+    ],
+    [
+     77.75,
+     71.88
+    ],
+    [
+     77.75,
+     81.0
+    ],
+    [
+     82.12,
+     81.0
+    ],
+    [
+     82.12,
+     67.12
+    ]
+   ],
+   "z": 11.2
+  },
+  {
+   "key": "upper/R24",
+   "name": "BEDROOM",
+   "use": "bedroom",
+   "unit": "house",
+   "storey": "upper",
+   "area_sf": 214.2,
+   "heat_btuh": 1071,
+   "cool_btuh": 434,
+   "win_sf": 0,
+   "ext_wall_ft": 33.1,
+   "ceil_sf": 214.2,
+   "floor_sf": 137.9,
+   "centroid": [
+    69.77,
+    73.72
+   ],
+   "poly": [
+    [
+     63.25,
+     64.62
+    ],
+    [
+     63.25,
+     71.62
+    ],
+    [
+     62.62,
+     71.88
+    ],
+    [
+     62.62,
+     79.25
+    ],
+    [
+     63.25,
+     79.5
+    ],
+    [
+     63.25,
+     80.88
+    ],
+    [
+     65.0,
+     80.88
+    ],
+    [
+     65.12,
+     81.5
+    ],
+    [
+     66.25,
+     81.5
+    ],
+    [
+     66.38,
+     79.62
+    ],
+    [
+     66.5,
+     81.5
+    ],
+    [
+     67.5,
+     81.5
+    ],
+    [
+     67.62,
+     80.88
+    ],
+    [
+     73.75,
+     81.0
+    ],
+    [
+     73.88,
+     81.5
+    ],
+    [
+     74.88,
+     81.5
+    ],
+    [
+     75.0,
+     81.0
+    ],
+    [
+     75.12,
+     81.5
+    ],
+    [
+     77.62,
+     81.0
+    ],
+    [
+     77.62,
+     71.88
+    ],
+    [
+     76.25,
+     70.25
+    ],
+    [
+     76.25,
+     68.12
+    ],
+    [
+     75.88,
+     67.5
+    ],
+    [
+     74.75,
+     67.75
+    ],
+    [
+     74.62,
+     68.25
+    ],
+    [
+     74.5,
+     67.62
+    ],
+    [
+     73.38,
+     67.38
+    ],
+    [
+     72.12,
+     68.38
+    ],
+    [
+     70.25,
+     66.88
+    ],
+    [
+     70.25,
+     64.62
+    ],
+    [
+     69.38,
+     64.62
+    ],
+    [
+     69.25,
+     67.12
+    ],
+    [
+     69.0,
+     65.12
+    ],
+    [
+     68.12,
+     64.5
+    ]
+   ],
+   "z": 11.2
+  }
+ ],
+ "systems": [
+  {
+   "unit": "house",
+   "kind": "ducted_multizone",
+   "outdoor": [
+    {
+     "part": "eq_mz_60",
+     "kbtuh": 60,
+     "pos": [
+      45.28,
+      29.5
+     ],
+     "wall": [
+      45.28,
+      32.0
+     ],
+     "facing": "N",
+     "cap_at_design": 55992,
+     "kind": "multi",
+     "forced": true,
+     "where": "at the electrician's Heat pump condenser (LIVING ROOM, electrical/jobs/semiahmoo/devices.json)",
+     "unit": "house",
+     "lineset_ft": 111
+    }
+   ],
+   "indoor": [
+    {
+     "part": "eq_duin_18",
+     "kbtuh": 18,
+     "room": "LAUNDRY",
+     "storey": "main",
+     "cfm": 525,
+     "src": "rule: first LAUNDRY|UTIL room"
+    },
+    {
+     "part": "eq_duin_12",
+     "kbtuh": 12,
+     "room": "HALL",
+     "storey": "upper",
+     "cfm": 458,
+     "src": "rule: first CLOS|CLST|HALL|LANDING room"
+    }
+   ],
+   "registers": [
+    {
+     "room": "YOGA",
+     "storey": "main",
+     "cfm": 53,
+     "duct_in": 6
+    },
+    {
+     "room": "ENTRY",
+     "storey": "main",
+     "cfm": 66,
+     "duct_in": 6
+    },
+    {
+     "room": "BATH",
+     "storey": "main",
+     "cfm": 30,
+     "duct_in": 5
+    },
+    {
+     "room": "LIVING ROOM",
+     "storey": "main",
+     "cfm": 83,
+     "duct_in": 6
+    },
+    {
+     "room": "GREAT ROOM",
+     "storey": "main",
+     "cfm": 55,
+     "duct_in": 6
+    },
+    {
+     "room": "HALL",
+     "storey": "main",
+     "cfm": 30,
+     "duct_in": 5
+    },
+    {
+     "room": "KITCHEN",
+     "storey": "main",
+     "cfm": 51,
+     "duct_in": 6
+    },
+    {
+     "room": "KITCHEN",
+     "storey": "main",
+     "cfm": 51,
+     "duct_in": 6
+    },
+    {
+     "room": "DINING",
+     "storey": "main",
+     "cfm": 30,
+     "duct_in": 5
+    },
+    {
+     "room": "PRIMARY",
+     "storey": "main",
+     "cfm": 59,
+     "duct_in": 6
+    },
+    {
+     "room": "GREAT ROOM",
+     "storey": "main",
+     "cfm": 58,
+     "duct_in": 6
+    },
+    {
+     "room": "hall",
+     "storey": "main",
+     "cfm": 30,
+     "duct_in": 5
+    },
+    {
+     "room": "DEN",
+     "storey": "upper",
+     "cfm": 82,
+     "duct_in": 6
+    },
+    {
+     "room": "DEN",
+     "storey": "upper",
+     "cfm": 82,
+     "duct_in": 6
+    },
+    {
+     "room": "ROOM",
+     "storey": "upper",
+     "cfm": 49,
+     "duct_in": 5
+    },
+    {
+     "room": "ROOM",
+     "storey": "upper",
+     "cfm": 49,
+     "duct_in": 5
+    },
+    {
+     "room": "LANDING",
+     "storey": "upper",
+     "cfm": 49,
+     "duct_in": 5
+    },
+    {
+     "room": "LANDING",
+     "storey": "upper",
+     "cfm": 49,
+     "duct_in": 5
+    },
+    {
+     "room": "BEDROOM",
+     "storey": "upper",
+     "cfm": 39,
+     "duct_in": 5
+    },
+    {
+     "room": "BEDROOM",
+     "storey": "upper",
+     "cfm": 59,
+     "duct_in": 6
+    }
+   ],
+   "returns": [
+    {
+     "room": "ENTRY",
+     "storey": "main",
+     "cfm": 596,
+     "duct_in": 12,
+     "grille": "16x20"
+    },
+    {
+     "room": "HALL",
+     "storey": "upper",
+     "cfm": 458,
+     "duct_in": 12,
+     "grille": "14x20"
+    }
+   ],
+   "total_heat": 23560,
+   "total_cool": 21777,
+   "cap_at_design": 55992
+  }
+ ],
+ "items": [
+  {
+   "kind": "outdoor",
+   "part": "eq_mz_60",
+   "pos": [
+    45.28,
+    29.5
+   ],
+   "z": 0.0,
+   "storey": "main",
+   "room": null,
+   "note": "60k outdoor unit",
+   "kbtuh": 60,
+   "n": [
+    -0.0,
+    -1.0
+   ]
+  },
+  {
+   "kind": "ahu",
+   "part": "eq_duin_18",
+   "pos": [
+    75.77,
+    66.73
+   ],
+   "z": 0.0,
+   "storey": "main",
+   "room": "main/R21",
+   "note": "18k ducted unit",
+   "kbtuh": 18
+  },
+  {
+   "kind": "register",
+   "part": "tr_reg_floor",
+   "pos": [
+    77.32,
+    40.23
+   ],
+   "z": 0.0,
+   "storey": "main",
+   "room": "main/R15",
+   "note": "",
+   "cfm": 53
+  },
+  {
+   "kind": "register",
+   "part": "tr_reg_floor",
+   "pos": [
+    79.05,
+    56.81
+   ],
+   "z": 0.0,
+   "storey": "main",
+   "room": "main/R18",
+   "note": "",
+   "cfm": 66
+  },
+  {
+   "kind": "register",
+   "part": "tr_reg_floor",
+   "pos": [
+    63.5,
+    30.88
+   ],
+   "z": 0.0,
+   "storey": "main",
+   "room": "main/R29",
+   "note": "",
+   "cfm": 30
+  },
+  {
+   "kind": "register",
+   "part": "tr_reg_floor",
+   "pos": [
+    52.69,
+    30.88
+   ],
+   "z": 0.0,
+   "storey": "main",
+   "room": "main/R34",
+   "note": "",
+   "cfm": 83
+  },
+  {
+   "kind": "register",
+   "part": "tr_reg_floor",
+   "pos": [
+    33.88,
+    44.06
+   ],
+   "z": 0.0,
+   "storey": "main",
+   "room": "main/R35",
+   "note": "",
+   "cfm": 55
+  },
+  {
+   "kind": "register",
+   "part": "tr_reg_floor",
+   "pos": [
+    54.02,
+    50.47
+   ],
+   "z": 0.0,
+   "storey": "main",
+   "room": "main/R37",
+   "note": "",
+   "cfm": 30
+  },
+  {
+   "kind": "register",
+   "part": "tr_reg_floor",
+   "pos": [
+    66.64,
+    72.07
+   ],
+   "z": 0.0,
+   "storey": "main",
+   "room": "main/R38",
+   "note": "",
+   "cfm": 51
+  },
+  {
+   "kind": "register",
+   "part": "tr_reg_floor",
+   "pos": [
+    63.91,
+    69.75
+   ],
+   "z": 0.0,
+   "storey": "main",
+   "room": "main/R38",
+   "note": "",
+   "cfm": 51
+  },
+  {
+   "kind": "register",
+   "part": "tr_reg_floor",
+   "pos": [
+    44.0,
+    61.37
+   ],
+   "z": 0.0,
+   "storey": "main",
+   "room": "main/R39",
+   "note": "",
+   "cfm": 30
+  },
+  {
+   "kind": "register",
+   "part": "tr_reg_floor",
+   "pos": [
+    64.5,
+    27.75
+   ],
+   "z": 0.0,
+   "storey": "main",
+   "room": "main/R4",
+   "note": "",
+   "cfm": 59
+  },
+  {
+   "kind": "register",
+   "part": "tr_reg_floor",
+   "pos": [
+    60.16,
+    72.0
+   ],
+   "z": 0.0,
+   "storey": "main",
+   "room": "main/R40",
+   "note": "",
+   "cfm": 58
+  },
+  {
+   "kind": "register",
+   "part": "tr_reg_floor",
+   "pos": [
+    68.96,
+    32.04
+   ],
+   "z": 0.0,
+   "storey": "main",
+   "room": "main/R9",
+   "note": "",
+   "cfm": 30
+  },
+  {
+   "kind": "return",
+   "part": "tr_return",
+   "pos": [
+    75.38,
+    56.37
+   ],
+   "z": 0.5,
+   "storey": "main",
+   "room": "main/R18",
+   "note": "",
+   "cfm": 596
+  },
+  {
+   "kind": "ahu",
+   "part": "eq_duin_12",
+   "pos": [
+    65.96,
+    31.37
+   ],
+   "z": 11.2,
+   "storey": "upper",
+   "room": "upper/R15",
+   "note": "12k ducted unit",
+   "kbtuh": 12
+  },
+  {
+   "kind": "register",
+   "part": "tr_reg_floor",
+   "pos": [
+    77.06,
+    37.95
+   ],
+   "z": 11.2,
+   "storey": "upper",
+   "room": "upper/R18",
+   "note": "",
+   "cfm": 82
+  },
+  {
+   "kind": "register",
+   "part": "tr_reg_floor",
+   "pos": [
+    76.11,
+    57.06
+   ],
+   "z": 11.2,
+   "storey": "upper",
+   "room": "upper/R18",
+   "note": "",
+   "cfm": 82
+  },
+  {
+   "kind": "register",
+   "part": "tr_reg_floor",
+   "pos": [
+    40.63,
+    54.0
+   ],
+   "z": 11.2,
+   "storey": "upper",
+   "room": "upper/R21",
+   "note": "",
+   "cfm": 49
+  },
+  {
+   "kind": "register",
+   "part": "tr_reg_floor",
+   "pos": [
+    43.81,
+    32.12
+   ],
+   "z": 11.2,
+   "storey": "upper",
+   "room": "upper/R21",
+   "note": "",
+   "cfm": 49
+  },
+  {
+   "kind": "register",
+   "part": "tr_reg_floor",
+   "pos": [
+    81.12,
+    74.06
+   ],
+   "z": 11.2,
+   "storey": "upper",
+   "room": "upper/R23",
+   "note": "",
+   "cfm": 49
+  },
+  {
+   "kind": "register",
+   "part": "tr_reg_floor",
+   "pos": [
+    79.94,
+    80.0
+   ],
+   "z": 11.2,
+   "storey": "upper",
+   "room": "upper/R23",
+   "note": "",
+   "cfm": 49
+  },
+  {
+   "kind": "register",
+   "part": "tr_reg_floor",
+   "pos": [
+    63.62,
+    75.56
+   ],
+   "z": 11.2,
+   "storey": "upper",
+   "room": "upper/R24",
+   "note": "",
+   "cfm": 39
+  },
+  {
+   "kind": "register",
+   "part": "tr_reg_floor",
+   "pos": [
+    77.06,
+    18.76
+   ],
+   "z": 11.2,
+   "storey": "upper",
+   "room": "upper/R3",
+   "note": "",
+   "cfm": 59
+  },
+  {
+   "kind": "return",
+   "part": "tr_return",
+   "pos": [
+    65.96,
+    31.37
+   ],
+   "z": 19.7,
+   "storey": "upper",
+   "room": "upper/R15",
+   "note": "",
+   "cfm": 458
+  },
+  {
+   "kind": "fan",
+   "part": "fan_bath_50",
+   "pos": [
+    63.79,
+    33.19
+   ],
+   "z": 10.0,
+   "storey": "main",
+   "room": "main/R29",
+   "note": "bath fan (electrical allowance)"
+  },
+  {
+   "kind": "fan",
+   "part": "fan_bath_50",
+   "pos": [
+    59.6,
+    35.46
+   ],
+   "z": 10.0,
+   "storey": "main",
+   "room": "main/R30",
+   "note": "bath fan (electrical allowance)"
+  },
+  {
+   "kind": "fan",
+   "part": "fan_bath_50",
+   "pos": [
+    64.33,
+    44.93
+   ],
+   "z": 10.0,
+   "storey": "main",
+   "room": "main/R32",
+   "note": "bath fan (electrical allowance)"
+  },
+  {
+   "kind": "fan",
+   "part": "fan_bath_50",
+   "pos": [
+    56.98,
+    42.86
+   ],
+   "z": 10.0,
+   "storey": "main",
+   "room": "main/R36",
+   "note": "bath fan (electrical allowance)"
+  },
+  {
+   "kind": "fan",
+   "part": "fan_bath_50",
+   "pos": [
+    74.76,
+    30.39
+   ],
+   "z": 20.2,
+   "storey": "upper",
+   "room": "upper/R7",
+   "note": "bath fan (electrical allowance)"
+  },
+  {
+   "kind": "fan",
+   "part": "fan_bath_50",
+   "pos": [
+    75.61,
+    52.87
+   ],
+   "z": 20.2,
+   "storey": "upper",
+   "room": "upper/R13",
+   "note": "bath fan (electrical allowance)"
+  },
+  {
+   "kind": "erv",
+   "part": "eq_erv_s",
+   "pos": [
+    75.77,
+    66.73
+   ],
+   "z": 8.0,
+   "storey": "main",
+   "room": "main/R21",
+   "note": "ERV / HRV"
+  },
+  {
+   "kind": "grille",
+   "part": "vx_erv_grille",
+   "pos": [
+    72.89,
+    43.71
+   ],
+   "z": 9.7,
+   "storey": "main",
+   "room": "main/R15",
+   "note": "",
+   "kind2": "erv_supply"
+  },
+  {
+   "kind": "grille",
+   "part": "vx_erv_grille",
+   "pos": [
+    45.28,
+    34.5
+   ],
+   "z": 9.7,
+   "storey": "main",
+   "room": "main/R34",
+   "note": "",
+   "kind2": "erv_supply"
+  },
+  {
+   "kind": "grille",
+   "part": "vx_erv_grille",
+   "pos": [
+    42.26,
+    46.54
+   ],
+   "z": 9.7,
+   "storey": "main",
+   "room": "main/R35",
+   "note": "",
+   "kind2": "erv_supply"
+  },
+  {
+   "kind": "grille",
+   "part": "vx_erv_grille",
+   "pos": [
+    49.88,
+    60.53
+   ],
+   "z": 9.7,
+   "storey": "main",
+   "room": "main/R39",
+   "note": "",
+   "kind2": "erv_supply"
+  },
+  {
+   "kind": "grille",
+   "part": "vx_erv_grille",
+   "pos": [
+    70.74,
+    21.66
+   ],
+   "z": 9.7,
+   "storey": "main",
+   "room": "main/R4",
+   "note": "",
+   "kind2": "erv_supply"
+  },
+  {
+   "kind": "grille",
+   "part": "vx_erv_grille",
+   "pos": [
+    51.74,
+    68.31
+   ],
+   "z": 9.7,
+   "storey": "main",
+   "room": "main/R40",
+   "note": "",
+   "kind2": "erv_supply"
+  },
+  {
+   "kind": "grille",
+   "part": "vx_erv_grille",
+   "pos": [
+    70.91,
+    49.66
+   ],
+   "z": 19.9,
+   "storey": "upper",
+   "room": "upper/R18",
+   "note": "",
+   "kind2": "erv_supply"
+  },
+  {
+   "kind": "grille",
+   "part": "vx_erv_grille",
+   "pos": [
+    43.16,
+    42.19
+   ],
+   "z": 19.9,
+   "storey": "upper",
+   "room": "upper/R21",
+   "note": "",
+   "kind2": "erv_supply"
+  },
+  {
+   "kind": "grille",
+   "part": "vx_erv_grille",
+   "pos": [
+    69.77,
+    73.72
+   ],
+   "z": 19.9,
+   "storey": "upper",
+   "room": "upper/R24",
+   "note": "",
+   "kind2": "erv_supply"
+  },
+  {
+   "kind": "grille",
+   "part": "vx_erv_grille",
+   "pos": [
+    70.22,
+    20.7
+   ],
+   "z": 19.9,
+   "storey": "upper",
+   "room": "upper/R3",
+   "note": "",
+   "kind2": "erv_supply"
+  },
+  {
+   "kind": "grille",
+   "part": "vx_erv_grille",
+   "pos": [
+    75.77,
+    66.73
+   ],
+   "z": 9.7,
+   "storey": "main",
+   "room": "main/R21",
+   "note": "",
+   "kind2": "erv_exhaust"
+  },
+  {
+   "kind": "grille",
+   "part": "vx_erv_grille",
+   "pos": [
+    63.79,
+    33.19
+   ],
+   "z": 9.7,
+   "storey": "main",
+   "room": "main/R29",
+   "note": "",
+   "kind2": "erv_exhaust"
+  },
+  {
+   "kind": "grille",
+   "part": "vx_erv_grille",
+   "pos": [
+    59.6,
+    35.46
+   ],
+   "z": 9.7,
+   "storey": "main",
+   "room": "main/R30",
+   "note": "",
+   "kind2": "erv_exhaust"
+  },
+  {
+   "kind": "grille",
+   "part": "vx_erv_grille",
+   "pos": [
+    75.61,
+    52.87
+   ],
+   "z": 19.9,
+   "storey": "upper",
+   "room": "upper/R13",
+   "note": "",
+   "kind2": "erv_exhaust"
+  },
+  {
+   "kind": "grille",
+   "part": "vx_erv_grille",
+   "pos": [
+    74.76,
+    30.39
+   ],
+   "z": 19.9,
+   "storey": "upper",
+   "room": "upper/R7",
+   "note": "",
+   "kind2": "erv_exhaust"
+  },
+  {
+   "kind": "hood",
+   "part": "vx_erv_hood",
+   "pos": [
+    82.25,
+    69.02
+   ],
+   "z": 9.0,
+   "storey": "main",
+   "room": null,
+   "note": "outdoor-air intake"
+  },
+  {
+   "kind": "hood",
+   "part": "vx_erv_hood",
+   "pos": [
+    70.26,
+    69.43
+   ],
+   "z": 9.0,
+   "storey": "main",
+   "room": null,
+   "note": "exhaust outlet"
+  },
+  {
+   "kind": "hood_cap",
+   "part": "vx_hood_cap",
+   "pos": [
+    62.62,
+    73.14
+   ],
+   "z": 10.0,
+   "storey": "main",
+   "room": null,
+   "note": "range hood 400 cfm"
+  },
+  {
+   "kind": "dryer_cap",
+   "part": "vx_dryer_cap",
+   "pos": [
+    76.32,
+    71.22
+   ],
+   "z": 1.0,
+   "storey": "main",
+   "room": null,
+   "note": "dryer cap"
+  }
+ ],
+ "runs": [
+  {
+   "system": "refrigerant",
+   "size": "0.25x0.5",
+   "pts": [
+    [
+     75.767,
+     66.726,
+     1.0
+    ],
+    [
+     75.767,
+     66.726,
+     -1.2
+    ],
+    [
+     45.28,
+     66.726,
+     -1.2
+    ],
+    [
+     45.28,
+     32.0,
+     -1.2
+    ],
+    [
+     45.28,
+     29.5,
+     0.5
+    ]
+   ],
+   "ft": 71.9,
+   "storey": "main",
+   "note": "line set LAUNDRY -> outdoor"
+  },
+  {
+   "system": "trunk",
+   "size": 12,
+   "pts": [
+    [
+     33.88,
+     66.726,
+     -1.2
+    ],
+    [
+     79.045,
+     66.726,
+     -1.2
+    ]
+   ],
+   "ft": 45.2,
+   "storey": "main",
+   "note": "main supply trunk 12 in, 596 cfm"
+  },
+  {
+   "system": "supply",
+   "size": 6,
+   "pts": [
+    [
+     77.316,
+     66.726,
+     -1.2
+    ],
+    [
+     77.316,
+     40.226,
+     -1.2
+    ],
+    [
+     77.316,
+     40.226,
+     0.0
+    ]
+   ],
+   "ft": 28.5,
+   "storey": "main",
+   "note": "branch to YOGA 53 cfm"
+  },
+  {
+   "system": "supply",
+   "size": 6,
+   "pts": [
+    [
+     79.045,
+     66.726,
+     -1.2
+    ],
+    [
+     79.045,
+     56.815,
+     -1.2
+    ],
+    [
+     79.045,
+     56.815,
+     0.0
+    ]
+   ],
+   "ft": 11.9,
+   "storey": "main",
+   "note": "branch to ENTRY 66 cfm"
+  },
+  {
+   "system": "supply",
+   "size": 5,
+   "pts": [
+    [
+     63.5,
+     66.726,
+     -1.2
+    ],
+    [
+     63.5,
+     30.88,
+     -1.2
+    ],
+    [
+     63.5,
+     30.88,
+     0.0
+    ]
+   ],
+   "ft": 37.8,
+   "storey": "main",
+   "note": "branch to BATH 30 cfm"
+  },
+  {
+   "system": "supply",
+   "size": 6,
+   "pts": [
+    [
+     52.685,
+     66.726,
+     -1.2
+    ],
+    [
+     52.685,
+     30.88,
+     -1.2
+    ],
+    [
+     52.685,
+     30.88,
+     0.0
+    ]
+   ],
+   "ft": 37.8,
+   "storey": "main",
+   "note": "branch to LIVING ROOM 83 cfm"
+  },
+  {
+   "system": "supply",
+   "size": 6,
+   "pts": [
+    [
+     33.88,
+     66.726,
+     -1.2
+    ],
+    [
+     33.88,
+     44.065,
+     -1.2
+    ],
+    [
+     33.88,
+     44.065,
+     0.0
+    ]
+   ],
+   "ft": 24.7,
+   "storey": "main",
+   "note": "branch to GREAT ROOM 55 cfm"
+  },
+  {
+   "system": "supply",
+   "size": 5,
+   "pts": [
+    [
+     54.02,
+     66.726,
+     -1.2
+    ],
+    [
+     54.02,
+     50.47,
+     -1.2
+    ],
+    [
+     54.02,
+     50.47,
+     0.0
+    ]
+   ],
+   "ft": 18.3,
+   "storey": "main",
+   "note": "branch to HALL 30 cfm"
+  },
+  {
+   "system": "supply",
+   "size": 6,
+   "pts": [
+    [
+     66.64,
+     66.726,
+     -1.2
+    ],
+    [
+     66.64,
+     72.066,
+     -1.2
+    ],
+    [
+     66.64,
+     72.066,
+     0.0
+    ]
+   ],
+   "ft": 7.3,
+   "storey": "main",
+   "note": "branch to KITCHEN 51 cfm"
+  },
+  {
+   "system": "supply",
+   "size": 6,
+   "pts": [
+    [
+     63.909,
+     66.726,
+     -1.2
+    ],
+    [
+     63.909,
+     69.755,
+     -1.2
+    ],
+    [
+     63.909,
+     69.755,
+     0.0
+    ]
+   ],
+   "ft": 5.0,
+   "storey": "main",
+   "note": "branch to KITCHEN 51 cfm"
+  },
+  {
+   "system": "supply",
+   "size": 5,
+   "pts": [
+    [
+     44.0,
+     66.726,
+     -1.2
+    ],
+    [
+     44.0,
+     61.37,
+     -1.2
+    ],
+    [
+     44.0,
+     61.37,
+     0.0
+    ]
+   ],
+   "ft": 7.4,
+   "storey": "main",
+   "note": "branch to DINING 30 cfm"
+  },
+  {
+   "system": "supply",
+   "size": 6,
+   "pts": [
+    [
+     64.5,
+     66.726,
+     -1.2
+    ],
+    [
+     64.5,
+     27.75,
+     -1.2
+    ],
+    [
+     64.5,
+     27.75,
+     0.0
+    ]
+   ],
+   "ft": 41.0,
+   "storey": "main",
+   "note": "branch to PRIMARY 59 cfm"
+  },
+  {
+   "system": "supply",
+   "size": 6,
+   "pts": [
+    [
+     60.157,
+     66.726,
+     -1.2
+    ],
+    [
+     60.157,
+     72.005,
+     -1.2
+    ],
+    [
+     60.157,
+     72.005,
+     0.0
+    ]
+   ],
+   "ft": 7.3,
+   "storey": "main",
+   "note": "branch to GREAT ROOM 58 cfm"
+  },
+  {
+   "system": "supply",
+   "size": 5,
+   "pts": [
+    [
+     68.96,
+     66.726,
+     -1.2
+    ],
+    [
+     68.96,
+     32.04,
+     -1.2
+    ],
+    [
+     68.96,
+     32.04,
+     0.0
+    ]
+   ],
+   "ft": 36.7,
+   "storey": "main",
+   "note": "branch to hall 30 cfm"
+  },
+  {
+   "system": "return",
+   "size": 12,
+   "pts": [
+    [
+     75.38,
+     56.37,
+     0.5
+    ],
+    [
+     75.38,
+     56.37,
+     -1.2
+    ],
+    [
+     75.767,
+     56.37,
+     -1.2
+    ],
+    [
+     75.767,
+     66.726,
+     -1.2
+    ]
+   ],
+   "ft": 13.7,
+   "storey": "main",
+   "note": "main central return 12 in"
+  },
+  {
+   "system": "refrigerant",
+   "size": "0.25x0.375",
+   "pts": [
+    [
+     65.957,
+     31.374,
+     12.2
+    ],
+    [
+     65.957,
+     31.374,
+     -1.2
+    ],
+    [
+     45.28,
+     31.374,
+     -1.2
+    ],
+    [
+     45.28,
+     32.0,
+     -1.2
+    ],
+    [
+     45.28,
+     29.5,
+     0.5
+    ]
+   ],
+   "ft": 39.2,
+   "storey": "upper",
+   "note": "line set HALL -> outdoor"
+  },
+  {
+   "system": "trunk",
+   "size": 12,
+   "pts": [
+    [
+     65.957,
+     18.763,
+     10.6
+    ],
+    [
+     65.957,
+     80.0,
+     10.6
+    ]
+   ],
+   "ft": 61.2,
+   "storey": "upper",
+   "note": "upper supply trunk 12 in, 458 cfm"
+  },
+  {
+   "system": "supply",
+   "size": 6,
+   "pts": [
+    [
+     65.957,
+     37.953,
+     10.6
+    ],
+    [
+     77.06,
+     37.953,
+     10.6
+    ],
+    [
+     77.06,
+     37.953,
+     11.2
+    ]
+   ],
+   "ft": 14.1,
+   "storey": "upper",
+   "note": "branch to DEN 82 cfm"
+  },
+  {
+   "system": "supply",
+   "size": 6,
+   "pts": [
+    [
+     65.957,
+     57.06,
+     10.6
+    ],
+    [
+     76.115,
+     57.06,
+     10.6
+    ],
+    [
+     76.115,
+     57.06,
+     11.2
+    ]
+   ],
+   "ft": 13.2,
+   "storey": "upper",
+   "note": "branch to DEN 82 cfm"
+  },
+  {
+   "system": "supply",
+   "size": 5,
+   "pts": [
+    [
+     65.957,
+     54.0,
+     10.6
+    ],
+    [
+     40.63,
+     54.0,
+     10.6
+    ],
+    [
+     40.63,
+     54.0,
+     11.2
+    ]
+   ],
+   "ft": 28.3,
+   "storey": "upper",
+   "note": "branch to ROOM 49 cfm"
+  },
+  {
+   "system": "supply",
+   "size": 5,
+   "pts": [
+    [
+     65.957,
+     32.12,
+     10.6
+    ],
+    [
+     43.815,
+     32.12,
+     10.6
+    ],
+    [
+     43.815,
+     32.12,
+     11.2
+    ]
+   ],
+   "ft": 25.1,
+   "storey": "upper",
+   "note": "branch to ROOM 49 cfm"
+  },
+  {
+   "system": "supply",
+   "size": 5,
+   "pts": [
+    [
+     65.957,
+     74.06,
+     10.6
+    ],
+    [
+     81.12,
+     74.06,
+     10.6
+    ],
+    [
+     81.12,
+     74.06,
+     11.2
+    ]
+   ],
+   "ft": 18.2,
+   "storey": "upper",
+   "note": "branch to LANDING 49 cfm"
+  },
+  {
+   "system": "supply",
+   "size": 5,
+   "pts": [
+    [
+     65.957,
+     80.0,
+     10.6
+    ],
+    [
+     79.935,
+     80.0,
+     10.6
+    ],
+    [
+     79.935,
+     80.0,
+     11.2
+    ]
+   ],
+   "ft": 17.0,
+   "storey": "upper",
+   "note": "branch to LANDING 49 cfm"
+  },
+  {
+   "system": "supply",
+   "size": 5,
+   "pts": [
+    [
+     65.957,
+     75.565,
+     10.6
+    ],
+    [
+     63.62,
+     75.565,
+     10.6
+    ],
+    [
+     63.62,
+     75.565,
+     11.2
+    ]
+   ],
+   "ft": 5.3,
+   "storey": "upper",
+   "note": "branch to BEDROOM 39 cfm"
+  },
+  {
+   "system": "supply",
+   "size": 6,
+   "pts": [
+    [
+     65.957,
+     18.763,
+     10.6
+    ],
+    [
+     77.06,
+     18.763,
+     10.6
+    ],
+    [
+     77.06,
+     18.763,
+     11.2
+    ]
+   ],
+   "ft": 14.1,
+   "storey": "upper",
+   "note": "branch to BEDROOM 59 cfm"
+  },
+  {
+   "system": "return",
+   "size": 12,
+   "pts": [
+    [
+     65.96,
+     31.37,
+     19.7
+    ],
+    [
+     65.96,
+     31.37,
+     10.6
+    ],
+    [
+     65.957,
+     31.37,
+     10.6
+    ],
+    [
+     65.957,
+     31.374,
+     10.6
+    ]
+   ],
+   "ft": 3.0,
+   "storey": "upper",
+   "note": "upper central return 12 in"
+  },
+  {
+   "system": "exhaust",
+   "size": 4,
+   "pts": [
+    [
+     63.79,
+     33.19,
+     10.0
+    ],
+    [
+     63.79,
+     33.19,
+     10.0
+    ],
+    [
+     63.79,
+     29.88,
+     10.0
+    ],
+    [
+     63.79,
+     27.38,
+     10.0
+    ]
+   ],
+   "ft": 4.8,
+   "storey": "main",
+   "note": "BATH -> wall cap (50 cfm on 4 in flex)"
+  },
+  {
+   "system": "exhaust",
+   "size": 4,
+   "pts": [
+    [
+     59.6,
+     35.46,
+     10.0
+    ],
+    [
+     59.6,
+     35.46,
+     10.0
+    ],
+    [
+     59.6,
+     29.88,
+     10.0
+    ],
+    [
+     59.6,
+     27.38,
+     10.0
+    ]
+   ],
+   "ft": 7.1,
+   "storey": "main",
+   "note": "W.C. -> wall cap (50 cfm on 4 in flex)"
+  },
+  {
+   "system": "exhaust",
+   "size": 4,
+   "pts": [
+    [
+     64.33,
+     44.93,
+     10.0
+    ],
+    [
+     78.367,
+     44.93,
+     10.0
+    ],
+    [
+     78.367,
+     41.638,
+     10.0
+    ],
+    [
+     80.864,
+     41.548,
+     10.0
+    ]
+   ],
+   "ft": 18.8,
+   "storey": "main",
+   "note": "shower -> wall cap (50 cfm on 4 in flex)"
+  },
+  {
+   "system": "exhaust",
+   "size": 4,
+   "pts": [
+    [
+     56.98,
+     42.86,
+     10.0
+    ],
+    [
+     56.737,
+     42.86,
+     10.0
+    ],
+    [
+     56.737,
+     29.88,
+     10.0
+    ],
+    [
+     56.737,
+     27.38,
+     10.0
+    ]
+   ],
+   "ft": 14.7,
+   "storey": "main",
+   "note": "POWDER -> wall cap (50 cfm on 4 in flex)"
+  },
+  {
+   "system": "exhaust",
+   "size": 4,
+   "pts": [
+    [
+     74.76,
+     30.39,
+     20.2
+    ],
+    [
+     76.38,
+     30.39,
+     20.2
+    ],
+    [
+     76.38,
+     30.39,
+     20.2
+    ],
+    [
+     78.88,
+     30.39,
+     20.2
+    ]
+   ],
+   "ft": 3.1,
+   "storey": "upper",
+   "note": "ENSUITE -> wall cap (50 cfm on 4 in flex)"
+  },
+  {
+   "system": "exhaust",
+   "size": 4,
+   "pts": [
+    [
+     75.61,
+     52.87,
+     20.2
+    ],
+    [
+     78.0,
+     52.87,
+     20.2
+    ],
+    [
+     78.0,
+     52.87,
+     20.2
+    ],
+    [
+     80.5,
+     52.87,
+     20.2
+    ]
+   ],
+   "ft": 3.9,
+   "storey": "upper",
+   "note": "BATH -> wall cap (50 cfm on 4 in flex)"
+  },
+  {
+   "system": "erv_supply",
+   "size": 6,
+   "pts": [
+    [
+     75.767,
+     66.726,
+     9.0
+    ],
+    [
+     75.767,
+     66.726,
+     9.7
+    ],
+    [
+     75.767,
+     21.66,
+     9.7
+    ],
+    [
+     75.767,
+     68.31,
+     9.7
+    ]
+   ],
+   "ft": 47.4,
+   "storey": "main",
+   "note": "ERV supply trunk (main)"
+  },
+  {
+   "system": "erv_supply",
+   "size": 4,
+   "pts": [
+    [
+     75.767,
+     43.71,
+     9.7
+    ],
+    [
+     72.89,
+     43.71,
+     9.7
+    ]
+   ],
+   "ft": 4.9,
+   "storey": "main",
+   "note": "supply to YOGA"
+  },
+  {
+   "system": "erv_supply",
+   "size": 4,
+   "pts": [
+    [
+     75.767,
+     34.5,
+     9.7
+    ],
+    [
+     45.28,
+     34.5,
+     9.7
+    ]
+   ],
+   "ft": 32.5,
+   "storey": "main",
+   "note": "supply to LIVING ROOM"
+  },
+  {
+   "system": "erv_supply",
+   "size": 4,
+   "pts": [
+    [
+     75.767,
+     46.54,
+     9.7
+    ],
+    [
+     42.26,
+     46.54,
+     9.7
+    ]
+   ],
+   "ft": 35.5,
+   "storey": "main",
+   "note": "supply to GREAT ROOM"
+  },
+  {
+   "system": "erv_supply",
+   "size": 4,
+   "pts": [
+    [
+     75.767,
+     60.53,
+     9.7
+    ],
+    [
+     49.88,
+     60.53,
+     9.7
+    ]
+   ],
+   "ft": 27.9,
+   "storey": "main",
+   "note": "supply to DINING"
+  },
+  {
+   "system": "erv_supply",
+   "size": 4,
+   "pts": [
+    [
+     75.767,
+     21.66,
+     9.7
+    ],
+    [
+     70.74,
+     21.66,
+     9.7
+    ]
+   ],
+   "ft": 7.0,
+   "storey": "main",
+   "note": "supply to PRIMARY"
+  },
+  {
+   "system": "erv_supply",
+   "size": 4,
+   "pts": [
+    [
+     75.767,
+     68.31,
+     9.7
+    ],
+    [
+     51.74,
+     68.31,
+     9.7
+    ]
+   ],
+   "ft": 26.0,
+   "storey": "main",
+   "note": "supply to GREAT ROOM"
+  },
+  {
+   "system": "erv_supply",
+   "size": 6,
+   "pts": [
+    [
+     75.767,
+     66.726,
+     9.0
+    ],
+    [
+     75.767,
+     66.726,
+     19.9
+    ],
+    [
+     75.767,
+     20.7,
+     19.9
+    ],
+    [
+     75.767,
+     73.72,
+     19.9
+    ]
+   ],
+   "ft": 63.9,
+   "storey": "upper",
+   "note": "ERV supply trunk (upper)"
+  },
+  {
+   "system": "erv_supply",
+   "size": 4,
+   "pts": [
+    [
+     75.767,
+     49.66,
+     19.9
+    ],
+    [
+     70.91,
+     49.66,
+     19.9
+    ]
+   ],
+   "ft": 6.9,
+   "storey": "upper",
+   "note": "supply to DEN"
+  },
+  {
+   "system": "erv_supply",
+   "size": 4,
+   "pts": [
+    [
+     75.767,
+     42.19,
+     19.9
+    ],
+    [
+     43.16,
+     42.19,
+     19.9
+    ]
+   ],
+   "ft": 34.6,
+   "storey": "upper",
+   "note": "supply to ROOM"
+  },
+  {
+   "system": "erv_supply",
+   "size": 4,
+   "pts": [
+    [
+     75.767,
+     73.72,
+     19.9
+    ],
+    [
+     69.77,
+     73.72,
+     19.9
+    ]
+   ],
+   "ft": 8.0,
+   "storey": "upper",
+   "note": "supply to BEDROOM"
+  },
+  {
+   "system": "erv_supply",
+   "size": 4,
+   "pts": [
+    [
+     75.767,
+     20.7,
+     19.9
+    ],
+    [
+     70.22,
+     20.7,
+     19.9
+    ]
+   ],
+   "ft": 7.5,
+   "storey": "upper",
+   "note": "supply to BEDROOM"
+  },
+  {
+   "system": "erv_exhaust",
+   "size": 5,
+   "pts": [
+    [
+     75.767,
+     66.726,
+     9.0
+    ],
+    [
+     75.767,
+     66.726,
+     9.7
+    ],
+    [
+     75.767,
+     33.19,
+     9.7
+    ],
+    [
+     75.767,
+     66.73,
+     9.7
+    ]
+   ],
+   "ft": 34.2,
+   "storey": "main",
+   "note": "ERV exhaust trunk (main)"
+  },
+  {
+   "system": "erv_exhaust",
+   "size": 4,
+   "pts": [
+    [
+     75.767,
+     66.73,
+     9.7
+    ],
+    [
+     75.77,
+     66.73,
+     9.7
+    ]
+   ],
+   "ft": 2.0,
+   "storey": "main",
+   "note": "exhaust from LAUNDRY"
+  },
+  {
+   "system": "erv_exhaust",
+   "size": 4,
+   "pts": [
+    [
+     75.767,
+     33.19,
+     9.7
+    ],
+    [
+     63.79,
+     33.19,
+     9.7
+    ]
+   ],
+   "ft": 14.0,
+   "storey": "main",
+   "note": "exhaust from BATH"
+  },
+  {
+   "system": "erv_exhaust",
+   "size": 4,
+   "pts": [
+    [
+     75.767,
+     35.46,
+     9.7
+    ],
+    [
+     59.6,
+     35.46,
+     9.7
+    ]
+   ],
+   "ft": 18.2,
+   "storey": "main",
+   "note": "exhaust from W.C."
+  },
+  {
+   "system": "erv_exhaust",
+   "size": 5,
+   "pts": [
+    [
+     75.767,
+     66.726,
+     9.0
+    ],
+    [
+     75.767,
+     66.726,
+     19.9
+    ],
+    [
+     75.767,
+     30.39,
+     19.9
+    ],
+    [
+     75.767,
+     66.726,
+     19.9
+    ]
+   ],
+   "ft": 47.2,
+   "storey": "upper",
+   "note": "ERV exhaust trunk (upper)"
+  },
+  {
+   "system": "erv_exhaust",
+   "size": 4,
+   "pts": [
+    [
+     75.767,
+     52.87,
+     19.9
+    ],
+    [
+     75.61,
+     52.87,
+     19.9
+    ]
+   ],
+   "ft": 2.2,
+   "storey": "upper",
+   "note": "exhaust from BATH"
+  },
+  {
+   "system": "erv_exhaust",
+   "size": 4,
+   "pts": [
+    [
+     75.767,
+     30.39,
+     19.9
+    ],
+    [
+     74.76,
+     30.39,
+     19.9
+    ]
+   ],
+   "ft": 3.0,
+   "storey": "upper",
+   "note": "exhaust from ENSUITE"
+  },
+  {
+   "system": "erv_outdoor",
+   "size": 6,
+   "pts": [
+    [
+     75.767,
+     66.726,
+     9.0
+    ],
+    [
+     82.249,
+     69.02,
+     9.0
+    ]
+   ],
+   "ft": 11.1,
+   "storey": "main",
+   "note": "ERV outdoor-air intake"
+  },
+  {
+   "system": "erv_outdoor",
+   "size": 6,
+   "pts": [
+    [
+     75.767,
+     66.726,
+     9.0
+    ],
+    [
+     70.261,
+     69.428,
+     9.0
+    ]
+   ],
+   "ft": 11.1,
+   "storey": "main",
+   "note": "ERV exhaust outlet"
+  },
+  {
+   "system": "hood",
+   "size": 7,
+   "pts": [
+    [
+     63.54,
+     63.83,
+     10.0
+    ],
+    [
+     62.863,
+     63.83,
+     10.0
+    ],
+    [
+     62.863,
+     70.656,
+     10.0
+    ],
+    [
+     62.615,
+     73.143,
+     10.0
+    ]
+   ],
+   "ft": 9.0,
+   "storey": "main",
+   "note": "range hood 400 cfm, 7 in"
+  },
+  {
+   "system": "dryer",
+   "size": 4,
+   "pts": [
+    [
+     75.77,
+     66.73,
+     1.0
+    ],
+    [
+     76.238,
+     66.73,
+     1.0
+    ],
+    [
+     76.238,
+     68.725,
+     1.0
+    ],
+    [
+     76.323,
+     71.222,
+     1.0
+    ]
+   ],
+   "ft": 4.5,
+   "storey": "main",
+   "note": "dryer vent 4 ft + 2 elbows = 14 ft equivalent (M1502.4.6.1)"
+  }
+ ],
+ "run_ft": {
+  "dryer 4": 4.5,
+  "erv_exhaust 4": 39.4,
+  "erv_exhaust 5": 81.4,
+  "erv_outdoor 6": 22.2,
+  "erv_supply 4": 190.8,
+  "erv_supply 6": 111.3,
+  "exhaust 4": 52.4,
+  "hood 7": 9.0,
+  "refrigerant 0.25x0.375": 39.2,
+  "refrigerant 0.25x0.5": 71.9,
+  "return 12": 16.7,
+  "supply 5": 194.1,
+  "supply 6": 204.9,
+  "trunk 12": 106.4
+ },
+ "order": [
+  {
+   "part": "eq_duin_12",
+   "cat": "Ducted indoor unit 12k",
+   "label": "Ducted indoor unit (slim / multi-position) 12k",
+   "group": "Equipment",
+   "phase": "equip",
+   "unit": "EA",
+   "qty": 1.0,
+   "option": false,
+   "order_qty": 1,
+   "note": "ducted indoor unit 12k in HALL (upper; rule: first CLOS|CLST|HALL|LANDING room)"
+  },
+  {
+   "part": "eq_duin_18",
+   "cat": "Ducted indoor unit 18k",
+   "label": "Ducted indoor unit (slim / multi-position) 18k",
+   "group": "Equipment",
+   "phase": "equip",
+   "unit": "EA",
+   "qty": 1.0,
+   "option": false,
+   "order_qty": 1,
+   "note": "ducted indoor unit 18k in LAUNDRY (main; rule: first LAUNDRY|UTIL room)"
+  },
+  {
+   "part": "eq_erv_s",
+   "cat": "ERV whole-house 150 cfm",
+   "label": "ERV / HRV - balanced whole-house, 50-150 cfm (SRE per the credit)",
+   "group": "Equipment",
+   "phase": "equip",
+   "unit": "EA",
+   "qty": 1.0,
+   "option": false,
+   "order_qty": 1,
+   "note": "unit house: VENTS Frigate ERV 150 - 64 cfm continuous (balanced, ducted to every habitable room: Csystem 1.0), SRE >= 0.8 (the credit's number) in LAUNDRY"
+  },
+  {
+   "part": "eq_mz_60",
+   "cat": "Multi-zone outdoor unit 60k",
+   "label": "Multi-zone outdoor unit - 60k, cold-climate, up to 8 indoor units",
+   "group": "Equipment",
+   "phase": "equip",
+   "unit": "EA",
+   "qty": 1.0,
+   "option": false,
+   "order_qty": 1,
+   "note": "multi-zone outdoor unit 60k (~55,992 Btuh at 19 F), at the electrician's Heat pump condenser (LIVING ROOM, electrical/jobs/semiahmoo/devices.json), N wall - AS SPECIFIED on the plan"
+  },
+  {
+   "part": "eq_tstat",
+   "cat": "Thermostat heat pump programmable",
+   "label": "Thermostat - programmable, heat pump with aux-heat lockout (WSEC R403.1.1 / R403.1.2)",
+   "group": "Equipment",
+   "phase": "equip",
+   "unit": "EA",
+   "qty": 2.0,
+   "option": false,
+   "order_qty": 2,
+   "note": "WSEC R403.1.1 programmable; heat-pump aux lockout R403.1.2"
+  },
+  {
+   "part": "cd_line",
+   "cat": "Condensate line 3/4 PVC",
+   "label": "Condensate line 3/4 in PVC (or 5/8 vinyl with the line set)",
+   "group": "Condensate",
+   "phase": "rough",
+   "unit": "LF",
+   "qty": 25.0,
+   "option": false,
+   "order_qty": 28,
+   "waste": 0.1,
+   "packs": 3,
+   "pack_ft": 10,
+   "pack": "stick",
+   "note": "air handler condensate to an approved discharge"
+  },
+  {
+   "part": "cd_trap",
+   "cat": "Condensate trap",
+   "label": "Condensate trap + cleanout tee",
+   "group": "Condensate",
+   "phase": "rough",
+   "unit": "EA",
+   "qty": 2.0,
+   "option": false,
+   "order_qty": 2,
+   "note": "trap + cleanout tee"
+  },
+  {
+   "part": "cd_pan",
+   "cat": "Secondary pan and float switch",
+   "label": "Secondary drain pan + float switch (M1411.3.1: equipment above finished space)",
+   "group": "Condensate",
+   "phase": "rough",
+   "unit": "EA",
+   "qty": 1.0,
+   "option": false,
+   "order_qty": 1,
+   "note": "upper unit sits over finished space (M1411.3.1)"
+  },
+  {
+   "part": "dt_hanger",
+   "cat": "Duct hanger",
+   "label": "Duct hanger strap / saddle (flex every 4 ft, rigid every 10 ft)",
+   "group": "Ductwork",
+   "phase": "rough",
+   "unit": "EA",
+   "qty": 125.0,
+   "option": false,
+   "order_qty": 125,
+   "note": "trunk"
+  },
+  {
+   "part": "dt_mastic",
+   "cat": "Duct mastic and tape",
+   "label": "Duct mastic (gal) + UL-181 foil tape",
+   "group": "Ductwork",
+   "phase": "rough",
+   "unit": "EA",
+   "qty": 10.0,
+   "option": false,
+   "order_qty": 10,
+   "note": "mastic by the gallon per 100 ft of duct"
+  },
+  {
+   "part": "dt_flex_05",
+   "cat": "Flex duct R-8 5 in",
+   "label": "Flex duct R-8 5 in",
+   "group": "Ductwork",
+   "phase": "rough",
+   "unit": "LF",
+   "qty": 194.1,
+   "option": false,
+   "order_qty": 204,
+   "waste": 0.05,
+   "packs": 9,
+   "pack_ft": 25,
+   "pack": "bag",
+   "note": "BATH: 30 cfm \u00b7 HALL: 30 cfm \u00b7 DINING: 30 cfm \u00b7 hall: 30 cfm \u00b7 ROOM: 49 cfm \u00b7 LANDING: 49 cfm"
+  },
+  {
+   "part": "dt_flex_06",
+   "cat": "Flex duct R-8 6 in",
+   "label": "Flex duct R-8 6 in",
+   "group": "Ductwork",
+   "phase": "rough",
+   "unit": "LF",
+   "qty": 204.9,
+   "option": false,
+   "order_qty": 216,
+   "waste": 0.05,
+   "packs": 9,
+   "pack_ft": 25,
+   "pack": "bag",
+   "note": "YOGA: 53 cfm \u00b7 ENTRY: 66 cfm \u00b7 LIVING ROOM: 83 cfm \u00b7 GREAT ROOM: 55 cfm \u00b7 KITCHEN: 51 cfm \u00b7 PRIMARY: 59 cfm"
+  },
+  {
+   "part": "dt_boot",
+   "cat": "Register boot",
+   "label": "Register boot (4x10 / 4x12 floor or 6x10 ceiling)",
+   "group": "Ductwork",
+   "phase": "rough",
+   "unit": "EA",
+   "qty": 20.0,
+   "option": false,
+   "order_qty": 20,
+   "note": ""
+  },
+  {
+   "part": "dt_return",
+   "cat": "Return duct",
+   "label": "Return duct 12-16 in (panned joist not allowed for a new return)",
+   "group": "Ductwork",
+   "phase": "rough",
+   "unit": "LF",
+   "qty": 16.8,
+   "option": false,
+   "order_qty": 18,
+   "waste": 0.05,
+   "note": "main central return 12 in, 596 cfm, 16x20 filter grille \u00b7 upper central return 12 in, 458 cfm, 14x20 filter grille"
+  },
+  {
+   "part": "dt_plenum",
+   "cat": "Plenum set supply and return",
+   "label": "Supply + return plenums (fabricated, sealed, lined where required)",
+   "group": "Ductwork",
+   "phase": "rough",
+   "unit": "EA",
+   "qty": 2.0,
+   "option": false,
+   "order_qty": 2,
+   "note": "supply + return plenums at the unit"
+  },
+  {
+   "part": "dt_trunk",
+   "cat": "Supply trunk duct",
+   "label": "Supply trunk - galvanized rectangular / 10-14 in round (extended plenum)",
+   "group": "Ductwork",
+   "phase": "rough",
+   "unit": "LF",
+   "qty": 106.4,
+   "option": false,
+   "order_qty": 112,
+   "waste": 0.05,
+   "note": "main: 12 in equivalent, 596 cfm - reducing past 24 ft \u00b7 upper: 12 in equivalent, 458 cfm - reducing past 24 ft"
+  },
+  {
+   "part": "dt_takeoff",
+   "cat": "Duct takeoff with damper",
+   "label": "Takeoff / starting collar with balancing damper",
+   "group": "Ductwork",
+   "phase": "rough",
+   "unit": "EA",
+   "qty": 20.0,
+   "option": false,
+   "order_qty": 20,
+   "note": ""
+  },
+  {
+   "part": "dt_transfer",
+   "cat": "Transfer grille or jumper",
+   "label": "Transfer grille pair / jumper duct (closed-door pressure relief)",
+   "group": "Ductwork",
+   "phase": "rough",
+   "unit": "EA",
+   "qty": 4.0,
+   "option": false,
+   "order_qty": 4,
+   "note": "PRIMARY: 59 cfm needs ~32 sq in free area at 3 Pa - transfer grille pair or jumper duct \u00b7 DEN: 163 cfm needs ~90 sq in free area at 3 Pa - transfer grille pair or jumper duct \u00b7 BEDROOM: 39 cfm needs ~21 sq in free area at 3 Pa - transfer gr"
+  },
+  {
+   "part": "rp_vib",
+   "cat": "Anti-vibration pads",
+   "label": "Anti-vibration pads (set of 4)",
+   "group": "Refrigerant piping",
+   "phase": "rough",
+   "unit": "EA",
+   "qty": 1.0,
+   "option": false,
+   "order_qty": 1,
+   "note": ""
+  },
+  {
+   "part": "rp_comm",
+   "cat": "Mini-split cable 14/4",
+   "label": "Communication cable 14/4 stranded (outdoor unit to each indoor unit)",
+   "group": "Refrigerant piping",
+   "phase": "rough",
+   "unit": "LF",
+   "qty": 111.1,
+   "option": false,
+   "order_qty": 123,
+   "waste": 0.1,
+   "packs": 1,
+   "pack_ft": 250,
+   "pack": "coil",
+   "note": "with the line set"
+  },
+  {
+   "part": "rp_pad",
+   "cat": "Equipment pad",
+   "label": "Equipment pad - composite, sized to the outdoor unit",
+   "group": "Refrigerant piping",
+   "phase": "rough",
+   "unit": "EA",
+   "qty": 1.0,
+   "option": false,
+   "order_qty": 1,
+   "note": "outdoor unit pad"
+  },
+  {
+   "part": "rp_ls_1412",
+   "cat": "Line set 1/4 x 1/2",
+   "label": "Line set 1/4 x 1/2 insulated",
+   "group": "Refrigerant piping",
+   "phase": "rough",
+   "unit": "LF",
+   "qty": 71.9,
+   "option": false,
+   "order_qty": 80,
+   "waste": 0.1,
+   "packs": 2,
+   "pack_ft": 50,
+   "pack": "coil",
+   "note": "18k indoor unit, 72 ft"
+  },
+  {
+   "part": "rp_ls_1438",
+   "cat": "Line set 1/4 x 3/8",
+   "label": "Line set 1/4 x 3/8 insulated (pre-flared or brazed)",
+   "group": "Refrigerant piping",
+   "phase": "rough",
+   "unit": "LF",
+   "qty": 39.2,
+   "option": false,
+   "order_qty": 44,
+   "waste": 0.1,
+   "packs": 1,
+   "pack_ft": 50,
+   "pack": "coil",
+   "note": "12k indoor unit, 39 ft"
+  },
+  {
+   "part": "rp_stand",
+   "cat": "Outdoor unit stand",
+   "label": "Outdoor unit stand / wall bracket (snow and drainage clearance)",
+   "group": "Refrigerant piping",
+   "phase": "rough",
+   "unit": "EA",
+   "qty": 1.0,
+   "option": false,
+   "order_qty": 1,
+   "note": "snow / drainage stand"
+  },
+  {
+   "part": "rp_sleeve",
+   "cat": "Line-set wall penetration",
+   "label": "Wall penetration - 3 in sleeve, sealed and flashed",
+   "group": "Refrigerant piping",
+   "phase": "rough",
+   "unit": "EA",
+   "qty": 1.0,
+   "option": false,
+   "order_qty": 1,
+   "note": "rim penetration for the line set"
+  },
+  {
+   "part": "sp_caulk",
+   "cat": "Fire caulk",
+   "label": "Fire caulk / sealant (tube)",
+   "group": "Support + protection",
+   "phase": "rough",
+   "unit": "EA",
+   "qty": 1.0,
+   "option": false,
+   "order_qty": 1,
+   "note": "fire caulk / sealant at the penetrations"
+  },
+  {
+   "part": "vx_bath_duct",
+   "cat": "Exhaust duct 4 in",
+   "label": "Bath fan exhaust duct 4 in insulated flex (50 cfm fan: <= 25 ft, Table M1505.4.4.2)",
+   "group": "Ventilation",
+   "phase": "vent",
+   "unit": "LF",
+   "qty": 52.5,
+   "option": false,
+   "order_qty": 58,
+   "waste": 0.1,
+   "packs": 3,
+   "pack_ft": 25,
+   "pack": "bag",
+   "note": "BATH: 50 cfm, 5 ft, 2 elbows -> 4 in flex (Table M1505.4.4.2 allows 25 ft) \u00b7 W.C.: 50 cfm, 7 ft, 2 elbows -> 4 in flex (Table M1505.4.4.2 allows 25 ft) \u00b7 shower: 50 cfm, 19 ft, 3 elbows -> 4 in flex (Table M1505.4.4.2 allows 25 ft) \u00b7 POWDER"
+  },
+  {
+   "part": "vx_dryer_ell",
+   "cat": "Dryer elbow 4 in",
+   "label": "Dryer duct 4 in 90 elbow",
+   "group": "Ventilation",
+   "phase": "vent",
+   "unit": "EA",
+   "qty": 2.0,
+   "option": false,
+   "order_qty": 2,
+   "note": ""
+  },
+  {
+   "part": "vx_dryer_pipe",
+   "cat": "Dryer duct 4 in rigid",
+   "label": "Dryer duct 4 in rigid metal, smooth wall (M1502.4.2)",
+   "group": "Ventilation",
+   "phase": "vent",
+   "unit": "LF",
+   "qty": 4.5,
+   "option": false,
+   "order_qty": 5,
+   "waste": 0.1,
+   "packs": 1,
+   "pack_ft": 5,
+   "pack": "stick",
+   "note": "from the electrician's dryer outlet in LAUNDRY: 4 ft"
+  },
+  {
+   "part": "vx_dryer_box",
+   "cat": "Dryer vent box",
+   "label": "Dryer vent box (recessed)",
+   "group": "Ventilation",
+   "phase": "vent",
+   "unit": "EA",
+   "qty": 1.0,
+   "option": false,
+   "order_qty": 1,
+   "note": ""
+  },
+  {
+   "part": "vx_dryer_cap",
+   "cat": "Dryer wall cap",
+   "label": "Dryer wall cap with damper, no screen (M1502.3)",
+   "group": "Ventilation",
+   "phase": "vent",
+   "unit": "EA",
+   "qty": 1.0,
+   "option": false,
+   "order_qty": 1,
+   "note": ""
+  },
+  {
+   "part": "vx_erv_duct",
+   "cat": "ERV duct 6 in",
+   "label": "ERV duct 5-6 in (supply to bedrooms / living, exhaust from baths / kitchen / laundry)",
+   "group": "Ventilation",
+   "phase": "vent",
+   "unit": "LF",
+   "qty": 422.9,
+   "option": false,
+   "order_qty": 466,
+   "waste": 0.1,
+   "packs": 19,
+   "pack_ft": 25,
+   "pack": "bag",
+   "note": "supply trunk, main \u00b7 supply YOGA \u00b7 supply LIVING ROOM \u00b7 supply GREAT ROOM \u00b7 supply DINING \u00b7 supply PRIMARY"
+  },
+  {
+   "part": "vx_erv_hood",
+   "cat": "ERV wall hood 6 in",
+   "label": "ERV intake / exhaust hood 6 in (intake >= 10 ft from any exhaust, R303.5 / M1505.2)",
+   "group": "Ventilation",
+   "phase": "vent",
+   "unit": "EA",
+   "qty": 2.0,
+   "option": false,
+   "order_qty": 2,
+   "note": "outdoor-air intake - 12 ft apart on the S wall (M1504.3: exhaust >= 10 ft from an intake) \u00b7 exhaust outlet - 12 ft apart on the S wall (M1504.3: exhaust >= 10 ft from an intake)"
+  },
+  {
+   "part": "vx_erv_insul",
+   "cat": "ERV insulated duct 6 in",
+   "label": "ERV outdoor-air / exhaust duct, insulated with vapour jacket (to the hoods)",
+   "group": "Ventilation",
+   "phase": "vent",
+   "unit": "LF",
+   "qty": 22.1,
+   "option": false,
+   "order_qty": 25,
+   "waste": 0.1,
+   "packs": 1,
+   "pack_ft": 25,
+   "pack": "bag",
+   "note": "ERV outdoor-air intake to its wall hood (insulated, vapour jacket) \u00b7 ERV exhaust outlet to its wall hood (insulated, vapour jacket)"
+  },
+  {
+   "part": "vx_erv_grille",
+   "cat": "ERV grille",
+   "label": "ERV supply / exhaust grille or valve 4-6 in",
+   "group": "Ventilation",
+   "phase": "vent",
+   "unit": "EA",
+   "qty": 15.0,
+   "option": false,
+   "order_qty": 15,
+   "note": "YOGA \u00b7 LIVING ROOM \u00b7 GREAT ROOM \u00b7 DINING \u00b7 PRIMARY \u00b7 DEN"
+  },
+  {
+   "part": "vx_hood_duct",
+   "cat": "Range hood duct rigid",
+   "label": "Range hood duct 6-10 in rigid, sealed (M1503.3)",
+   "group": "Ventilation",
+   "phase": "vent",
+   "unit": "LF",
+   "qty": 9.0,
+   "option": false,
+   "order_qty": 10,
+   "waste": 0.1,
+   "packs": 2,
+   "pack_ft": 5,
+   "pack": "stick",
+   "note": "7 in rigid for a 400 cfm hood at the electrician's range outlet (electrical/jobs/semiahmoo/devices.json) (M1503.3); the hood itself is the appliance supplier's"
+  },
+  {
+   "part": "vx_hood_cap",
+   "cat": "Range hood cap",
+   "label": "Range hood wall / roof cap with damper",
+   "group": "Ventilation",
+   "phase": "vent",
+   "unit": "EA",
+   "qty": 1.0,
+   "option": false,
+   "order_qty": 1,
+   "note": "7 in wall cap with damper"
+  },
+  {
+   "part": "vx_cap4_wall",
+   "cat": "Wall cap 4 in",
+   "label": "Wall cap 4 in with backdraft damper",
+   "group": "Ventilation",
+   "phase": "vent",
+   "unit": "EA",
+   "qty": 6.0,
+   "option": false,
+   "order_qty": 6,
+   "note": "BATH: wall cap with backdraft damper \u00b7 W.C.: wall cap with backdraft damper \u00b7 shower: wall cap with backdraft damper \u00b7 POWDER: wall cap with backdraft damper \u00b7 ENSUITE: wall cap with backdraft damper"
+  },
+  {
+   "part": "tr_filter",
+   "cat": "Filter",
+   "label": "Filters MERV 8-13 (first set)",
+   "group": "Registers + grilles",
+   "phase": "trim",
+   "unit": "EA",
+   "qty": 2.0,
+   "option": false,
+   "order_qty": 2,
+   "note": "first filter set"
+  },
+  {
+   "part": "tr_reg_floor",
+   "cat": "Floor register",
+   "label": "Floor register 4x10 / 4x12",
+   "group": "Registers + grilles",
+   "phase": "trim",
+   "unit": "EA",
+   "qty": 20.0,
+   "option": false,
+   "order_qty": 20,
+   "note": "YOGA \u00b7 ENTRY \u00b7 BATH \u00b7 LIVING ROOM \u00b7 GREAT ROOM \u00b7 HALL"
+  },
+  {
+   "part": "tr_return",
+   "cat": "Return filter grille",
+   "label": "Return / filter grille 20x25 (or 14x30)",
+   "group": "Registers + grilles",
+   "phase": "trim",
+   "unit": "EA",
+   "qty": 2.0,
+   "option": false,
+   "order_qty": 2,
+   "note": "ENTRY (main): 16x20 at <= 300 fpm \u00b7 HALL (upper): 14x20 at <= 300 fpm"
+  },
+  {
+   "part": "cm_balance",
+   "cat": "Air balance",
+   "label": "Air balance of supply registers (per ducted system)",
+   "group": "Commissioning",
+   "phase": "test",
+   "unit": "EA",
+   "qty": 2.0,
+   "option": false,
+   "order_qty": 2,
+   "note": "register balance"
+  },
+  {
+   "part": "cm_labels",
+   "cat": "HVAC hand-over",
+   "label": "Equipment labels, WSEC certificate data, owner hand-over",
+   "group": "Commissioning",
+   "phase": "test",
+   "unit": "EA",
+   "qty": 1.0,
+   "option": false,
+   "order_qty": 1,
+   "note": "per dwelling unit"
+  },
+  {
+   "part": "cm_design",
+   "cat": "HVAC design and load calc",
+   "label": "Load calculation + equipment selection for the permit (Manual J / S or the WSU sizing form)",
+   "group": "Commissioning",
+   "phase": "test",
+   "unit": "EA",
+   "qty": 1.0,
+   "option": false,
+   "order_qty": 1,
+   "note": "room-by-room loads for the permit (this takeoff is the draft)"
+  },
+  {
+   "part": "cm_startup",
+   "cat": "HVAC start-up",
+   "label": "Start-up, charge verification, controls set-up (per outdoor unit)",
+   "group": "Commissioning",
+   "phase": "test",
+   "unit": "EA",
+   "qty": 1.0,
+   "option": false,
+   "order_qty": 1,
+   "note": "60k system"
+  },
+  {
+   "part": "cm_vent_test",
+   "cat": "Ventilation flow test",
+   "label": "Ventilation flow test - whole-house + local exhaust (WA M1505.4.3 / M1505.4.4)",
+   "group": "Commissioning",
+   "phase": "test",
+   "unit": "EA",
+   "qty": 1.0,
+   "option": false,
+   "order_qty": 1,
+   "note": "unit house: whole-house 64 cfm + every local exhaust measured at the grille (WA M1505.4.3 / M1505.4.4)"
+  },
+  {
+   "part": "rp_nitro",
+   "cat": "Pressure test and evacuation",
+   "label": "Nitrogen pressure test + evacuation to 500 micron (per system)",
+   "group": "Refrigerant piping",
+   "phase": "test",
+   "unit": "EA",
+   "qty": 1.0,
+   "option": false,
+   "order_qty": 1,
+   "note": "per refrigerant system"
+  },
+  {
+   "part": "rp_charge",
+   "cat": "Refrigerant additional charge (lb)",
+   "label": "Refrigerant - additional charge beyond the pre-charge (lb)",
+   "group": "Refrigerant piping",
+   "phase": "test",
+   "unit": "lb",
+   "qty": 2.1,
+   "option": false,
+   "order_qty": 2.1,
+   "note": "33 oz past the pre-charge [U: the maker's oz / ft]"
+  }
+ ],
+ "labour": {
+  "crew_hours": {
+   "set": 18.0,
+   "rough": 79.3,
+   "trim": 3.2,
+   "startup": 8.0
+  },
+  "days": {
+   "set": 3,
+   "rough": 13,
+   "trim": 1,
+   "startup": 2
+  },
+  "total_hours": 108.5,
+  "total_days": 19,
+  "crew": 2,
+  "capacity_hr": 6.25,
+  "note": "crew minutes are PLACEHOLDERS (no task-level install hours were found: references/research-hvac-market.md 3.3) - set them from a sub or the crew"
+ },
+ "inspections": {
+  "jurisdiction": "whatcom",
+  "authority": "Whatcom County PDS",
+  "appliances": 4,
+  "fans_and_vents": 8,
+  "permit_fee": null,
+  "fee_source": "Whatcom County PDS residential mechanical fee schedule - NOT FOUND in the 9/25 research (references/research-hvac-code.md 8): price it from the county sheet",
+  "sequence": [
+   {
+    "name": "Mechanical rough-in (cover)",
+    "when": "after framing, before insulation",
+    "test": "line sets pressure-tested and in place; ducts, boots, exhaust ducts and caps; firestops at the garage separation"
+   },
+   {
+    "name": "Duct leakage test",
+    "when": "rough-in or final",
+    "test": "total leakage at 25 Pa per WSEC R403.3.5 - waived only when every duct and the air handler are inside the envelope"
+   },
+   {
+    "name": "Ventilation flow test",
+    "when": "before final",
+    "test": "whole-house rate and every local exhaust measured (WA M1505.4)"
+   },
+   {
+    "name": "Final mechanical",
+    "when": "equipment set, started, labelled",
+    "test": "equipment listing / HSPF2 on the certificate, controls, condensate, clearances"
+   }
+  ]
+ },
+ "checks": [
+  {
+   "level": "data",
+   "where": "plan set",
+   "what": "credit 2.3 (heat-recovery ventilation) AND a whole-house exhaust fan are both on the set -> hrv (if the ERV/HRV is the whole-house system the fan is local exhaust only; if the fan is the whole-house system the credit fails - ask the designer)"
+  },
+  {
+   "level": "practice",
+   "where": "unit house",
+   "what": "the 60k outdoor unit carries 55,992 Btuh at 19 F against a 23,560 Btuh load - 2.4x AS SPECIFIED on the plan: ask how it was sized (Manual S 2023 wants >= 1.00 x at design and the minimum output <= 0.80 x; WA M1401.3 lets variable-capacity equipment run over, but not forever)"
+  },
+  {
+   "level": "data",
+   "where": "design temperature",
+   "what": "19 F is a stand-in (WSEC Table RC-1 Bellingham IAP 19 F / 78 F [S]; MJ8 Table 1A 23 F / 76 F [V] (Fraser outflow country - STAND-IN on the Bellingham row)) - pull WSEC Table RC-1 for blaine before this goes out"
+  },
+  {
+   "level": "practice",
+   "where": "electrical",
+   "what": "the 60k multi outdoor unit typically needs a 50 A circuit [U: the nameplate MOCP governs]; the electrical job carries 40 A"
+  }
+ ],
+ "notes": [
+  "tracer fragments merged into one space (same name, touching): hall (main: 2 pieces, 30 sf)",
+  "the electrician put the air handler in WORKBENCH / SHOP (outside the conditioned space) - not followed; tell the electrician where it moved",
+  "bath fans: 6 read from the electrical skill (electrical/jobs/semiahmoo/devices.json) - the electrician supplies and wires them; HVAC ducts and caps each one",
+  "unit house: ERV supplies 10 habitable rooms and exhausts 5 wet rooms on a trunk-and-branch layout - 423 ft of 4-6 in duct",
+  "equipment must meet HSPF2 >= 9.4 (the WSEC credit); design temperature 19 F <= 23 F: a NEEP-listed cold-climate variable-capacity unit (the 3.6 note)",
+  "the 60k nominal is over the WSU sizing sheet's heat-pump maximum (49,505 Btuh = 1.25 x its 39,604) - if the permit used the WSU sheet, the reviewer can ask",
+  "refrigerant: a split system installed from 1/1/2026 is an A2L (R-454B / R-32) unit under the EPA Technology Transitions rule; R-410A equipment is out. A2L units carry leak detection / mitigation per their listing - it rides with the equipment line",
+  "a gas-fuel fireplace is on the set - not in this bid (the fireplace installer's); a sealed direct-vent unit needs no combustion air from the house"
+ ],
+ "routing": {
+  "mode": "concealed",
+  "source": "line sets drop in the stud bay under each indoor unit (or the nearest stacked wall) and cross the crawl on an L along the joists to the rim beside the outdoor unit; ducts run a trunk per storey with square branches in the joist bays"
+ },
+ "electrical": {
+  "source": "electrical/jobs/semiahmoo/devices.json",
+  "devices_read": 286
+ },
+ "spaces": [
+  {
+   "id": 0,
+   "name": "main/R1",
+   "use": "circulation",
+   "storey": "main",
+   "unit": "house",
+   "area": 9.2,
+   "keys": [
+    "main/R1"
+   ],
+   "habitable": false,
+   "fragment": false
+  },
+  {
+   "id": 1,
+   "name": "CLOSET",
+   "use": "closet",
+   "storey": "main",
+   "unit": "house",
+   "area": 55.1,
+   "keys": [
+    "main/R10"
+   ],
+   "habitable": false,
+   "fragment": false
+  },
+  {
+   "id": 2,
+   "name": "main/R11",
+   "use": "circulation",
+   "storey": "main",
+   "unit": "house",
+   "area": 18.4,
+   "keys": [
+    "main/R11"
+   ],
+   "habitable": false,
+   "fragment": false
+  },
+  {
+   "id": 3,
+   "name": "main/R13",
+   "use": "circulation",
+   "storey": "main",
+   "unit": "house",
+   "area": 18.2,
+   "keys": [
+    "main/R13"
+   ],
+   "habitable": false,
+   "fragment": false
+  },
+  {
+   "id": 4,
+   "name": "YOGA",
+   "use": "living",
+   "storey": "main",
+   "unit": "house",
+   "area": 121.3,
+   "keys": [
+    "main/R15"
+   ],
+   "habitable": true,
+   "fragment": false
+  },
+  {
+   "id": 5,
+   "name": "ENTRY",
+   "use": "circulation",
+   "storey": "main",
+   "unit": "house",
+   "area": 93.0,
+   "keys": [
+    "main/R18"
+   ],
+   "habitable": false,
+   "fragment": false
+  },
+  {
+   "id": 6,
+   "name": "LAUNDRY",
+   "use": "utility",
+   "storey": "main",
+   "unit": "house",
+   "area": 65.3,
+   "keys": [
+    "main/R21"
+   ],
+   "habitable": false,
+   "fragment": false
+  },
+  {
+   "id": 7,
+   "name": "main/R24",
+   "use": "circulation",
+   "storey": "main",
+   "unit": "house",
+   "area": 6.7,
+   "keys": [
+    "main/R24"
+   ],
+   "habitable": false,
+   "fragment": false
+  },
+  {
+   "id": 8,
+   "name": "main/R25",
+   "use": "circulation",
+   "storey": "main",
+   "unit": "house",
+   "area": 8.2,
+   "keys": [
+    "main/R25"
+   ],
+   "habitable": false,
+   "fragment": false
+  },
+  {
+   "id": 9,
+   "name": "PANTRY",
+   "use": "pantry",
+   "storey": "main",
+   "unit": "house",
+   "area": 7.0,
+   "keys": [
+    "main/R26"
+   ],
+   "habitable": false,
+   "fragment": false
+  },
+  {
+   "id": 10,
+   "name": "BROOM",
+   "use": "closet",
+   "storey": "main",
+   "unit": "house",
+   "area": 7.8,
+   "keys": [
+    "main/R27"
+   ],
+   "habitable": false,
+   "fragment": false
+  },
+  {
+   "id": 11,
+   "name": "BATH",
+   "use": "bath",
+   "storey": "main",
+   "unit": "house",
+   "area": 38.8,
+   "keys": [
+    "main/R29"
+   ],
+   "habitable": false,
+   "fragment": false
+  },
+  {
+   "id": 12,
+   "name": "main/R3",
+   "use": "circulation",
+   "storey": "main",
+   "unit": "house",
+   "area": 15.1,
+   "keys": [
+    "main/R3"
+   ],
+   "habitable": false,
+   "fragment": false
+  },
+  {
+   "id": 13,
+   "name": "W.C.",
+   "use": "bath",
+   "storey": "main",
+   "unit": "house",
+   "area": 24.7,
+   "keys": [
+    "main/R30"
+   ],
+   "habitable": false,
+   "fragment": false
+  },
+  {
+   "id": 14,
+   "name": "VANITY",
+   "use": "bath",
+   "storey": "main",
+   "unit": "house",
+   "area": 16.6,
+   "keys": [
+    "main/R31"
+   ],
+   "habitable": false,
+   "fragment": false
+  },
+  {
+   "id": 15,
+   "name": "shower",
+   "use": "bath",
+   "storey": "main",
+   "unit": "house",
+   "area": 14.0,
+   "keys": [
+    "main/R32"
+   ],
+   "habitable": false,
+   "fragment": false
+  },
+  {
+   "id": 16,
+   "name": "COATS",
+   "use": "closet",
+   "storey": "main",
+   "unit": "house",
+   "area": 76.9,
+   "keys": [
+    "main/R33"
+   ],
+   "habitable": false,
+   "fragment": false
+  },
+  {
+   "id": 17,
+   "name": "LIVING ROOM",
+   "use": "living",
+   "storey": "main",
+   "unit": "house",
+   "area": 208.3,
+   "keys": [
+    "main/R34"
+   ],
+   "habitable": true,
+   "fragment": false
+  },
+  {
+   "id": 18,
+   "name": "GREAT ROOM",
+   "use": "living",
+   "storey": "main",
+   "unit": "house",
+   "area": 297.7,
+   "keys": [
+    "main/R35"
+   ],
+   "habitable": true,
+   "fragment": false
+  },
+  {
+   "id": 19,
+   "name": "POWDER",
+   "use": "powder",
+   "storey": "main",
+   "unit": "house",
+   "area": 9.1,
+   "keys": [
+    "main/R36"
+   ],
+   "habitable": false,
+   "fragment": false
+  },
+  {
+   "id": 20,
+   "name": "HALL",
+   "use": "circulation",
+   "storey": "main",
+   "unit": "house",
+   "area": 105.8,
+   "keys": [
+    "main/R37"
+   ],
+   "habitable": false,
+   "fragment": false
+  },
+  {
+   "id": 21,
+   "name": "KITCHEN",
+   "use": "kitchen",
+   "storey": "main",
+   "unit": "house",
+   "area": 170.7,
+   "keys": [
+    "main/R38"
+   ],
+   "habitable": true,
+   "fragment": false
+  },
+  {
+   "id": 22,
+   "name": "DINING",
+   "use": "living",
+   "storey": "main",
+   "unit": "house",
+   "area": 107.1,
+   "keys": [
+    "main/R39"
+   ],
+   "habitable": true,
+   "fragment": false
+  },
+  {
+   "id": 23,
+   "name": "PRIMARY",
+   "use": "bedroom",
+   "storey": "main",
+   "unit": "house",
+   "area": 232.1,
+   "keys": [
+    "main/R4"
+   ],
+   "habitable": true,
+   "fragment": false
+  },
+  {
+   "id": 24,
+   "name": "GREAT ROOM",
+   "use": "living",
+   "storey": "main",
+   "unit": "house",
+   "area": 113.0,
+   "keys": [
+    "main/R40"
+   ],
+   "habitable": true,
+   "fragment": false
+  },
+  {
+   "id": 25,
+   "name": "main/R7",
+   "use": "circulation",
+   "storey": "main",
+   "unit": "house",
+   "area": 17.1,
+   "keys": [
+    "main/R7"
+   ],
+   "habitable": false,
+   "fragment": false
+  },
+  {
+   "id": 26,
+   "name": "hall",
+   "use": "circulation",
+   "storey": "main",
+   "unit": "house",
+   "area": 29.6,
+   "keys": [
+    "main/R9",
+    "main/R12"
+   ],
+   "habitable": false,
+   "fragment": false
+  },
+  {
+   "id": 27,
+   "name": "BATH",
+   "use": "bath",
+   "storey": "upper",
+   "unit": "house",
+   "area": 21.2,
+   "keys": [
+    "upper/R13"
+   ],
+   "habitable": false,
+   "fragment": false
+  },
+  {
+   "id": 28,
+   "name": "HALL",
+   "use": "circulation",
+   "storey": "upper",
+   "unit": "house",
+   "area": 14.9,
+   "keys": [
+    "upper/R15"
+   ],
+   "habitable": false,
+   "fragment": false
+  },
+  {
+   "id": 29,
+   "name": "DEN",
+   "use": "office",
+   "storey": "upper",
+   "unit": "house",
+   "area": 452.1,
+   "keys": [
+    "upper/R18"
+   ],
+   "habitable": true,
+   "fragment": false
+  },
+  {
+   "id": 30,
+   "name": "ROOM",
+   "use": "living",
+   "storey": "upper",
+   "unit": "house",
+   "area": 491.2,
+   "keys": [
+    "upper/R21"
+   ],
+   "habitable": true,
+   "fragment": false
+  },
+  {
+   "id": 31,
+   "name": "LANDING",
+   "use": "circulation",
+   "storey": "upper",
+   "unit": "house",
+   "area": 64.5,
+   "keys": [
+    "upper/R23"
+   ],
+   "habitable": false,
+   "fragment": false
+  },
+  {
+   "id": 32,
+   "name": "BEDROOM",
+   "use": "bedroom",
+   "storey": "upper",
+   "unit": "house",
+   "area": 214.2,
+   "keys": [
+    "upper/R24"
+   ],
+   "habitable": true,
+   "fragment": false
+  },
+  {
+   "id": 33,
+   "name": "BEDROOM",
+   "use": "bedroom",
+   "storey": "upper",
+   "unit": "house",
+   "area": 198.8,
+   "keys": [
+    "upper/R3"
+   ],
+   "habitable": true,
+   "fragment": false
+  },
+  {
+   "id": 34,
+   "name": "ENSUITE",
+   "use": "bath",
+   "storey": "upper",
+   "unit": "house",
+   "area": 21.0,
+   "keys": [
+    "upper/R7"
+   ],
+   "habitable": false,
+   "fragment": false
+  }
+ ],
+ "totals": {
+  "heat_btuh": 23560,
+  "cool_tons": 1.81,
+  "outdoor_units": 1,
+  "heads": 0,
+  "indoor_ducted": 2,
+  "registers": 20,
+  "lineset_ft": 111,
+  "duct_ft": 522,
+  "vent_ft": 511,
+  "codes": 0,
+  "practice": 2,
+  "data": 2
+ }
+}

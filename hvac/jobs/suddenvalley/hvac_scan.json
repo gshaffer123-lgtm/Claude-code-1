@@ -1,0 +1,474 @@
+{
+ "code": {
+  "wsec": "2021",
+  "wsec_votes": {
+   "2021": 2
+  },
+  "dwelling": "medium",
+  "dwelling_page": null,
+  "credits_required": 8.0,
+  "credits_page": null,
+  "credits_total": 8.0
+ },
+ "credits": [
+  {
+   "option": "2.2",
+   "year": "2021",
+   "how": [
+    "option = credits"
+   ],
+   "page": null,
+   "quote": "EFFICIENT VENTILATION OPTIONS AIR LEAKAGE CONTROL AND EFFICIENT VENTILATION ENERGY OPTION (2.2) REDUCE AIR LEAKAGE TO 1.5 CPH AND A WHOLE HOUSE VENTILATION SYSTEM WITH WITH MINIMUM SENSIBLE HEAT RECOVERY EFFICIENCY OF 0.7 = 1.5 CREDITS HIGH EFFICIENCY HVAC EQU",
+   "meaning": "air leakage 1.5 ACH50 + whole-house ventilation with heat recovery (SRE >= 0.70)",
+   "kind": "ventilation",
+   "vent": "hrv",
+   "ach50": 1.5,
+   "sre": 0.7,
+   "credits": 1.5
+  },
+  {
+   "option": "3.6a",
+   "year": "2021",
+   "how": [
+    "option = credits"
+   ],
+   "page": null,
+   "quote": "T OPTIONS AIR-SOURCE, CENTRALLY DUCTED HEAT PUMP WITH MINIMUM HSPF2 OF 9.4 (HSPF OF 11.0) (3.6a) = 1.0 CREDIT COMPACT HOT WATER DISTRIBUTION SYSTEM OPTION 5.2 HOT WATER LOOP WITH AN ON DEMAND RECIRC",
+   "meaning": "air-source CENTRALLY DUCTED heat pump, HSPF2 >= 9.4 (HSPF 11.0)",
+   "kind": "equipment",
+   "system": "ducted",
+   "hspf2": 9.4,
+   "credits": 1.0
+  },
+  {
+   "option": "4c",
+   "year": "2021",
+   "how": [
+    "option = credits"
+   ],
+   "page": null,
+   "quote": "CKS = Email: WSEC 2021 MEDIUM DWELLING UNIT REQUIRING 8 CREDITS PRIMARY HEATING SCOURCE (4c) HEATING SYSTEM USING A HEAT PUMP THAT MEETS FEDERAL STANDARDS FOR THE EQUIPMENT LISTED IN TABLE C403.3.2(2) OR C403.3.2(9) = 3.0 CREDITS AIR LEAKAGE CONTROL AND EFFICI",
+   "meaning": "heat pump meeting the federal standard (Table C403.3.2(2) or (9)) or air-to-water",
+   "kind": "heat_pump",
+   "system": null,
+   "credits": 3.0
+  },
+  {
+   "option": "5.6",
+   "year": "2021",
+   "how": [
+    "option = credits"
+   ],
+   "page": null,
+   "quote": "TRUNK LINE = 0.5 CREDITS 12' - 11 1/4\" 6' - 3\" EFFICIENT WATER HEATING OPTIONS OPTION (5.6) ELECTRIC HEAT PUMP H2O HEATER MEETING THE STANDARDS FOR TIER 3 OF NEEA'S =2.0 CREDITS 6' - 8 1/4\" BOLLARD 6' - 2 15/16\" 5' - 0\" x TEM2' - P 6\" PIC 83.53\u00b0 6' - 1\" E 3'",
+   "meaning": "",
+   "credits": 2.0
+  }
+ ],
+ "credits_mentioned": [],
+ "system": {
+  "mentioned": [
+   "ducted"
+  ],
+  "votes": [
+   {
+    "kind": "ducted",
+    "why": "option 3.6a (2021): air-source CENTRALLY DUCTED heat pump, HSPF2 >= 9.4 (HSPF 11.0)",
+    "weight": 3
+   }
+  ],
+  "kind": "ducted",
+  "why": "option 3.6a (2021): air-source CENTRALLY DUCTED heat pump, HSPF2 >= 9.4 (HSPF 11.0)"
+ },
+ "equipment": [],
+ "ventilation": {
+  "hrv_words": [
+   {
+    "word": "ERV",
+    "page": null,
+    "quote": "83.53\u00b0 6' - 1\" E 3' - 6\" 6' - 0\" x 6' - 0\" XO ERV BATH 90CFM TILE R-21 TYP. Garage 255.15 sf"
+   }
+  ],
+  "sre_required": 0.7,
+  "whf_words": [
+   {
+    "page": null,
+    "quote": "- 9 7/16\" 116CFM \\= 116 CUBIC FEET PER MINUTE EXHAUST FAN WHF WHOLE HOUSE FAN WITH TIMER CAPABLE OF CONTINUOS OPERATION"
+   },
+   {
+    "page": null,
+    "quote": "/16\" 116CFM \\= 116 CUBIC FEET PER MINUTE EXHAUST FAN WHF WHOLE HOUSE FAN WITH TIMER CAPABLE OF CONTINUOS OPERATION 1 FIRST FLOOR PL"
+   },
+   {
+    "page": null,
+    "quote": "04/23/25 E TEMP 116CFM WHF 90CFMEmail: WSEC 2021 MEDIUM DWELLING UNIT REQUIRING 8 CRED"
+   },
+   {
+    "page": null,
+    "quote": "K 41' - 3 7/16\" \\= 116 CUBIC FEET PER MINUTE EXHAUST FAN WHOLE HOUSE FAN WITH TIMER CAPABLE OF SEE STRUCTURALS FOR HOLDOWN AND SHEA"
+   }
+  ],
+  "exhaust_models": [
+   {
+    "maker": "Air King",
+    "model": "AIRKING MODELS AK150LS",
+    "page": null
+   },
+   {
+    "maker": "Air King",
+    "model": "AIRKING MODELS AK150LS",
+    "page": null
+   }
+  ],
+  "kind": "erv",
+  "both": true
+ },
+ "fans": [
+  {
+   "cfm": 90.0,
+   "where": "exhaust",
+   "page": null,
+   "quote": "1\" E 3' - 6\" 6' - 0\" x 6' - 0\" XO ERV BATH 90CFM TILE R-21 TYP. Garage 255.15 sf 22' - 6\" ADVA"
+  },
+  {
+   "cfm": 116.0,
+   "where": "whole-house",
+   "page": null,
+   "quote": "N R308 2021 IRC CODE BOOK 33' - 6\" 7' - 9 7/16\" 116CFM \\= 116 CUBIC FEET PER MINUTE EXHAUST FAN WHF WH"
+  },
+  {
+   "cfm": 90.0,
+   "where": "exhaust",
+   "page": null,
+   "quote": "NE TO 03/13/2026 2021 IRC MECH. SPECIFICATIONS 90CFM= 90 CUBIC FEET PER MINUTE OF AIR FLOW EXHAUST FA"
+  },
+  {
+   "cfm": 116.0,
+   "where": "whole-house",
+   "page": null,
+   "quote": "04/23/25 E TEMP 116CFM WHF 90CFMEmail: WSEC 2021 MEDIUM DWELLING UNIT R"
+  },
+  {
+   "cfm": 90.0,
+   "where": "exhaust",
+   "page": null,
+   "quote": "G ROOM \\= SMOKE DETECTOR/CARBON MONOXIDE ALARMS 90CFM LAMINATE LAMINATE CO SD THESE UNITS ARE TO BE"
+  }
+ ],
+ "hood": {},
+ "dryer": {
+  "words": [
+   {
+    "page": null,
+    "quote": "MECHANICAL CODES SD BDRM 2 STACKED . WASHER/DRYER FOYER LAMINATE 4' - 0\" x 8' - 0\" 9'"
+   }
+  ]
+ },
+ "fireplace": {
+  "present": false
+ },
+ "mech_rooms": [
+  {
+   "word": "MECHANICAL ROOM UNDER STAIRS",
+   "page": null
+  },
+  {
+   "word": "DUCT CHASE",
+   "page": null
+  }
+ ],
+ "envelope": {
+  "floor_r": [
+   {
+    "v": 38.0,
+    "page": null,
+    "quote": "GWB TAPED & TEXTURED WITH PVA R-38 AROUND BARRIER APPLIED PERIM [bare section label beside a floor / vapour-barrier word]"
+   }
+  ],
+  "ach50": [
+   {
+    "v": 1.5,
+    "page": null,
+    "quote": "ILATION ENERGY OPTION (2.2) REDUCE AIR LEAKAGE TO 1.5 CPH AND A WHOLE HOUSE VENTILATION SYSTEM WITH WITH MI"
+   },
+   {
+    "v": 1.5,
+    "page": null,
+    "quote": "ILATION ENERGY OPTION (2.2) REDUCE AIR LEAKAGE TO 1.5 CPH AND A WHOLE HOUSE VENTILATION SYSTEM WITH WITH MI"
+   }
+  ],
+  "floor_r_value": 38.0,
+  "ach50_value": 1.5
+ },
+ "areas": {
+  "heated_sf": 1503.0,
+  "heated_sf_page": null,
+  "upper_sf": 905.0,
+  "upper_sf_page": null,
+  "garage_sf": 255.0,
+  "garage_sf_page": null,
+  "crawl_sf": 542.0,
+  "crawl_sf_page": null,
+  "main_living_sf": 601.0,
+  "main_living_sf_page": null,
+  "upper_living_sf": 806.0,
+  "upper_living_sf_page": null
+ },
+ "tests": {},
+ "heat_source": [],
+ "conflicts": [
+  {
+   "what": "credit 2.2 (heat-recovery ventilation) AND a whole-house exhaust fan are both on the set",
+   "use": "hrv",
+   "why": "if the ERV/HRV is the whole-house system the fan is local exhaust only; if the fan is the whole-house system the credit fails - ask the designer"
+  }
+ ],
+ "warnings": [],
+ "openings": {
+  "rows": [
+   {
+    "form": "callout",
+    "word": "",
+    "w_ft": 6.0,
+    "h_ft": 6.0,
+    "sf": 36.0,
+    "op": "XO",
+    "kind": "window",
+    "page": null
+   },
+   {
+    "form": "callout",
+    "word": "",
+    "w_ft": 6.0,
+    "h_ft": 6.0,
+    "sf": 36.0,
+    "op": "XO",
+    "kind": "window",
+    "page": null
+   },
+   {
+    "form": "callout",
+    "word": "",
+    "w_ft": 3.0,
+    "h_ft": 8.0,
+    "sf": 24.0,
+    "op": "",
+    "kind": "door",
+    "page": null
+   },
+   {
+    "form": "callout",
+    "word": "",
+    "w_ft": 2.667,
+    "h_ft": 8.0,
+    "sf": 21.3,
+    "op": "",
+    "kind": "door",
+    "page": null
+   },
+   {
+    "form": "callout",
+    "word": "",
+    "w_ft": 3.0,
+    "h_ft": 8.0,
+    "sf": 24.0,
+    "op": "",
+    "kind": "door",
+    "page": null
+   },
+   {
+    "form": "callout",
+    "word": "",
+    "w_ft": 4.0,
+    "h_ft": 8.0,
+    "sf": 32.0,
+    "op": "",
+    "kind": "door",
+    "page": null
+   },
+   {
+    "form": "callout",
+    "word": "",
+    "w_ft": 3.0,
+    "h_ft": 8.0,
+    "sf": 24.0,
+    "op": "",
+    "kind": "door",
+    "page": null
+   },
+   {
+    "form": "callout",
+    "word": "",
+    "w_ft": 2.0,
+    "h_ft": 6.0,
+    "sf": 12.0,
+    "op": "PIC",
+    "kind": "window",
+    "page": null
+   },
+   {
+    "form": "callout",
+    "word": "",
+    "w_ft": 8.0,
+    "h_ft": 8.0,
+    "sf": 64.0,
+    "op": "OHD",
+    "kind": "garage",
+    "page": null
+   },
+   {
+    "form": "callout",
+    "word": "",
+    "w_ft": 3.0,
+    "h_ft": 6.0,
+    "sf": 18.0,
+    "op": "PIC",
+    "kind": "window",
+    "page": null
+   },
+   {
+    "form": "callout",
+    "word": "",
+    "w_ft": 3.0,
+    "h_ft": 6.0,
+    "sf": 18.0,
+    "op": "PIC",
+    "kind": "window",
+    "page": null
+   },
+   {
+    "form": "callout",
+    "word": "",
+    "w_ft": 3.0,
+    "h_ft": 6.0,
+    "sf": 18.0,
+    "op": "PIC",
+    "kind": "window",
+    "page": null
+   },
+   {
+    "form": "callout",
+    "word": "",
+    "w_ft": 3.0,
+    "h_ft": 6.0,
+    "sf": 18.0,
+    "op": "PIC",
+    "kind": "window",
+    "page": null
+   },
+   {
+    "form": "callout",
+    "word": "",
+    "w_ft": 6.0,
+    "h_ft": 6.0,
+    "sf": 36.0,
+    "op": "PIC",
+    "kind": "window",
+    "page": null
+   },
+   {
+    "form": "callout",
+    "word": "",
+    "w_ft": 6.0,
+    "h_ft": 6.0,
+    "sf": 36.0,
+    "op": "PIC",
+    "kind": "window",
+    "page": null
+   },
+   {
+    "form": "callout",
+    "word": "",
+    "w_ft": 8.0,
+    "h_ft": 6.0,
+    "sf": 48.0,
+    "op": "XO",
+    "kind": "window",
+    "page": null
+   },
+   {
+    "form": "callout",
+    "word": "",
+    "w_ft": 6.0,
+    "h_ft": 6.0,
+    "sf": 36.0,
+    "op": "XO",
+    "kind": "window",
+    "page": null
+   },
+   {
+    "form": "callout",
+    "word": "",
+    "w_ft": 5.5,
+    "h_ft": 2.5,
+    "sf": 13.8,
+    "op": "",
+    "kind": "window?",
+    "page": null
+   },
+   {
+    "form": "callout",
+    "word": "",
+    "w_ft": 3.0,
+    "h_ft": 6.0,
+    "sf": 18.0,
+    "op": "PIC",
+    "kind": "window",
+    "page": null
+   },
+   {
+    "form": "callout",
+    "word": "",
+    "w_ft": 6.0,
+    "h_ft": 6.0,
+    "sf": 36.0,
+    "op": "XO",
+    "kind": "window",
+    "page": null
+   },
+   {
+    "form": "callout",
+    "word": "",
+    "w_ft": 3.0,
+    "h_ft": 6.0,
+    "sf": 18.0,
+    "op": "PIC",
+    "kind": "window",
+    "page": null
+   },
+   {
+    "form": "callout",
+    "word": "",
+    "w_ft": 3.0,
+    "h_ft": 6.0,
+    "sf": 18.0,
+    "op": "PIC",
+    "kind": "window",
+    "page": null
+   },
+   {
+    "form": "callout",
+    "word": "",
+    "w_ft": 8.0,
+    "h_ft": 6.125,
+    "sf": 49.0,
+    "op": "TRAP",
+    "kind": "window",
+    "page": null
+   }
+  ],
+  "window_sf": 451.0,
+  "patio_sf": 0.0,
+  "uncertain_sf": 13.8,
+  "door_rows": 5,
+  "count": 16,
+  "u_mean": null,
+  "note": "read off the text layer; mulled parts and interior / garage doors left out - LOOK at the schedule before trusting the total"
+ },
+ "text_chars": 20574,
+ "pages": 1,
+ "source": {
+  "kind": "text",
+  "file": "suddenvalley_SFR2025-00185.txt"
+ }
+}

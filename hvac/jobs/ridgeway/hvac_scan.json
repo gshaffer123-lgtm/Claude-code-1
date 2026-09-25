@@ -1,0 +1,800 @@
+{
+ "code": {
+  "wsec": "2021",
+  "wsec_votes": {
+   "2021": 3
+  },
+  "dwelling": "medium",
+  "dwelling_page": null,
+  "credits_required": 8.0,
+  "credits_page": null,
+  "credits_total": 8.0
+ },
+ "credits": [
+  {
+   "option": "2.1",
+   "year": "2021",
+   "how": [
+    "options-selected list"
+   ],
+   "page": null,
+   "quote": "N TABLE C403.3.2(2) OR C403.3.3(9) PER TABLE 406.3, OPTIONS SELECTED FOR PROJECT INCLUDE: 2.1 AIR LEAKAGE CONTROL & EFFICIENT VENTILATION OPTIONS Compliance based on Section R402.4.1.2: Reduce the tested air leakage to 2.0 air changes",
+   "meaning": "air leakage 2.0 ACH50",
+   "kind": "ventilation",
+   "vent": null,
+   "ach50": 2.0
+  },
+  {
+   "option": "3.7",
+   "year": "2021",
+   "how": [
+    "options-selected list"
+   ],
+   "page": null,
+   "quote": "n Section R402.4.1.2: Reduce the tested air leakage to 0.25 cfm/ft2 maximum at 50 Pascals. 3.7 HIGH EFFICIENCY HVAC DISTRIBUTION OPTIONS Ductless mini-split heat pump system with no electric resistance heating in the primary",
+   "meaning": "DUCTLESS mini-split heat pump, no electric resistance in the primary living areas, HSPF2 >= 9 (HSPF 10), sized to heat the ENTIRE dwelling at design temperature",
+   "kind": "equipment",
+   "system": "ductless",
+   "hspf2": 9.0,
+   "description": "Ductless mini-split heat pump system with no electric resistance heating in the primary living areas. A ductless heat pump system with a minimum HSPF2 of 9 (HSPF of 10) shall be sized and installed to provide heat to ent"
+  },
+  {
+   "option": "4",
+   "year": "2021",
+   "how": [
+    "options-selected list"
+   ],
+   "page": null,
+   "quote": "\u00b031'40\"W DS 1 FOR MEDIUM DWELLING UNIT : 8.0 ENERGY CREDITS REQUIRED PER TABLE 406.2, OPTIONS SELECTED FOR PROJECT INCLUDE: 4 FOR HEATING SYSTEM USING A HEAT PUMP THAT MEETS FEDERAL STANDARDS FOR THE EQUIPMENT LISTED IN TABLE C403.3.",
+   "meaning": "heat pump meeting the federal standard (Table C403.3.2(2) or (9))",
+   "kind": "heat_pump",
+   "system": null
+  },
+  {
+   "option": "5.6",
+   "year": "2021",
+   "how": [
+    "options-selected list"
+   ],
+   "page": null,
+   "quote": "Y CODE-RESIDENTIAL (WSEC-R), AND ALL OTHER GOVERNING LAWS, CODES, ORDINANCES, REGULATIONS, 5.6 EFFICIENT WATER HEATING OPTIONS Water heating system shall include one of the following: Electric heat pump water heater",
+   "meaning": ""
+  }
+ ],
+ "credits_mentioned": [],
+ "system": {
+  "mentioned": [
+   "ductless"
+  ],
+  "votes": [
+   {
+    "kind": "ductless",
+    "why": "option 3.7 (2021): DUCTLESS mini-split heat pump, no electric resistance in the primary living areas, HSPF2 >= 9 (HSPF 10), sized to heat the ENTIRE dwelling at design temperature",
+    "weight": 3
+   }
+  ],
+  "kind": "ductless",
+  "why": "option 3.7 (2021): DUCTLESS mini-split heat pump, no electric resistance in the primary living areas, HSPF2 >= 9 (HSPF 10), sized to heat the ENTIRE dwelling at design temperature"
+ },
+ "equipment": [],
+ "ventilation": {
+  "whf": [
+   {
+    "cfm": 90.0,
+    "page": null,
+    "quote": "TECTOR, INTERCONNECT W/ BATTERY BACKUP 90 CFM FAN MIN. FOR CONT. WHOLE HOUSE OPERATION HEAT DETECTOR, INTERCONNECT"
+   },
+   {
+    "cfm": 90.0,
+    "page": null,
+    "quote": "TECTOR, INTERCONNECT W/ BATTERY BACKUP 90 CFM FAN MIN. FOR CONT. WHOLE HOUSE OPERATION HEAT DETECTOR, INTERCONNECT"
+   }
+  ],
+  "whf_words": [
+   {
+    "page": null,
+    "quote": "6'-0\" 21'-5\" 7'-1\" 9'-6\" 11'-5\" 14'-6\" 5'-6\" 5\\. INSTALL WHOLE HOUSE VENTILATION FAN PER 2021 IRC WA STATE AMENDMENTS 1'-3\" 13'-6\" 1'-3\" SECTI"
+   },
+   {
+    "page": null,
+    "quote": "SECTION R314 & R315; SEE PLANS FOR LOCATIONS. 5\\. INSTALL WHOLE HOUSE VENTILATION FAN PER 2021 IRC WA STATE AMENDMENTS SECTION M1507.3: SYSTEM SH"
+   }
+  ],
+  "continuous_note": true,
+  "kind": "exhaust"
+ },
+ "fans": [
+  {
+   "cfm": 25.0,
+   "where": "exhaust",
+   "page": null,
+   "quote": "on R402.4.1.2: Reduce the tested air leakage to 0.25 cfm/ft2 maximum at 50 Pascals. 3.7 HIGH EFFICIENCY H"
+  },
+  {
+   "cfm": 400.0,
+   "where": "hood",
+   "page": null,
+   "quote": "Air shall be provided on Hood Systems that exceed 400CFM if applicable per IRC1503.6 Installation of equi"
+  },
+  {
+   "cfm": 600.0,
+   "where": "hood",
+   "page": null,
+   "quote": "36\" a PWDR OFFICE RANGE DINING PANTRY PTRY. 600 CFM MAKE-UP AIR HOOD UNDER-CABINETLAUNDRY d 36\" R"
+  },
+  {
+   "cfm": 90.0,
+   "where": "whole-house",
+   "page": null,
+   "quote": "ONOXIDE DETECTOR, INTERCONNECT W/ BATTERY BACKUP 90 CFM FAN MIN. FOR CONT. WHOLE HOUSE OPERATION HEAT DE"
+  },
+  {
+   "cfm": 90.0,
+   "where": "whole-house",
+   "page": null,
+   "quote": "ONOXIDE DETECTOR, INTERCONNECT W/ BATTERY BACKUP 90 CFM FAN MIN. FOR CONT. WHOLE HOUSE OPERATION HEAT DE"
+  }
+ ],
+ "hood": {
+  "cfm": 600.0,
+  "page": null,
+  "quote": "'-6\" 7D HOOD VENT 36\" a PWDR OFFICE RANGE DINING PANTRY PTRY. 600 CFM MAKE-UP AIR HOOD UNDER-CABINETLAUNDRY d 36\" REFR. Main Level Liv",
+  "makeup_air": true,
+  "code_note": "ATION PLAN A 1.0 Makeup Air shall be provided on Hood Systems that exceed 400CFM if applicable per IRC1503.6 Installation of eq"
+ },
+ "dryer": {},
+ "fireplace": {
+  "code_notes": [
+   {
+    "word": "FIREPLACE",
+    "page": null,
+    "quote": "ements SECTION R1005 FACTORY-BUILT CHIMNEYS SOLID BURNING FIREPLACE INSTALLATION SHALL COMPLY WITH IRC CHAP 10 WOODSTOVE INSTA"
+   },
+   {
+    "word": "WOODSTOVE",
+    "page": null,
+    "quote": "RNING FIREPLACE INSTALLATION SHALL COMPLY WITH IRC CHAP 10 WOODSTOVE INSTALLATION SHALL COMPLY WITH MFG. SPECS & W.S.E.C. IRC SE"
+   },
+   {
+    "word": "GAS FIREPLACE",
+    "page": null,
+    "quote": "PROVIDE OUTSIDE COMBUSTION AIR SECTION G2435 (605) VENTED GAS FIREPLACE HEATERS FLOOR PLAN NOTES 1\\. CONTRACTOR TO VERIFY AND CO"
+   }
+  ],
+  "callouts": [
+   {
+    "word": "FIREPLACE",
+    "page": null,
+    "quote": "MIN. 1/4\" AIR GAP 1ROOF DETAIL @ EAVE, TYP. 2ROOF DETAIL @ FIREPLACE EAVE 3ROOF DETAIL @ GABLE 4ROOF DETAIL @ EAVE, TYP. 5ROOF D"
+   },
+   {
+    "word": "FIREPLACE",
+    "page": null,
+    "quote": "CEILING 24 BEAM DETAIL @ GARAGE 25 FLOOR TO WALL DETAIL @ FIREPLACE A4.2 1\" = 1'-0\" A4.2 1\" = 1'-0\" A4.2 1\" = 1'-0\" A4.2 1\" ="
+   },
+   {
+    "word": "FIREPLACE",
+    "page": null,
+    "quote": "WINDOW - SEE WINDOW SCHEDULE W4 A4.3 LOAD BEARING WALL @ FIREPLACE EXTERIOR NON LOAD BEARING WALL @ FIREPLACE FOUNDATION PER"
+   },
+   {
+    "word": "FIREPLACE",
+    "page": null,
+    "quote": "BEARING WALL @ FIREPLACE EXTERIOR NON LOAD BEARING WALL @ FIREPLACE FOUNDATION PER STRUCT. 4\" DRAIN IN 2\" CRUSHED ROCK BASE,"
+   }
+  ],
+  "fuel": "unknown",
+  "present": true
+ },
+ "mech_rooms": [
+  {
+   "word": "AIR HANDLER",
+   "page": null
+  }
+ ],
+ "envelope": {
+  "ceiling_r": [
+   {
+    "v": 60.0,
+    "page": null,
+    "quote": "R 0.50 ZONING R2A CEILING R-VALUE 60 VAULTED CEILING R-V"
+   }
+  ],
+  "vault_r": [
+   {
+    "v": 38.0,
+    "page": null,
+    "quote": "CEILING R-VALUE 60 VAULTED CEILING R-VALUE 38 WOOD FRAME WALL 20+"
+   }
+  ],
+  "wall": [
+   {
+    "v": "R-20+5",
+    "page": null,
+    "quote": "CEILING R-VALUE 38 WOOD FRAME WALL 20+5 or 13+10 FLOOR R-VA"
+   }
+  ],
+  "floor_r": [
+   {
+    "v": 38.0,
+    "page": null,
+    "quote": "WOOD FRAME WALL 20+5 or 13+10 FLOOR R-VALUE 38 BELOW GRADE WALL 10/15/21 int"
+   },
+   {
+    "v": 38.0,
+    "page": null,
+    "quote": "BASE 4\" CONC. SLAB OVER 4\" R-38 MIN. FLOOR INSULATION ABOVE GARAGE COMP. FILL W1"
+   },
+   {
+    "v": 38.0,
+    "page": null,
+    "quote": "4.3 JOIST HANGER PER STRUCT R-38 MIN. FLOOR INSULATION ABOVE GARAGE HEADER PER STRU"
+   }
+  ],
+  "ceiling_r_assembly": [
+   {
+    "v": 60.0,
+    "page": null,
+    "quote": "4 W1 A4.3 R1 A4.3 TRUSSES PER MANF. R-60 BATT INSULATION MIN. 1/4\" AIR GAP W1 A4.3 R1 A4.3 P"
+   },
+   {
+    "v": 60.0,
+    "page": null,
+    "quote": "ER STRUCT. ENGINEERED TRUSSES PER MANF. R-60 BATT INSULATION 1/2\" GWB CEILING 1\" = 1'-0\" ROOF ASSEM"
+   }
+  ],
+  "slab_r": [
+   {
+    "v": 10.0,
+    "page": null,
+    "quote": "10/15/21 int + 5TB SLAB R-VALUE/DEPTH 10/4' 118 S.F. LIMIT 1"
+   }
+  ],
+  "skylight_u": [
+   {
+    "v": 0.5,
+    "page": null,
+    "quote": "LE SHEET A0.2 120 SKYLIGHT U-FACTOR 0.50 ZONING R2A CEILIN"
+   }
+  ],
+  "schedule_u": {
+   "0.25": 7,
+   "0.16": 2,
+   "0.27": 2,
+   "0.22": 1
+  },
+  "ach50": [
+   {
+    "v": 1.5,
+    "page": null,
+    "quote": "STING, DEMONSTRATING THE SPECIFIC LEAKAGE AREA IS 1.5 AIR CHANGES PER HOUR MAXIMUM (SEC. R402.4.1.2), IS REQUIRED PRIOR TO F"
+   },
+   {
+    "v": 2.0,
+    "page": null,
+    "quote": "tion R402.4.1.2: Reduce the tested air leakage to 2.0 air changes per hour maximum at 50 Pascals, or for R-2 Occupancies, op"
+   }
+  ],
+  "ceiling_r_value": 60.0,
+  "floor_r_value": 38.0,
+  "ach50_value": 1.5,
+  "wall_value": "R-20+5",
+  "skylight_u_value": 0.5,
+  "slab_r_value": 10.0,
+  "vault_r_value": 38.0
+ },
+ "areas": {
+  "heated_sf": 2436.0,
+  "heated_sf_page": null,
+  "main_sf": 1155.0,
+  "main_sf_page": null,
+  "upper_sf": 1281.0,
+  "upper_sf_page": null,
+  "garage_sf": 477.0,
+  "garage_sf_page": null,
+  "crawl_sf": 1163.0,
+  "crawl_sf_page": null,
+  "main_living_sf": 1160.87,
+  "main_living_sf_page": null,
+  "upper_living_sf": 1290.96,
+  "upper_living_sf_page": null
+ },
+ "tests": {
+  "duct_leakage": true,
+  "duct_exception_note": true,
+  "blower_door": true
+ },
+ "heat_source": [],
+ "conflicts": [
+  {
+   "what": "ach50: the set prints {1.5: 1, 2.0: 1}",
+   "use": 1.5,
+   "why": "two values for one requirement; the tighter one is used for ACH50, the most frequent for R-values - confirm on the energy sheet"
+  },
+  {
+   "what": "credit 2.1 sets 2.0 ACH50 but the notes print 1.5",
+   "use": 1.5,
+   "why": "the tighter target governs the blower-door test and the infiltration load"
+  }
+ ],
+ "warnings": [],
+ "openings": {
+  "rows": [
+   {
+    "form": "schedule",
+    "word": "A ENTRY",
+    "w_ft": 3.0,
+    "h_ft": 9.0,
+    "sf": 27.0,
+    "op": "SWING",
+    "kind": "door",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "B LIVING",
+    "w_ft": 12.0,
+    "h_ft": 9.0,
+    "sf": 108.0,
+    "op": "DBL SLIDER",
+    "kind": "patio",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "C DINING",
+    "w_ft": 8.0,
+    "h_ft": 9.0,
+    "sf": 72.0,
+    "op": "SLIDER",
+    "kind": "patio",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "MUDROOM",
+    "w_ft": 2.833,
+    "h_ft": 8.0,
+    "sf": 22.7,
+    "op": "",
+    "kind": "door",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "GARAGE",
+    "w_ft": 3.0,
+    "h_ft": 8.0,
+    "sf": 24.0,
+    "op": "SWING",
+    "kind": "garage",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "GARAGE",
+    "w_ft": 18.0,
+    "h_ft": 10.0,
+    "sf": 180.0,
+    "op": "OVERHEAD",
+    "kind": "garage",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "PWDR",
+    "w_ft": 2.333,
+    "h_ft": 8.0,
+    "sf": 18.7,
+    "op": "POCKET",
+    "kind": "door",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "OFFICE",
+    "w_ft": 2.5,
+    "h_ft": 8.0,
+    "sf": 20.0,
+    "op": "SWING",
+    "kind": "door",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "CLOS.",
+    "w_ft": 6.0,
+    "h_ft": 8.0,
+    "sf": 48.0,
+    "op": "SLIDER",
+    "kind": "door",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "GARAGE",
+    "w_ft": 3.0,
+    "h_ft": 8.0,
+    "sf": 24.0,
+    "op": "SWING",
+    "kind": "garage",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "MEDIA",
+    "w_ft": 5.0,
+    "h_ft": 8.0,
+    "sf": 40.0,
+    "op": "SWING",
+    "kind": "door",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "BATH. 2",
+    "w_ft": 2.5,
+    "h_ft": 8.0,
+    "sf": 20.0,
+    "op": "SWING",
+    "kind": "door",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "BATH. 2",
+    "w_ft": 2.5,
+    "h_ft": 8.0,
+    "sf": 20.0,
+    "op": "POCKET",
+    "kind": "door",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "W.I.C.",
+    "w_ft": 2.5,
+    "h_ft": 8.0,
+    "sf": 20.0,
+    "op": "SWING",
+    "kind": "door",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "BED. 2",
+    "w_ft": 2.5,
+    "h_ft": 8.0,
+    "sf": 20.0,
+    "op": "SWING",
+    "kind": "door",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "MASTER BED.",
+    "w_ft": 3.0,
+    "h_ft": 8.0,
+    "sf": 24.0,
+    "op": "SWING",
+    "kind": "door",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "C",
+    "w_ft": 2.333,
+    "h_ft": 8.0,
+    "sf": 18.7,
+    "op": "SWING",
+    "kind": "door",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "MASTER BATH.",
+    "w_ft": 2.833,
+    "h_ft": 8.0,
+    "sf": 22.7,
+    "op": "SWING",
+    "kind": "door",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "ENTRY",
+    "w_ft": 3.0,
+    "h_ft": 7.5,
+    "sf": 22.5,
+    "op": "",
+    "kind": "window",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "OPEN HALL",
+    "w_ft": 3.0,
+    "h_ft": 8.0,
+    "sf": 24.0,
+    "op": "",
+    "kind": "door",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "LIVING",
+    "w_ft": 3.0,
+    "h_ft": 7.0,
+    "sf": 21.0,
+    "op": "CSMT",
+    "kind": "window",
+    "u": 0.22,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "FIXED",
+    "w_ft": 2.75,
+    "h_ft": 6.5,
+    "sf": 17.9,
+    "op": "FIXED",
+    "kind": "window",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "MEDIA",
+    "w_ft": 6.0,
+    "h_ft": 6.5,
+    "sf": 39.0,
+    "op": "FIXED",
+    "kind": "window",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "LIVING",
+    "w_ft": 3.0,
+    "h_ft": 7.0,
+    "sf": 21.0,
+    "op": "CSMT",
+    "kind": "window",
+    "u": 0.25,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "KITCHEN",
+    "w_ft": 6.0,
+    "h_ft": 6.0,
+    "sf": 36.0,
+    "op": "SLIDER",
+    "kind": "window",
+    "u": 0.25,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "HALL",
+    "w_ft": 3.0,
+    "h_ft": 6.0,
+    "sf": 18.0,
+    "op": "FIXED",
+    "kind": "window",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "OFFICE",
+    "w_ft": 6.0,
+    "h_ft": 6.0,
+    "sf": 36.0,
+    "op": "FIXED",
+    "kind": "window",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "OFFICE",
+    "w_ft": 6.0,
+    "h_ft": 6.0,
+    "sf": 36.0,
+    "op": "SLIDER",
+    "kind": "window",
+    "u": 0.25,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "GARAGE",
+    "w_ft": 3.0,
+    "h_ft": 6.0,
+    "sf": 18.0,
+    "op": "FIXED",
+    "kind": "garage",
+    "u": 0.25,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "OPEN HALL",
+    "w_ft": 3.0,
+    "h_ft": 8.0,
+    "sf": 24.0,
+    "op": "FIXED",
+    "kind": "window",
+    "u": 0.25,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "MEDIA",
+    "w_ft": 2.75,
+    "h_ft": 6.5,
+    "sf": 17.9,
+    "op": "",
+    "kind": "window",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "LANDING",
+    "w_ft": 3.0,
+    "h_ft": 8.0,
+    "sf": 24.0,
+    "op": "FIXED",
+    "kind": "window",
+    "u": 0.25,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "BED. 1",
+    "w_ft": 6.0,
+    "h_ft": 6.5,
+    "sf": 39.0,
+    "op": "SLIDER",
+    "kind": "window",
+    "u": 0.25,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "BED. 1",
+    "w_ft": 3.0,
+    "h_ft": 6.5,
+    "sf": 19.5,
+    "op": "FIXED",
+    "kind": "window",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "BED. 1",
+    "w_ft": 7.0,
+    "h_ft": 6.5,
+    "sf": 45.5,
+    "op": "FIXED",
+    "kind": "window",
+    "u": 0.25,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "BED. 1",
+    "w_ft": 3.0,
+    "h_ft": 6.5,
+    "sf": 19.5,
+    "op": "FIXED",
+    "kind": "window",
+    "u": 0.22,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "MEDIA",
+    "w_ft": 3.0,
+    "h_ft": 6.5,
+    "sf": 19.5,
+    "op": "",
+    "kind": "window",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "BATH. 2",
+    "w_ft": 6.0,
+    "h_ft": 2.0,
+    "sf": 12.0,
+    "op": "",
+    "kind": "window",
+    "u": 0.22,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "BED. 2",
+    "w_ft": 6.0,
+    "h_ft": 6.0,
+    "sf": 36.0,
+    "op": "SLIDER",
+    "kind": "window",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "BED. 2",
+    "w_ft": 6.0,
+    "h_ft": 6.0,
+    "sf": 36.0,
+    "op": "FIXED",
+    "kind": "window",
+    "u": 0.22,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "BATH. 1",
+    "w_ft": 2.5,
+    "h_ft": 2.5,
+    "sf": 6.2,
+    "op": "AWN",
+    "kind": "window",
+    "u": null,
+    "page": null
+   },
+   {
+    "form": "schedule",
+    "word": "BATH. 1",
+    "w_ft": 6.0,
+    "h_ft": 3.0,
+    "sf": 18.0,
+    "op": "FIXED",
+    "kind": "window",
+    "u": 0.22,
+    "page": null
+   }
+  ],
+  "window_sf": 564.5,
+  "patio_sf": 180.0,
+  "uncertain_sf": 0.0,
+  "door_rows": 14,
+  "count": 24,
+  "u_mean": 0.238,
+  "note": "read off the text layer; mulled parts and interior / garage doors left out - LOOK at the schedule before trusting the total"
+ },
+ "text_chars": 36653,
+ "pages": 1,
+ "source": {
+  "kind": "text",
+  "file": "ridgeway_SFR2025-00214.txt"
+ }
+}

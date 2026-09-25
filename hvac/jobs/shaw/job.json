@@ -1,0 +1,32 @@
+{
+ "address": "2168 Blind Bay Rd, Shaw Island WA 98286 (San Juan County) - duplex",
+ "slug": "2168-blindbay-hvac",
+ "permit": "BUILD-24-0020",
+ "plans": "BUILD-24-0020_Approved_Plans.pdf",
+ "interior": "../../../finish/jobs/shaw/interior.json",
+ "finish_job": "../../../finish/jobs/shaw/job.json",
+ "storeys": [{"name": "main", "rooms": "rooms_p8.json", "page": 8, "z": 0.0, "plate": 9.0}],
+ "hvac": {
+  "jurisdiction": "sanjuan",
+  "code": {"wsec": "2018"},
+  "_code": "2018 WSEC-R per the plan's energy sheet (p21) - an older set (the electrical and plumbing jobs read it); the approved PDF has NO text layer",
+  "system": {"kind": "ductless", "layout": "auto", "option": "3.6 (2018)"},
+  "_system": "the energy sheet's credit path is a ductless heat pump - '2018 WSEC option 3.6' as the plumbing job read it and 'DHP' as the electrical job read it; hvacscan cannot confirm it (scanned set). One system PER DWELLING UNIT",
+  "units": [
+   {"name": "A", "x_max": 70.0, "cfa_sf": 1301, "bedrooms": 3},
+   {"name": "B", "x_min": 70.0, "cfa_sf": 980, "bedrooms": 2}
+  ],
+  "_units": "two mirrored units on one sheet, split at plan x = 70 ft. The west unit carries LIVING A and three bedrooms (PRIMARY BED, BED 1, BED 2; ~1,090 sf traced) = the 3-bed 1,301 sf unit; the east unit (LIVING B, BED 1, BED 2; ~975 sf traced) = the 2-bed 980 sf unit. NOTE: the electrical job's calc_sqft_by_unit names the 980 sf unit 'A' - the reverse of the plan's own LIVING A / LIVING B",
+  "envelope": {"ceiling_r": 49, "wall": "R-21", "floor_r": 30, "window_u": 0.30, "ach50": 5.0},
+  "_envelope": "2018 WSEC-R prescriptive values ASSUMED (the scanned set cannot be read here): ceiling R-49, wall R-21 int, floor R-30, fenestration U-0.30, 5.0 ACH50 - read the energy sheet and correct",
+  "foundation": "crawl",
+  "_foundation": "p7/p8: crawl, one CRAWL ACCESS HATCH per unit; slab only at the carport / porches",
+  "ventilation": {"kind": "exhaust"},
+  "_ventilation": "exhaust-only whole-house fan per unit ASSUMED (the 2018 credit path named no HRV)",
+  "hood": {"cfm": 300, "makeup_air": false},
+  "dryer": {"present": true, "fuel": "electric"},
+  "_dryer": "no gas on Shaw Island; electric",
+  "fireplace": {"present": false},
+  "labour": {"crew": 2, "capacity_hr": 6.25}
+ }
+}
